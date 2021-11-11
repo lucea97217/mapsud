@@ -120,6 +120,9 @@ for i in range (len(df_brut)) :
 
 # %%
 
-df = [ df_brut["ROUTE"], df_brut["NOMGARE"], GPS ]
+tab = { 'ROUTE':df_brut["ROUTE"], 'NOMGARE':df_brut["NOMGARE"], 'COORDONNEES':GPS }
 
 # %%
+######### ENREGISTREMENT DU TABLEAU EN CSV ######
+df_new = pd.DataFrame(tab)
+df_new.to_csv('coordonnees.csv')
