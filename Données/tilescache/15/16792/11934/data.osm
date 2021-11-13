@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.5 (1535804 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <bounds minlat="43.8424512" minlon="4.4824219" maxlat="43.8503745" maxlon="4.4934082"/>
+ <node id="76078931" visible="true" version="2" changeset="82844364" timestamp="2020-03-30T21:37:55Z" user="Lemalic" uid="10837953" lat="43.8442091" lon="4.4981890"/>
+ <node id="607992955" visible="true" version="1" changeset="3561088" timestamp="2010-01-07T12:00:39Z" user="Balooval" uid="145184" lat="43.8396340" lon="4.4834223"/>
+ <node id="607992956" visible="true" version="2" changeset="3561124" timestamp="2010-01-07T12:05:28Z" user="Balooval" uid="145184" lat="43.8440980" lon="4.4870938"/>
+ <node id="607992957" visible="true" version="2" changeset="3561124" timestamp="2010-01-07T12:05:28Z" user="Balooval" uid="145184" lat="43.8459511" lon="4.4989344"/>
+ <node id="607992958" visible="true" version="3" changeset="3663824" timestamp="2010-01-20T01:10:11Z" user="Balooval" uid="145184" lat="43.8526747" lon="4.4838121"/>
+ <node id="607992960" visible="true" version="3" changeset="3568994" timestamp="2010-01-08T10:35:33Z" user="Balooval" uid="145184" lat="43.8570547" lon="4.5009775"/>
+ <node id="607992961" visible="true" version="1" changeset="3561088" timestamp="2010-01-07T12:00:39Z" user="Balooval" uid="145184" lat="43.8517159" lon="4.5013243"/>
+ <node id="607994366" visible="true" version="1" changeset="3561124" timestamp="2010-01-07T12:05:26Z" user="Balooval" uid="145184" lat="43.8407151" lon="4.4838072"/>
+ <node id="607994367" visible="true" version="1" changeset="3561124" timestamp="2010-01-07T12:05:26Z" user="Balooval" uid="145184" lat="43.8449429" lon="4.4927523"/>
+ <node id="607994368" visible="true" version="1" changeset="3561124" timestamp="2010-01-07T12:05:26Z" user="Balooval" uid="145184" lat="43.8443272" lon="4.4910085"/>
+ <node id="609220997" visible="true" version="4" changeset="47904814" timestamp="2017-04-18T12:43:28Z" user="Pmz" uid="4363" lat="43.8596894" lon="4.4771098"/>
+ <node id="609220999" visible="true" version="3" changeset="44164307" timestamp="2016-12-04T19:06:09Z" user="Art Penteur" uid="92075" lat="43.8578792" lon="4.4777660"/>
+ <node id="609661014" visible="true" version="1" changeset="3573154" timestamp="2010-01-08T20:10:10Z" user="Balooval" uid="145184" lat="43.8393857" lon="4.4825605"/>
+ <node id="610015296" visible="true" version="2" changeset="32384125" timestamp="2015-07-03T10:25:42Z" user="Yod4z" uid="318821" lat="43.8400533" lon="4.4876075"/>
+ <node id="610028706" visible="true" version="2" changeset="31790654" timestamp="2015-06-07T13:54:42Z" user="JFK73" uid="662440" lat="43.8453135" lon="4.4946020"/>
+ <node id="616932814" visible="true" version="4" changeset="52355269" timestamp="2017-09-25T12:56:54Z" user="Pmz" uid="4363" lat="43.8568493" lon="4.4795258"/>
+ <node id="616932816" visible="true" version="4" changeset="52355269" timestamp="2017-09-25T12:56:54Z" user="Pmz" uid="4363" lat="43.8566265" lon="4.4796607"/>
+ <node id="616932817" visible="true" version="1" changeset="3663824" timestamp="2010-01-20T01:10:11Z" user="Balooval" uid="145184" lat="43.8563272" lon="4.4798215"/>
+ <node id="616932819" visible="true" version="2" changeset="3709788" timestamp="2010-01-25T11:05:25Z" user="Balooval" uid="145184" lat="43.8541464" lon="4.4809405"/>
+ <node id="616932820" visible="true" version="2" changeset="3709788" timestamp="2010-01-25T11:05:25Z" user="Balooval" uid="145184" lat="43.8534553" lon="4.4813247"/>
+ <node id="616932821" visible="true" version="2" changeset="3709788" timestamp="2010-01-25T11:05:25Z" user="Balooval" uid="145184" lat="43.8532315" lon="4.4815818"/>
+ <node id="616932823" visible="true" version="1" changeset="3663824" timestamp="2010-01-20T01:10:11Z" user="Balooval" uid="145184" lat="43.8531754" lon="4.4816983"/>
+ <node id="616932824" visible="true" version="1" changeset="3663824" timestamp="2010-01-20T01:10:11Z" user="Balooval" uid="145184" lat="43.8530834" lon="4.4818988"/>
+ <node id="616932825" visible="true" version="2" changeset="3663829" timestamp="2010-01-20T01:12:57Z" user="Balooval" uid="145184" lat="43.8525825" lon="4.4841255"/>
+ <node id="616932826" visible="true" version="1" changeset="3663824" timestamp="2010-01-20T01:10:11Z" user="Balooval" uid="145184" lat="43.8528102" lon="4.4832477"/>
+ <node id="616933101" visible="true" version="1" changeset="3663829" timestamp="2010-01-20T01:12:56Z" user="Balooval" uid="145184" lat="43.8456316" lon="4.4941957"/>
+ <node id="616933102" visible="true" version="1" changeset="3663829" timestamp="2010-01-20T01:12:56Z" user="Balooval" uid="145184" lat="43.8518581" lon="4.4881967"/>
+ <node id="616933103" visible="true" version="1" changeset="3663829" timestamp="2010-01-20T01:12:56Z" user="Balooval" uid="145184" lat="43.8516342" lon="4.4885617"/>
+ <node id="616933104" visible="true" version="1" changeset="3663829" timestamp="2010-01-20T01:12:56Z" user="Balooval" uid="145184" lat="43.8513103" lon="4.4888247"/>
+ <node id="616933105" visible="true" version="1" changeset="3663829" timestamp="2010-01-20T01:12:56Z" user="Balooval" uid="145184" lat="43.8509523" lon="4.4889423"/>
+ <node id="616933106" visible="true" version="1" changeset="3663829" timestamp="2010-01-20T01:12:56Z" user="Balooval" uid="145184" lat="43.8484587" lon="4.4893185"/>
+ <node id="616933107" visible="true" version="1" changeset="3663829" timestamp="2010-01-20T01:12:56Z" user="Balooval" uid="145184" lat="43.8482348" lon="4.4894349"/>
+ <node id="616933108" visible="true" version="1" changeset="3663829" timestamp="2010-01-20T01:12:56Z" user="Balooval" uid="145184" lat="43.8521258" lon="4.4857225"/>
+ <node id="616933109" visible="true" version="1" changeset="3663829" timestamp="2010-01-20T01:12:56Z" user="Balooval" uid="145184" lat="43.8519914" lon="4.4877527"/>
+ <node id="616933285" visible="true" version="1" changeset="3663831" timestamp="2010-01-20T01:13:22Z" user="Balooval" uid="145184" lat="43.8511442" lon="4.4888793"/>
+ <node id="619759997" visible="true" version="2" changeset="44164307" timestamp="2016-12-04T19:06:12Z" user="Art Penteur" uid="92075" lat="43.8576965" lon="4.4781169"/>
+ <node id="619759999" visible="true" version="2" changeset="44164307" timestamp="2016-12-04T19:06:12Z" user="Art Penteur" uid="92075" lat="43.8581032" lon="4.4775185"/>
+ <node id="1933856830" visible="true" version="1" changeset="13260917" timestamp="2012-09-26T15:25:44Z" user="bestinthewest" uid="377620" lat="43.8515236" lon="4.4829583"/>
+ <node id="2787844207" visible="true" version="1" changeset="21664350" timestamp="2014-04-13T12:36:40Z" user="user_870861" uid="870861" lat="43.8498879" lon="4.4827025"/>
+ <node id="2787844237" visible="true" version="1" changeset="21664350" timestamp="2014-04-13T12:36:40Z" user="user_870861" uid="870861" lat="43.8499573" lon="4.4829223"/>
+ <node id="2787844249" visible="true" version="1" changeset="21664350" timestamp="2014-04-13T12:36:40Z" user="user_870861" uid="870861" lat="43.8499937" lon="4.4826373"/>
+ <node id="2787844263" visible="true" version="1" changeset="21664350" timestamp="2014-04-13T12:36:40Z" user="user_870861" uid="870861" lat="43.8500668" lon="4.4828651"/>
+ <node id="2787844322" visible="true" version="1" changeset="21664350" timestamp="2014-04-13T12:36:41Z" user="user_870861" uid="870861" lat="43.8501820" lon="4.4831749"/>
+ <node id="2787844325" visible="true" version="1" changeset="21664350" timestamp="2014-04-13T12:36:41Z" user="user_870861" uid="870861" lat="43.8501871" lon="4.4830514"/>
+ <node id="2787844351" visible="true" version="1" changeset="21664350" timestamp="2014-04-13T12:36:41Z" user="user_870861" uid="870861" lat="43.8502252" lon="4.4904383"/>
+ <node id="2787844353" visible="true" version="1" changeset="21664350" timestamp="2014-04-13T12:36:41Z" user="user_870861" uid="870861" lat="43.8502254" lon="4.4904778"/>
+ <node id="2787844364" visible="true" version="1" changeset="21664350" timestamp="2014-04-13T12:36:41Z" user="user_870861" uid="870861" lat="43.8502470" lon="4.4901090"/>
+ <node id="2787844366" visible="true" version="1" changeset="21664350" timestamp="2014-04-13T12:36:41Z" user="user_870861" uid="870861" lat="43.8502544" lon="4.4901903"/>
+ <node id="2787844368" visible="true" version="1" changeset="21664350" timestamp="2014-04-13T12:36:41Z" user="user_870861" uid="870861" lat="43.8502545" lon="4.4904373"/>
+ <node id="2787844370" visible="true" version="1" changeset="21664350" timestamp="2014-04-13T12:36:41Z" user="user_870861" uid="870861" lat="43.8502549" lon="4.4904780"/>
+ <node id="2787844414" visible="true" version="1" changeset="21664350" timestamp="2014-04-13T12:36:42Z" user="user_870861" uid="870861" lat="43.8503343" lon="4.4900984"/>
+ <node id="2787844418" visible="true" version="1" changeset="21664350" timestamp="2014-04-13T12:36:42Z" user="user_870861" uid="870861" lat="43.8503380" lon="4.4901818"/>
+ <node id="2787844563" visible="true" version="1" changeset="21664350" timestamp="2014-04-13T12:36:43Z" user="user_870861" uid="870861" lat="43.8505368" lon="4.4832032"/>
+ <node id="2787844566" visible="true" version="1" changeset="21664350" timestamp="2014-04-13T12:36:43Z" user="user_870861" uid="870861" lat="43.8505428" lon="4.4830850"/>
+ <node id="2945895834" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8430302" lon="4.4841058"/>
+ <node id="2945895835" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8434095" lon="4.4831075"/>
+ <node id="2945895836" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8436732" lon="4.4815874"/>
+ <node id="2945895837" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8439013" lon="4.4801577"/>
+ <node id="2945895838" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8439932" lon="4.4849275"/>
+ <node id="2945895839" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8441206" lon="4.4800468"/>
+ <node id="2945895840" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8442743" lon="4.4896419"/>
+ <node id="2945895841" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8444080" lon="4.4798085"/>
+ <node id="2945895842" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8455890" lon="4.4791802"/>
+ <node id="2945895843" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8456099" lon="4.4791697"/>
+ <node id="2945895844" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8457160" lon="4.4894868"/>
+ <node id="2945895845" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8458670" lon="4.4790103"/>
+ <node id="2945895846" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8460072" lon="4.4894723"/>
+ <node id="2945895847" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8461149" lon="4.4812221"/>
+ <node id="2945895848" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8461980" lon="4.4797017"/>
+ <node id="2945895849" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8466296" lon="4.4800270"/>
+ <node id="2945895850" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8467028" lon="4.4893880"/>
+ <node id="2945895851" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8470590" lon="4.4893735"/>
+ <node id="2945895852" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8471218" lon="4.4851119"/>
+ <node id="2945895853" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8471324" lon="4.4850817"/>
+ <node id="2945895854" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8473125" lon="4.4858003"/>
+ <node id="2945895855" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8473335" lon="4.4807591"/>
+ <node id="2945895856" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8474927" lon="4.4810089"/>
+ <node id="2945895857" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8475408" lon="4.4893416"/>
+ <node id="2945895858" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8475639" lon="4.4867532"/>
+ <node id="2945895859" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8477860" lon="4.4816655"/>
+ <node id="2945895860" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8478299" lon="4.4892806"/>
+ <node id="2945895861" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8479452" lon="4.4881650"/>
+ <node id="2945895862" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8479872" lon="4.4822523"/>
+ <node id="2945895863" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8480751" lon="4.4892283"/>
+ <node id="2945895864" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8482260" lon="4.4834782"/>
+ <node id="2945895865" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8482343" lon="4.4892544"/>
+ <node id="2945895866" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8483727" lon="4.4843264"/>
+ <node id="2945895867" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214" lat="43.8484565" lon="4.4848087"/>
+ <node id="2945906803" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8408009" lon="4.4861731"/>
+ <node id="2945906804" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8408602" lon="4.4871632"/>
+ <node id="2945906805" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8411387" lon="4.4864565"/>
+ <node id="2945906806" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8417402" lon="4.4837697"/>
+ <node id="2945906807" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:19Z" user="pays_gcn" uid="663214" lat="43.8419343" lon="4.4832336"/>
+ <node id="2945906808" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:19Z" user="pays_gcn" uid="663214" lat="43.8421951" lon="4.4825927"/>
+ <node id="2945906809" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8424277" lon="4.4875000"/>
+ <node id="2945906810" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8424277" lon="4.4884901"/>
+ <node id="2945906811" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:19Z" user="pays_gcn" uid="663214" lat="43.8424514" lon="4.4821387"/>
+ <node id="2945906812" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8425202" lon="4.4874962"/>
+ <node id="2945906813" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8426876" lon="4.4856493"/>
+ <node id="2945906814" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8427003" lon="4.4850556"/>
+ <node id="2945906815" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8427625" lon="4.4852775"/>
+ <node id="2945906816" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8427863" lon="4.4877228"/>
+ <node id="2945906817" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:19Z" user="pays_gcn" uid="663214" lat="43.8427936" lon="4.4816580"/>
+ <node id="2945906818" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:19Z" user="pays_gcn" uid="663214" lat="43.8429862" lon="4.4840819"/>
+ <node id="2945906819" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8429877" lon="4.4886093"/>
+ <node id="2945906820" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8430588" lon="4.4880423"/>
+ <node id="2945906821" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8430618" lon="4.4842997"/>
+ <node id="2945906822" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:19Z" user="pays_gcn" uid="663214" lat="43.8432396" lon="4.4809843"/>
+ <node id="2945906823" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:19Z" user="pays_gcn" uid="663214" lat="43.8433759" lon="4.4830877"/>
+ <node id="2945906824" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:19Z" user="pays_gcn" uid="663214" lat="43.8435759" lon="4.4804502"/>
+ <node id="2945906825" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:19Z" user="pays_gcn" uid="663214" lat="43.8435848" lon="4.4819477"/>
+ <node id="2945906826" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:19Z" user="pays_gcn" uid="663214" lat="43.8437566" lon="4.4802366"/>
+ <node id="2945906827" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:19Z" user="pays_gcn" uid="663214" lat="43.8438574" lon="4.4801647"/>
+ <node id="2945906828" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8438944" lon="4.4849570"/>
+ <node id="2945906829" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8439359" lon="4.4856061"/>
+ <node id="2945906830" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8439448" lon="4.4858074"/>
+ <node id="2945906831" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8440434" lon="4.4874672"/>
+ <node id="2945906832" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8440455" lon="4.4882631"/>
+ <node id="2945906833" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:20Z" user="pays_gcn" uid="663214" lat="43.8442351" lon="4.4897111"/>
+ <node id="2945906834" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:20Z" user="pays_gcn" uid="663214" lat="43.8443326" lon="4.4907976"/>
+ <node id="2945906835" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8443481" lon="4.4908590"/>
+ <node id="2945906836" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8443669" lon="4.4910833"/>
+ <node id="2945906837" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8444403" lon="4.4914159"/>
+ <node id="2945906838" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8445744" lon="4.4917820"/>
+ <node id="2945906839" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8447904" lon="4.4923915"/>
+ <node id="2945906840" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8448305" lon="4.4925177"/>
+ <node id="2945906841" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:20Z" user="pays_gcn" uid="663214" lat="43.8450051" lon="4.4896385"/>
+ <node id="2945906842" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:20Z" user="pays_gcn" uid="663214" lat="43.8450093" lon="4.4907453"/>
+ <node id="2945906843" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8450248" lon="4.4896389"/>
+ <node id="2945906844" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8450311" lon="4.4908009"/>
+ <node id="2945906845" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8450332" lon="4.4907370"/>
+ <node id="2945906846" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8450374" lon="4.4906615"/>
+ <node id="2945906847" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8450683" lon="4.4932963"/>
+ <node id="2945906848" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8451689" lon="4.4924640"/>
+ <node id="2945906849" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8451734" lon="4.4923843"/>
+ <node id="2945906850" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8453177" lon="4.4944554"/>
+ <node id="2945906851" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8455439" lon="4.4941155"/>
+ <node id="2945906852" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8455666" lon="4.4940634"/>
+ <node id="2945906853" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8455717" lon="4.4895866"/>
+ <node id="2945906854" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8455758" lon="4.4906121"/>
+ <node id="2945906855" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8455779" lon="4.4906731"/>
+ <node id="2945906856" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8455992" lon="4.4923256"/>
+ <node id="2945906857" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:20Z" user="pays_gcn" uid="663214" lat="43.8456031" lon="4.4895895"/>
+ <node id="2945906858" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:20Z" user="pays_gcn" uid="663214" lat="43.8456240" lon="4.4922680"/>
+ <node id="2945906859" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:20Z" user="pays_gcn" uid="663214" lat="43.8460954" lon="4.4895314"/>
+ <node id="2945906860" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:20Z" user="pays_gcn" uid="663214" lat="43.8461352" lon="4.4910159"/>
+ <node id="2945906861" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:20Z" user="pays_gcn" uid="663214" lat="43.8461394" lon="4.4922331"/>
+ <node id="2945906862" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8461444" lon="4.4923173"/>
+ <node id="2945906863" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:20Z" user="pays_gcn" uid="663214" lat="43.8461688" lon="4.4922738"/>
+ <node id="2945906864" visible="true" version="3" changeset="94883644" timestamp="2020-11-27T09:00:23Z" user="cquest" uid="158826" lat="43.8462540" lon="4.4928227"/>
+ <node id="2945906865" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:20Z" user="pays_gcn" uid="663214" lat="43.8463028" lon="4.4928141"/>
+ <node id="2945906866" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:20Z" user="pays_gcn" uid="663214" lat="43.8469062" lon="4.4894530"/>
+ <node id="2945906867" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:20Z" user="pays_gcn" uid="663214" lat="43.8470340" lon="4.4906992"/>
+ <node id="2945906868" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:20Z" user="pays_gcn" uid="663214" lat="43.8475892" lon="4.4894036"/>
+ <node id="2945906869" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:20Z" user="pays_gcn" uid="663214" lat="43.8478741" lon="4.4893513"/>
+ <node id="2945906870" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:20Z" user="pays_gcn" uid="663214" lat="43.8481486" lon="4.4893281"/>
+ <node id="2945915529" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:08Z" user="pays_gcn" uid="663214" lat="43.8459505" lon="4.4788878"/>
+ <node id="2945915530" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:08Z" user="pays_gcn" uid="663214" lat="43.8460678" lon="4.4790417"/>
+ <node id="2945915531" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:08Z" user="pays_gcn" uid="663214" lat="43.8461306" lon="4.4792073"/>
+ <node id="2945915532" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:08Z" user="pays_gcn" uid="663214" lat="43.8462145" lon="4.4794513"/>
+ <node id="2945918433" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:08Z" user="pays_gcn" uid="663214" lat="43.8463569" lon="4.4796024"/>
+ <node id="2945918434" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:08Z" user="pays_gcn" uid="663214" lat="43.8464876" lon="4.4784028"/>
+ <node id="2945918435" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:08Z" user="pays_gcn" uid="663214" lat="43.8466416" lon="4.4782836"/>
+ <node id="2945918436" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:08Z" user="pays_gcn" uid="663214" lat="43.8467215" lon="4.4799452"/>
+ <node id="2945918437" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:08Z" user="pays_gcn" uid="663214" lat="43.8467839" lon="4.4781974"/>
+ <node id="2945918438" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:08Z" user="pays_gcn" uid="663214" lat="43.8469231" lon="4.4781481"/>
+ <node id="2945918439" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:08Z" user="pays_gcn" uid="663214" lat="43.8471098" lon="4.4781357"/>
+ <node id="2945918440" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:08Z" user="pays_gcn" uid="663214" lat="43.8471396" lon="4.4851053"/>
+ <node id="2945918441" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:08Z" user="pays_gcn" uid="663214" lat="43.8474128" lon="4.4806598"/>
+ <node id="2945918442" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:08Z" user="pays_gcn" uid="663214" lat="43.8474979" lon="4.4781850"/>
+ <node id="2945918443" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:08Z" user="pays_gcn" uid="663214" lat="43.8475658" lon="4.4808893"/>
+ <node id="2945918444" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:08Z" user="pays_gcn" uid="663214" lat="43.8476342" lon="4.4795860"/>
+ <node id="2945918445" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:08Z" user="pays_gcn" uid="663214" lat="43.8477334" lon="4.4812815"/>
+ <node id="2945918446" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:08Z" user="pays_gcn" uid="663214" lat="43.8480057" lon="4.4819961"/>
+ <node id="2945918447" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:09Z" user="pays_gcn" uid="663214" lat="43.8481063" lon="4.4824551"/>
+ <node id="2945918448" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:09Z" user="pays_gcn" uid="663214" lat="43.8482404" lon="4.4831349"/>
+ <node id="2945918449" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:09Z" user="pays_gcn" uid="663214" lat="43.8482982" lon="4.4892493"/>
+ <node id="2945918450" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:09Z" user="pays_gcn" uid="663214" lat="43.8484939" lon="4.4848372"/>
+ <node id="2945918451" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:09Z" user="pays_gcn" uid="663214" lat="43.8487156" lon="4.4793313"/>
+ <node id="2945918452" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:09Z" user="pays_gcn" uid="663214" lat="43.8491956" lon="4.4809581"/>
+ <node id="2945918453" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:09Z" user="pays_gcn" uid="663214" lat="43.8500846" lon="4.4834924"/>
+ <node id="2945918454" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:09Z" user="pays_gcn" uid="663214" lat="43.8507867" lon="4.4847057"/>
+ <node id="2945918455" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:09Z" user="pays_gcn" uid="663214" lat="43.8508158" lon="4.4888727"/>
+ <node id="2945918457" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:09Z" user="pays_gcn" uid="663214" lat="43.8508697" lon="4.4835704"/>
+ <node id="2945918458" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:09Z" user="pays_gcn" uid="663214" lat="43.8508957" lon="4.4871634"/>
+ <node id="2945918460" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:09Z" user="pays_gcn" uid="663214" lat="43.8509290" lon="4.4828679"/>
+ <node id="2945918461" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:09Z" user="pays_gcn" uid="663214" lat="43.8511534" lon="4.4888134"/>
+ <node id="2945918462" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:09Z" user="pays_gcn" uid="663214" lat="43.8513147" lon="4.4887611"/>
+ <node id="2945918463" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:09Z" user="pays_gcn" uid="663214" lat="43.8514771" lon="4.4830076"/>
+ <node id="2945918464" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:09Z" user="pays_gcn" uid="663214" lat="43.8515482" lon="4.4831801"/>
+ <node id="2945918465" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:09Z" user="pays_gcn" uid="663214" lat="43.8516100" lon="4.4885084"/>
+ <node id="2945918466" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:09Z" user="pays_gcn" uid="663214" lat="43.8517141" lon="4.4839443"/>
+ <node id="2945918467" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:09Z" user="pays_gcn" uid="663214" lat="43.8517965" lon="4.4844443"/>
+ <node id="2945918469" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:09Z" user="pays_gcn" uid="663214" lat="43.8518258" lon="4.4881627"/>
+ <node id="2945918470" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:09Z" user="pays_gcn" uid="663214" lat="43.8519264" lon="4.4877705"/>
+ <node id="2945918472" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:09Z" user="pays_gcn" uid="663214" lat="43.8519913" lon="4.4871169"/>
+ <node id="3577703122" visible="true" version="1" changeset="31779380" timestamp="2015-06-06T23:57:45Z" user="JFKimports" uid="903961" lat="43.8433570" lon="4.4884600"/>
+ <node id="3577703123" visible="true" version="1" changeset="31779380" timestamp="2015-06-06T23:57:45Z" user="JFKimports" uid="903961" lat="43.8433640" lon="4.4883350"/>
+ <node id="3577703124" visible="true" version="1" changeset="31779380" timestamp="2015-06-06T23:57:46Z" user="JFKimports" uid="903961" lat="43.8434500" lon="4.4884670"/>
+ <node id="3577703125" visible="true" version="1" changeset="31779380" timestamp="2015-06-06T23:57:46Z" user="JFKimports" uid="903961" lat="43.8434550" lon="4.4883450"/>
+ <node id="3632640504" visible="true" version="1" changeset="32384125" timestamp="2015-07-03T10:25:22Z" user="Yod4z" uid="318821" lat="43.8404406" lon="4.4878543"/>
+ <node id="3632640505" visible="true" version="1" changeset="32384125" timestamp="2015-07-03T10:25:22Z" user="Yod4z" uid="318821" lat="43.8405433" lon="4.4879036"/>
+ <node id="3632640506" visible="true" version="1" changeset="32384125" timestamp="2015-07-03T10:25:22Z" user="Yod4z" uid="318821" lat="43.8406137" lon="4.4879754"/>
+ <node id="3632640507" visible="true" version="1" changeset="32384125" timestamp="2015-07-03T10:25:22Z" user="Yod4z" uid="318821" lat="43.8410151" lon="4.4884654"/>
+ <node id="3632640508" visible="true" version="1" changeset="32384125" timestamp="2015-07-03T10:25:22Z" user="Yod4z" uid="318821" lat="43.8414938" lon="4.4890845"/>
+ <node id="3632640509" visible="true" version="1" changeset="32384125" timestamp="2015-07-03T10:25:22Z" user="Yod4z" uid="318821" lat="43.8418675" lon="4.4893922"/>
+ <node id="3632640510" visible="true" version="1" changeset="32384125" timestamp="2015-07-03T10:25:22Z" user="Yod4z" uid="318821" lat="43.8422080" lon="4.4895018"/>
+ <node id="3632640511" visible="true" version="1" changeset="32384125" timestamp="2015-07-03T10:25:22Z" user="Yod4z" uid="318821" lat="43.8427272" lon="4.4895949"/>
+ <node id="3632640512" visible="true" version="1" changeset="32384125" timestamp="2015-07-03T10:25:23Z" user="Yod4z" uid="318821" lat="43.8434167" lon="4.4897442"/>
+ <node id="3632640513" visible="true" version="1" changeset="32384125" timestamp="2015-07-03T10:25:23Z" user="Yod4z" uid="318821" lat="43.8437848" lon="4.4897532"/>
+ <node id="3632640514" visible="true" version="1" changeset="32384125" timestamp="2015-07-03T10:25:23Z" user="Yod4z" uid="318821" lat="43.8442046" lon="4.4896857"/>
+ <node id="3632640515" visible="true" version="1" changeset="32384125" timestamp="2015-07-03T10:25:23Z" user="Yod4z" uid="318821" lat="43.8442230" lon="4.4897224"/>
+ <node id="3632640516" visible="true" version="1" changeset="32384125" timestamp="2015-07-03T10:25:23Z" user="Yod4z" uid="318821" lat="43.8442311" lon="4.4899667"/>
+ <node id="3632640517" visible="true" version="1" changeset="32384125" timestamp="2015-07-03T10:25:23Z" user="Yod4z" uid="318821" lat="43.8443740" lon="4.4912733"/>
+ <node id="3632640518" visible="true" version="1" changeset="32384125" timestamp="2015-07-03T10:25:23Z" user="Yod4z" uid="318821" lat="43.8444520" lon="4.4914881"/>
+ <node id="3632640519" visible="true" version="1" changeset="32384125" timestamp="2015-07-03T10:25:23Z" user="Yod4z" uid="318821" lat="43.8446611" lon="4.4920331"/>
+ <node id="3632640520" visible="true" version="1" changeset="32384125" timestamp="2015-07-03T10:25:23Z" user="Yod4z" uid="318821" lat="43.8450465" lon="4.4933250"/>
+ <node id="4538209396" visible="true" version="1" changeset="44164307" timestamp="2016-12-04T19:05:37Z" user="Art Penteur" uid="92075" lat="43.8584243" lon="4.4773502"/>
+ <node id="4538333494" visible="true" version="1" changeset="44164307" timestamp="2016-12-04T19:05:36Z" user="Art Penteur" uid="92075" lat="43.8570356" lon="4.4793243"/>
+ <node id="4538333495" visible="true" version="1" changeset="44164307" timestamp="2016-12-04T19:05:37Z" user="Art Penteur" uid="92075" lat="43.8573484" lon="4.4789157"/>
+ <node id="5128429666" visible="true" version="1" changeset="52355269" timestamp="2017-09-25T12:56:53Z" user="Pmz" uid="4363" lat="43.8575388" lon="4.4785276"/>
+ <node id="6780004162" visible="true" version="1" changeset="74215745" timestamp="2019-09-07T22:32:21Z" user="gfdklgdldsfgkgfd" uid="4468387" lat="43.8353164" lon="4.5104417"/>
+ <node id="6780004536" visible="true" version="1" changeset="74215745" timestamp="2019-09-07T22:32:21Z" user="gfdklgdldsfgkgfd" uid="4468387" lat="43.8332937" lon="4.5213258"/>
+ <node id="6780004617" visible="true" version="1" changeset="74215745" timestamp="2019-09-07T22:32:21Z" user="gfdklgdldsfgkgfd" uid="4468387" lat="43.8515523" lon="4.4827066"/>
+ <node id="6780004691" visible="true" version="2" changeset="91845833" timestamp="2020-10-01T20:41:25Z" user="David Crochet" uid="50624" lat="43.8532188" lon="4.4740185"/>
+ <node id="6780004825" visible="true" version="2" changeset="91845833" timestamp="2020-10-01T20:41:25Z" user="David Crochet" uid="50624" lat="43.8515737" lon="4.4889343"/>
+ <node id="6780004984" visible="true" version="1" changeset="74215745" timestamp="2019-09-07T22:32:24Z" user="gfdklgdldsfgkgfd" uid="4468387" lat="43.8454684" lon="4.4947026"/>
+ <node id="6780005435" visible="true" version="1" changeset="74215745" timestamp="2019-09-07T22:32:24Z" user="gfdklgdldsfgkgfd" uid="4468387" lat="43.8275834" lon="4.5260507"/>
+ <node id="6780005600" visible="true" version="1" changeset="74215745" timestamp="2019-09-07T22:32:24Z" user="gfdklgdldsfgkgfd" uid="4468387" lat="43.8332796" lon="4.5202805"/>
+ <node id="6780006184" visible="true" version="2" changeset="91845833" timestamp="2020-10-01T20:41:25Z" user="David Crochet" uid="50624" lat="43.8478986" lon="4.4900367"/>
+ <node id="6780006251" visible="true" version="2" changeset="91845833" timestamp="2020-10-01T20:41:25Z" user="David Crochet" uid="50624" lat="43.8402032" lon="4.5082448"/>
+ <node id="6780006273" visible="true" version="2" changeset="91845833" timestamp="2020-10-01T20:41:25Z" user="David Crochet" uid="50624" lat="43.8521840" lon="4.4853307"/>
+ <node id="6780006570" visible="true" version="2" changeset="91845833" timestamp="2020-10-01T20:41:25Z" user="David Crochet" uid="50624" lat="43.8402148" lon="4.5089905"/>
+ <node id="6780006592" visible="true" version="1" changeset="74215745" timestamp="2019-09-07T22:32:29Z" user="gfdklgdldsfgkgfd" uid="4468387" lat="43.8358733" lon="4.5094576"/>
+ <node id="6780006655" visible="true" version="2" changeset="91845833" timestamp="2020-10-01T20:41:25Z" user="David Crochet" uid="50624" lat="43.8342666" lon="4.5184118"/>
+ <node id="6780007140" visible="true" version="2" changeset="91845833" timestamp="2020-10-01T20:41:25Z" user="David Crochet" uid="50624" lat="43.8434213" lon="4.5016560"/>
+ <node id="6780007411" visible="true" version="2" changeset="91845833" timestamp="2020-10-01T20:41:25Z" user="David Crochet" uid="50624" lat="43.8447068" lon="4.4949478"/>
+ <node id="6780007497" visible="true" version="1" changeset="74215745" timestamp="2019-09-07T22:32:31Z" user="gfdklgdldsfgkgfd" uid="4468387" lat="43.8519862" lon="4.4808439"/>
+ <node id="6780007515" visible="true" version="2" changeset="91845833" timestamp="2020-10-01T20:41:25Z" user="David Crochet" uid="50624" lat="43.8520176" lon="4.4766203"/>
+ <node id="6780007529" visible="true" version="1" changeset="74215745" timestamp="2019-09-07T22:32:31Z" user="gfdklgdldsfgkgfd" uid="4468387" lat="43.8363970" lon="4.5183152"/>
+ <node id="6780008354" visible="true" version="2" changeset="91845833" timestamp="2020-10-01T20:41:25Z" user="David Crochet" uid="50624" lat="43.8298454" lon="4.5243515"/>
+ <node id="6780008637" visible="true" version="2" changeset="91845833" timestamp="2020-10-01T20:41:25Z" user="David Crochet" uid="50624" lat="43.8520525" lon="4.4881980"/>
+ <node id="6780008979" visible="true" version="1" changeset="74215745" timestamp="2019-09-07T22:32:38Z" user="gfdklgdldsfgkgfd" uid="4468387" lat="43.8298016" lon="4.5218757"/>
+ <node id="6780009043" visible="true" version="2" changeset="91845833" timestamp="2020-10-01T20:41:25Z" user="David Crochet" uid="50624" lat="43.8417702" lon="4.5070499"/>
+ <node id="7964945944" visible="true" version="1" changeset="91845833" timestamp="2020-10-01T20:41:25Z" user="David Crochet" uid="50624" lat="43.8527778" lon="4.4747239"/>
+ <node id="7964945945" visible="true" version="1" changeset="91845833" timestamp="2020-10-01T20:41:25Z" user="David Crochet" uid="50624" lat="43.8524983" lon="4.4751893"/>
+ <node id="7964945946" visible="true" version="1" changeset="91845833" timestamp="2020-10-01T20:41:25Z" user="David Crochet" uid="50624" lat="43.8523126" lon="4.4755286"/>
+ <node id="7964945947" visible="true" version="1" changeset="91845833" timestamp="2020-10-01T20:41:25Z" user="David Crochet" uid="50624" lat="43.8521153" lon="4.4761509"/>
+ <node id="7964945948" visible="true" version="1" changeset="91845833" timestamp="2020-10-01T20:41:25Z" user="David Crochet" uid="50624" lat="43.8519635" lon="4.4771540"/>
+ <node id="7964945949" visible="true" version="1" changeset="91845833" timestamp="2020-10-01T20:41:25Z" user="David Crochet" uid="50624" lat="43.8519113" lon="4.4779681"/>
+ <node id="7964945950" visible="true" version="1" changeset="91845833" timestamp="2020-10-01T20:41:25Z" user="David Crochet" uid="50624" lat="43.8517043" lon="4.4821402"/>
+ <node id="7964945951" visible="true" version="1" changeset="91845833" timestamp="2020-10-01T20:41:25Z" user="David Crochet" uid="50624" lat="43.8487303" lon="4.4893554"/>
+ <node id="7964945952" visible="true" version="1" changeset="91845833" timestamp="2020-10-01T20:41:25Z" user="David Crochet" uid="50624" lat="43.8392049" lon="4.5091501"/>
+ <node id="7964945953" visible="true" version="1" changeset="91845833" timestamp="2020-10-01T20:41:25Z" user="David Crochet" uid="50624" lat="43.8353046" lon="4.5108144"/>
+ <node id="7964945954" visible="true" version="1" changeset="91845833" timestamp="2020-10-01T20:41:25Z" user="David Crochet" uid="50624" lat="43.8354371" lon="4.5124707"/>
+ <node id="7964945955" visible="true" version="1" changeset="91845833" timestamp="2020-10-01T20:41:25Z" user="David Crochet" uid="50624" lat="43.8285606" lon="4.5252326"/>
+ <node id="8829990416" visible="true" version="1" changeset="106292929" timestamp="2021-06-13T18:14:51Z" user="_URUS" uid="8037938" lat="43.8498924" lon="4.4823419"/>
+ <node id="8829990417" visible="true" version="1" changeset="106292929" timestamp="2021-06-13T18:14:51Z" user="_URUS" uid="8037938" lat="43.8513910" lon="4.4829055"/>
+ <node id="8829990418" visible="true" version="1" changeset="106292929" timestamp="2021-06-13T18:14:51Z" user="_URUS" uid="8037938" lat="43.8511529" lon="4.4828571"/>
+ <node id="8829990419" visible="true" version="1" changeset="106292929" timestamp="2021-06-13T18:14:51Z" user="_URUS" uid="8037938" lat="43.8508910" lon="4.4827888"/>
+ <node id="8829990420" visible="true" version="1" changeset="106292929" timestamp="2021-06-13T18:14:51Z" user="_URUS" uid="8037938" lat="43.8505337" lon="4.4827096"/>
+ <node id="8829990421" visible="true" version="1" changeset="106292929" timestamp="2021-06-13T18:14:51Z" user="_URUS" uid="8037938" lat="43.8504401" lon="4.4827228"/>
+ <node id="8829990422" visible="true" version="1" changeset="106292929" timestamp="2021-06-13T18:14:51Z" user="_URUS" uid="8037938" lat="43.8503782" lon="4.4828064"/>
+ <node id="8829990423" visible="true" version="1" changeset="106292929" timestamp="2021-06-13T18:14:51Z" user="_URUS" uid="8037938" lat="43.8503655" lon="4.4828901"/>
+ <node id="8829990424" visible="true" version="1" changeset="106292929" timestamp="2021-06-13T18:14:51Z" user="_URUS" uid="8037938" lat="43.8503893" lon="4.4829583"/>
+ <node id="8829990425" visible="true" version="1" changeset="106292929" timestamp="2021-06-13T18:14:51Z" user="_URUS" uid="8037938" lat="43.8504226" lon="4.4830156"/>
+ <node id="8829990426" visible="true" version="1" changeset="106292929" timestamp="2021-06-13T18:14:51Z" user="_URUS" uid="8037938" lat="43.8504814" lon="4.4830398"/>
+ <node id="8829990427" visible="true" version="1" changeset="106292929" timestamp="2021-06-13T18:14:51Z" user="_URUS" uid="8037938" lat="43.8505655" lon="4.4830420"/>
+ <node id="8829990439" visible="true" version="1" changeset="106292929" timestamp="2021-06-13T18:14:51Z" user="_URUS" uid="8037938" lat="43.8499645" lon="4.4824163"/>
+ <node id="8829990440" visible="true" version="1" changeset="106292929" timestamp="2021-06-13T18:14:51Z" user="_URUS" uid="8037938" lat="43.8500087" lon="4.4825426"/>
+ <node id="8829990441" visible="true" version="1" changeset="106292929" timestamp="2021-06-13T18:14:51Z" user="_URUS" uid="8037938" lat="43.8501474" lon="4.4828847"/>
+ <node id="8829990442" visible="true" version="1" changeset="106292929" timestamp="2021-06-13T18:14:51Z" user="_URUS" uid="8037938" lat="43.8502018" lon="4.4829578"/>
+ <node id="8829990443" visible="true" version="1" changeset="106292929" timestamp="2021-06-13T18:14:51Z" user="_URUS" uid="8037938" lat="43.8503214" lon="4.4829492"/>
+ <way id="47893567" visible="true" version="2" changeset="3573154" timestamp="2010-01-08T20:10:12Z" user="Balooval" uid="145184">
+  <nd ref="607992960"/>
+  <nd ref="607992961"/>
+  <nd ref="607992957"/>
+  <nd ref="607994367"/>
+  <nd ref="607994368"/>
+  <nd ref="607992956"/>
+  <nd ref="607994366"/>
+  <nd ref="607992955"/>
+  <nd ref="609661014"/>
+  <tag k="admin_level" v="8"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="source" v="cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010"/>
+ </way>
+ <way id="274002655" visible="true" version="1" changeset="21664350" timestamp="2014-04-13T12:54:15Z" user="user_870861" uid="870861">
+  <nd ref="2787844322"/>
+  <nd ref="2787844325"/>
+  <nd ref="2787844566"/>
+  <nd ref="2787844563"/>
+  <nd ref="2787844322"/>
+  <tag k="building" v="yes"/>
+  <tag k="source" v="cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2014"/>
+ </way>
+ <way id="274002727" visible="true" version="1" changeset="21664350" timestamp="2014-04-13T12:54:21Z" user="user_870861" uid="870861">
+  <nd ref="2787844366"/>
+  <nd ref="2787844364"/>
+  <nd ref="2787844414"/>
+  <nd ref="2787844418"/>
+  <nd ref="2787844366"/>
+  <tag k="building" v="yes"/>
+  <tag k="source" v="cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2014"/>
+ </way>
+ <way id="274002859" visible="true" version="1" changeset="21664350" timestamp="2014-04-13T12:54:38Z" user="user_870861" uid="870861">
+  <nd ref="2787844237"/>
+  <nd ref="2787844207"/>
+  <nd ref="2787844249"/>
+  <nd ref="2787844263"/>
+  <nd ref="2787844237"/>
+  <tag k="building" v="yes"/>
+  <tag k="source" v="cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2014"/>
+ </way>
+ <way id="274003790" visible="true" version="1" changeset="21664350" timestamp="2014-04-13T12:55:46Z" user="user_870861" uid="870861">
+  <nd ref="2787844370"/>
+  <nd ref="2787844353"/>
+  <nd ref="2787844351"/>
+  <nd ref="2787844368"/>
+  <nd ref="2787844370"/>
+  <tag k="building" v="yes"/>
+  <tag k="source" v="cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2014"/>
+ </way>
+ <way id="291162771" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214">
+  <nd ref="2945895845"/>
+  <nd ref="2945895848"/>
+  <nd ref="2945895849"/>
+  <nd ref="2945895855"/>
+  <nd ref="2945895856"/>
+  <nd ref="2945895859"/>
+  <nd ref="2945895862"/>
+  <nd ref="2945895864"/>
+  <nd ref="2945895866"/>
+  <nd ref="2945895867"/>
+  <nd ref="2945895853"/>
+  <nd ref="2945895843"/>
+  <nd ref="2945895845"/>
+  <tag k="landuse" v="farmland"/>
+ </way>
+ <way id="291162772" visible="true" version="1" changeset="23800327" timestamp="2014-07-03T13:00:46Z" user="pays_gcn" uid="663214">
+  <nd ref="2945895842"/>
+  <nd ref="2945895841"/>
+  <nd ref="2945895839"/>
+  <nd ref="2945895837"/>
+  <nd ref="2945895836"/>
+  <nd ref="2945895835"/>
+  <nd ref="2945895834"/>
+  <nd ref="2945895838"/>
+  <nd ref="2945895840"/>
+  <nd ref="2945895844"/>
+  <nd ref="2945895846"/>
+  <nd ref="2945895850"/>
+  <nd ref="2945895851"/>
+  <nd ref="2945895857"/>
+  <nd ref="2945895860"/>
+  <nd ref="2945895863"/>
+  <nd ref="2945895865"/>
+  <nd ref="2945895861"/>
+  <nd ref="2945895858"/>
+  <nd ref="2945895854"/>
+  <nd ref="2945895852"/>
+  <nd ref="2945895847"/>
+  <nd ref="2945895842"/>
+  <tag k="landuse" v="farmland"/>
+ </way>
+ <way id="291163520" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:20Z" user="pays_gcn" uid="663214">
+  <nd ref="2945906827"/>
+  <nd ref="2945906825"/>
+  <nd ref="2945906823"/>
+  <nd ref="2945906818"/>
+  <nd ref="2945906807"/>
+  <nd ref="2945906808"/>
+  <nd ref="2945906811"/>
+  <nd ref="2945906817"/>
+  <nd ref="2945906822"/>
+  <nd ref="2945906824"/>
+  <nd ref="2945906826"/>
+  <nd ref="2945906827"/>
+  <tag k="landuse" v="farmland"/>
+ </way>
+ <way id="291163521" visible="true" version="3" changeset="94883435" timestamp="2020-11-27T08:57:31Z" user="cquest" uid="158826">
+  <nd ref="2945906829"/>
+  <nd ref="2945906814"/>
+  <nd ref="2945906809"/>
+  <nd ref="2945906820"/>
+  <nd ref="2945906819"/>
+  <nd ref="2945906810"/>
+  <nd ref="2945906804"/>
+  <nd ref="2945906805"/>
+  <nd ref="2945906803"/>
+  <nd ref="2945906806"/>
+  <nd ref="2945906821"/>
+  <nd ref="2945906828"/>
+  <nd ref="2945906829"/>
+  <tag k="landuse" v="vineyard"/>
+ </way>
+ <way id="291163522" visible="true" version="3" changeset="94883435" timestamp="2020-11-27T08:57:31Z" user="cquest" uid="158826">
+  <nd ref="2945906855"/>
+  <nd ref="2945906845"/>
+  <nd ref="2945906844"/>
+  <nd ref="2945906835"/>
+  <nd ref="2945906836"/>
+  <nd ref="2945906837"/>
+  <nd ref="2945906838"/>
+  <nd ref="2945906839"/>
+  <nd ref="2945906849"/>
+  <nd ref="2945906852"/>
+  <nd ref="2945906864"/>
+  <nd ref="2945906862"/>
+  <nd ref="2945906856"/>
+  <nd ref="2945906855"/>
+  <tag k="landuse" v="vineyard"/>
+ </way>
+ <way id="291163523" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:21Z" user="pays_gcn" uid="663214">
+  <nd ref="2945906841"/>
+  <nd ref="2945906833"/>
+  <nd ref="2945906834"/>
+  <nd ref="2945906842"/>
+  <nd ref="2945906841"/>
+  <tag k="landuse" v="farmland"/>
+ </way>
+ <way id="291163524" visible="true" version="3" changeset="94883435" timestamp="2020-11-27T08:57:31Z" user="cquest" uid="158826">
+  <nd ref="2945906853"/>
+  <nd ref="2945906843"/>
+  <nd ref="2945906846"/>
+  <nd ref="2945906854"/>
+  <nd ref="2945906853"/>
+  <tag k="landuse" v="vineyard"/>
+ </way>
+ <way id="291163525" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:21Z" user="pays_gcn" uid="663214">
+  <nd ref="2945906859"/>
+  <nd ref="2945906857"/>
+  <nd ref="2945906858"/>
+  <nd ref="2945906861"/>
+  <nd ref="2945906859"/>
+  <tag k="landuse" v="farmland"/>
+ </way>
+ <way id="291163526" visible="true" version="3" changeset="94883435" timestamp="2020-11-27T08:57:31Z" user="cquest" uid="158826">
+  <nd ref="2945906840"/>
+  <nd ref="2945906848"/>
+  <nd ref="2945906851"/>
+  <nd ref="2945906850"/>
+  <nd ref="2945906847"/>
+  <nd ref="2945906840"/>
+  <tag k="landuse" v="vineyard"/>
+ </way>
+ <way id="291163527" visible="true" version="3" changeset="94883435" timestamp="2020-11-27T08:57:31Z" user="cquest" uid="158826">
+  <nd ref="2945906830"/>
+  <nd ref="2945906815"/>
+  <nd ref="2945906813"/>
+  <nd ref="2945906812"/>
+  <nd ref="2945906816"/>
+  <nd ref="2945906832"/>
+  <nd ref="2945906831"/>
+  <nd ref="2945906830"/>
+  <tag k="landuse" v="vineyard"/>
+ </way>
+ <way id="291163528" visible="true" version="1" changeset="23800531" timestamp="2014-07-03T13:06:21Z" user="pays_gcn" uid="663214">
+  <nd ref="2945906870"/>
+  <nd ref="2945906869"/>
+  <nd ref="2945906868"/>
+  <nd ref="2945906866"/>
+  <nd ref="2945906867"/>
+  <nd ref="2945906860"/>
+  <nd ref="2945906863"/>
+  <nd ref="2945906865"/>
+  <nd ref="2945906870"/>
+  <tag k="landuse" v="farmland"/>
+ </way>
+ <way id="291166368" visible="true" version="1" changeset="23800934" timestamp="2014-07-03T13:12:09Z" user="pays_gcn" uid="663214">
+  <nd ref="2945915529"/>
+  <nd ref="2945915530"/>
+  <nd ref="2945915531"/>
+  <nd ref="2945915532"/>
+  <nd ref="2945918433"/>
+  <nd ref="2945918436"/>
+  <nd ref="2945918441"/>
+  <nd ref="2945918443"/>
+  <nd ref="2945918445"/>
+  <nd ref="2945918446"/>
+  <nd ref="2945918447"/>
+  <nd ref="2945918448"/>
+  <nd ref="2945918450"/>
+  <nd ref="2945918440"/>
+  <nd ref="2945918449"/>
+  <nd ref="2945918455"/>
+  <nd ref="2945918461"/>
+  <nd ref="2945918462"/>
+  <nd ref="2945918465"/>
+  <nd ref="2945918469"/>
+  <nd ref="2945918470"/>
+  <nd ref="2945918472"/>
+  <nd ref="2945918458"/>
+  <nd ref="2945918454"/>
+  <nd ref="2945918467"/>
+  <nd ref="2945918466"/>
+  <nd ref="2945918464"/>
+  <nd ref="2945918463"/>
+  <nd ref="2945918460"/>
+  <nd ref="2945918457"/>
+  <nd ref="2945918453"/>
+  <nd ref="2945918452"/>
+  <nd ref="2945918451"/>
+  <nd ref="2945918444"/>
+  <nd ref="2945918442"/>
+  <nd ref="2945918439"/>
+  <nd ref="2945918438"/>
+  <nd ref="2945918437"/>
+  <nd ref="2945918435"/>
+  <nd ref="2945918434"/>
+  <nd ref="2945915529"/>
+  <tag k="landuse" v="farmland"/>
+ </way>
+ <way id="351971026" visible="true" version="1" changeset="31779380" timestamp="2015-06-06T23:59:50Z" user="JFKimports" uid="903961">
+  <nd ref="3577703125"/>
+  <nd ref="3577703123"/>
+  <nd ref="3577703122"/>
+  <nd ref="3577703124"/>
+  <nd ref="3577703125"/>
+  <tag k="building" v="yes"/>
+  <tag k="source" v="cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2015"/>
+ </way>
+ <way id="358326312" visible="true" version="1" changeset="32384125" timestamp="2015-07-03T10:25:31Z" user="Yod4z" uid="318821">
+  <nd ref="610028706"/>
+  <nd ref="3632640520"/>
+  <nd ref="3632640519"/>
+  <nd ref="3632640518"/>
+  <nd ref="3632640517"/>
+  <nd ref="3632640516"/>
+  <nd ref="3632640515"/>
+  <nd ref="3632640514"/>
+  <nd ref="3632640513"/>
+  <nd ref="3632640512"/>
+  <nd ref="3632640511"/>
+  <nd ref="3632640510"/>
+  <nd ref="3632640509"/>
+  <nd ref="3632640508"/>
+  <nd ref="3632640507"/>
+  <nd ref="3632640506"/>
+  <nd ref="3632640505"/>
+  <nd ref="3632640504"/>
+  <nd ref="610015296"/>
+  <tag k="highway" v="track"/>
+  <tag k="source" v="bing 2015"/>
+ </way>
+ <way id="358903522" visible="true" version="4" changeset="52355269" timestamp="2017-09-25T12:56:54Z" user="Pmz" uid="4363">
+  <nd ref="609220997"/>
+  <nd ref="4538209396"/>
+  <nd ref="619759999"/>
+  <nd ref="609220999"/>
+  <nd ref="619759997"/>
+  <nd ref="5128429666"/>
+  <nd ref="4538333495"/>
+  <nd ref="4538333494"/>
+  <nd ref="616932814"/>
+  <nd ref="616932816"/>
+  <nd ref="616932817"/>
+  <nd ref="616932819"/>
+  <nd ref="616932820"/>
+  <nd ref="616932821"/>
+  <nd ref="616932823"/>
+  <nd ref="616932824"/>
+  <nd ref="616932826"/>
+  <nd ref="607992958"/>
+  <nd ref="616932825"/>
+  <nd ref="616933108"/>
+  <nd ref="616933109"/>
+  <nd ref="616933102"/>
+  <nd ref="616933103"/>
+  <nd ref="616933104"/>
+  <nd ref="616933285"/>
+  <nd ref="616933105"/>
+  <nd ref="616933106"/>
+  <nd ref="616933107"/>
+  <nd ref="616933101"/>
+  <nd ref="610028706"/>
+  <tag k="highway" v="secondary"/>
+  <tag k="ref" v="D 3"/>
+  <tag k="source" v="cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010"/>
+ </way>
+ <way id="722801467" visible="true" version="3" changeset="91845833" timestamp="2020-10-01T20:41:25Z" user="David Crochet" uid="50624">
+  <nd ref="6780005435"/>
+  <nd ref="7964945955"/>
+  <nd ref="6780008354"/>
+  <nd ref="6780008979"/>
+  <nd ref="6780004536"/>
+  <nd ref="6780005600"/>
+  <nd ref="6780006655"/>
+  <nd ref="6780007529"/>
+  <nd ref="7964945954"/>
+  <nd ref="7964945953"/>
+  <nd ref="6780004162"/>
+  <nd ref="6780006592"/>
+  <nd ref="7964945952"/>
+  <nd ref="6780006570"/>
+  <nd ref="6780006251"/>
+  <nd ref="6780009043"/>
+  <nd ref="6780007140"/>
+  <nd ref="76078931"/>
+  <nd ref="6780007411"/>
+  <nd ref="6780004984"/>
+  <nd ref="6780006184"/>
+  <nd ref="7964945951"/>
+  <nd ref="6780004825"/>
+  <nd ref="6780008637"/>
+  <nd ref="6780006273"/>
+  <nd ref="6780004617"/>
+  <nd ref="7964945950"/>
+  <nd ref="6780007497"/>
+  <nd ref="7964945949"/>
+  <nd ref="7964945948"/>
+  <nd ref="6780007515"/>
+  <nd ref="7964945947"/>
+  <nd ref="7964945946"/>
+  <nd ref="7964945945"/>
+  <nd ref="7964945944"/>
+  <nd ref="6780004691"/>
+  <tag k="layer" v="-1"/>
+  <tag k="location" v="underground"/>
+  <tag k="man_made" v="pipeline"/>
+  <tag k="operator" v="GRTGaz"/>
+  <tag k="source" v="open data - data.gouv.fr"/>
+  <tag k="substance" v="gas"/>
+  <tag k="usage" v="transmission"/>
+ </way>
+ <way id="954027215" visible="true" version="1" changeset="106292929" timestamp="2021-06-13T18:14:51Z" user="_URUS" uid="8037938">
+  <nd ref="1933856830"/>
+  <nd ref="8829990417"/>
+  <nd ref="8829990418"/>
+  <nd ref="8829990419"/>
+  <nd ref="8829990420"/>
+  <nd ref="8829990421"/>
+  <nd ref="8829990422"/>
+  <nd ref="8829990423"/>
+  <nd ref="8829990424"/>
+  <nd ref="8829990425"/>
+  <nd ref="8829990426"/>
+  <nd ref="8829990427"/>
+  <tag k="highway" v="track"/>
+  <tag k="tracktype" v="grade2"/>
+ </way>
+ <way id="954027218" visible="true" version="1" changeset="106292929" timestamp="2021-06-13T18:14:51Z" user="_URUS" uid="8037938">
+  <nd ref="8829990416"/>
+  <nd ref="8829990439"/>
+  <nd ref="8829990440"/>
+  <nd ref="8829990441"/>
+  <nd ref="8829990442"/>
+  <nd ref="8829990443"/>
+  <nd ref="8829990423"/>
+  <tag k="highway" v="track"/>
+  <tag k="tracktype" v="grade3"/>
+ </way>
+ <relation id="378697" visible="true" version="15" changeset="84631023" timestamp="2020-05-04T15:23:40Z" user="oc-OpenStreetMap" uid="4224320">
+  <member type="way" ref="47806181" role="outer"/>
+  <member type="way" ref="489930596" role="outer"/>
+  <member type="way" ref="47801255" role="outer"/>
+  <member type="way" ref="47843666" role="outer"/>
+  <member type="way" ref="47933978" role="outer"/>
+  <member type="way" ref="47893567" role="outer"/>
+  <member type="way" ref="47845229" role="outer"/>
+  <member type="way" ref="47845231" role="outer"/>
+  <member type="way" ref="47805948" role="outer"/>
+  <member type="node" ref="26695366" role="admin_centre"/>
+  <tag k="admin_level" v="8"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="name" v="Marguerittes"/>
+  <tag k="name:oc" v="Margarita"/>
+  <tag k="population" v="8586"/>
+  <tag k="postal_code" v="30320"/>
+  <tag k="ref:INSEE" v="30156"/>
+  <tag k="source:name:oc" v="ieo-bdtopoc"/>
+  <tag k="source:population" v="INSEE 2020"/>
+  <tag k="type" v="boundary"/>
+  <tag k="wikidata" v="Q244297"/>
+  <tag k="wikipedia" v="fr:Marguerittes"/>
+ </relation>
+ <relation id="379895" visible="true" version="10" changeset="100962967" timestamp="2021-03-13T17:39:39Z" user="Farot" uid="10617233">
+  <member type="way" ref="47893567" role="outer"/>
+  <member type="way" ref="47933979" role="outer"/>
+  <member type="way" ref="47933980" role="outer"/>
+  <member type="way" ref="48131956" role="outer"/>
+  <member type="way" ref="48228823" role="outer"/>
+  <member type="way" ref="47934556" role="outer"/>
+  <member type="node" ref="26695024" role="admin_centre"/>
+  <tag k="admin_level" v="8"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="name" v="Redessan"/>
+  <tag k="name:oc" v="Redeçan"/>
+  <tag k="population" v="4115"/>
+  <tag k="postal_code" v="30129"/>
+  <tag k="ref:INSEE" v="30211"/>
+  <tag k="source:name:oc" v="ieo-bdtopoc"/>
+  <tag k="source:population" v="INSEE 2020"/>
+  <tag k="type" v="boundary"/>
+  <tag k="wikidata" v="Q375605"/>
+  <tag k="wikipedia" v="fr:Redessan"/>
+ </relation>
+ <relation id="4575969" visible="true" version="11" changeset="77532087" timestamp="2019-11-25T15:25:15Z" user="Olyon" uid="1443767">
+  <member type="node" ref="26695366" role="admin_centre"/>
+  <member type="way" ref="48132205" role="outer"/>
+  <member type="way" ref="520233404" role="outer"/>
+  <member type="way" ref="48132207" role="outer"/>
+  <member type="way" ref="47841927" role="outer"/>
+  <member type="way" ref="327413111" role="outer"/>
+  <member type="way" ref="489930598" role="outer"/>
+  <member type="way" ref="327414452" role="outer"/>
+  <member type="way" ref="47850841" role="outer"/>
+  <member type="way" ref="47806180" role="outer"/>
+  <member type="way" ref="327410957" role="outer"/>
+  <member type="way" ref="489930596" role="outer"/>
+  <member type="way" ref="47801255" role="outer"/>
+  <member type="way" ref="47805416" role="outer"/>
+  <member type="way" ref="718034943" role="outer"/>
+  <member type="way" ref="718034940" role="outer"/>
+  <member type="way" ref="47805415" role="outer"/>
+  <member type="way" ref="48349592" role="outer"/>
+  <member type="way" ref="47893347" role="outer"/>
+  <member type="way" ref="47805948" role="outer"/>
+  <member type="way" ref="47845231" role="outer"/>
+  <member type="way" ref="47845229" role="outer"/>
+  <member type="way" ref="47893567" role="outer"/>
+  <member type="way" ref="47934556" role="outer"/>
+  <member type="way" ref="48227798" role="outer"/>
+  <member type="way" ref="47934559" role="outer"/>
+  <member type="way" ref="48132206" role="outer"/>
+  <member type="way" ref="48227797" role="outer"/>
+  <tag k="boundary" v="political"/>
+  <tag k="name" v="Marguerittes"/>
+  <tag k="political_division" v="canton"/>
+  <tag k="ref:INSEE" v="3009"/>
+  <tag k="source" v="(JORF 2014-02-27) Décret nº 2014-232 du 24 février 2014 portant délimitation des cantons dans le département du Gard"/>
+  <tag k="source:url" v="http://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000028658380"/>
+  <tag k="start_date" v="2015-03"/>
+  <tag k="type" v="boundary"/>
+  <tag k="wikidata" v="Q788136"/>
+  <tag k="wikipedia" v="fr:Canton de Marguerittes"/>
+ </relation>
+ <relation id="4576017" visible="true" version="5" changeset="77532087" timestamp="2019-11-25T15:25:15Z" user="Olyon" uid="1443767">
+  <member type="node" ref="26695024" role="admin_centre"/>
+  <member type="way" ref="47845229" role="outer"/>
+  <member type="way" ref="47845231" role="outer"/>
+  <member type="way" ref="47805948" role="outer"/>
+  <member type="way" ref="47893347" role="outer"/>
+  <member type="way" ref="47934854" role="outer"/>
+  <member type="way" ref="48615423" role="outer"/>
+  <member type="way" ref="48178962" role="outer"/>
+  <member type="way" ref="48134983" role="outer"/>
+  <member type="way" ref="48178927" role="outer"/>
+  <member type="way" ref="48178928" role="outer"/>
+  <member type="way" ref="48178929" role="outer"/>
+  <member type="way" ref="48178926" role="outer"/>
+  <member type="way" ref="48180553" role="outer"/>
+  <member type="way" ref="48173348" role="outer"/>
+  <member type="way" ref="48172565" role="outer"/>
+  <member type="way" ref="48167282" role="outer"/>
+  <member type="way" ref="48172566" role="outer"/>
+  <member type="way" ref="48275096" role="outer"/>
+  <member type="way" ref="48274757" role="outer"/>
+  <member type="way" ref="48237446" role="outer"/>
+  <member type="way" ref="48237448" role="outer"/>
+  <member type="way" ref="48238603" role="outer"/>
+  <member type="way" ref="48238129" role="outer"/>
+  <member type="way" ref="48237820" role="outer"/>
+  <member type="way" ref="48238132" role="outer"/>
+  <member type="way" ref="48236943" role="outer"/>
+  <member type="way" ref="48235125" role="outer"/>
+  <member type="way" ref="48234565" role="outer"/>
+  <member type="way" ref="48234563" role="outer"/>
+  <member type="way" ref="48234564" role="outer"/>
+  <member type="way" ref="48131956" role="outer"/>
+  <member type="way" ref="48228823" role="outer"/>
+  <member type="way" ref="47934556" role="outer"/>
+  <member type="way" ref="47893567" role="outer"/>
+  <tag k="boundary" v="political"/>
+  <tag k="name" v="Redessan"/>
+  <tag k="political_division" v="canton"/>
+  <tag k="ref:INSEE" v="3016"/>
+  <tag k="source" v="(JORF 2014-02-27) Décret nº 2014-232 du 24 février 2014 portant délimitation des cantons dans le département du Gard"/>
+  <tag k="source:url" v="http://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000028658380"/>
+  <tag k="start_date" v="2015-03"/>
+  <tag k="type" v="boundary"/>
+  <tag k="wikidata" v="Q17623053"/>
+  <tag k="wikipedia" v="fr:Canton de Redessan"/>
+ </relation>
+ <relation id="4616159" visible="true" version="2" changeset="29032947" timestamp="2015-02-22T22:41:12Z" user="Verdy_p" uid="90780">
+  <member type="relation" ref="4575935" role="01"/>
+  <member type="relation" ref="4576201" role="02"/>
+  <member type="relation" ref="4576242" role="03"/>
+  <member type="relation" ref="4576500" role="04"/>
+  <member type="relation" ref="4575940" role="05"/>
+  <member type="relation" ref="4575951" role="06"/>
+  <member type="relation" ref="4575955" role="07"/>
+  <member type="relation" ref="4575959" role="08"/>
+  <member type="relation" ref="4575969" role="09"/>
+  <member type="relation" ref="4576546" role="10"/>
+  <member type="relation" ref="4576771" role="11"/>
+  <member type="relation" ref="4576816" role="12"/>
+  <member type="relation" ref="4576863" role="13"/>
+  <member type="relation" ref="4575999" role="14"/>
+  <member type="relation" ref="4576015" role="15"/>
+  <member type="relation" ref="4576017" role="16"/>
+  <member type="relation" ref="4576037" role="17"/>
+  <member type="relation" ref="4576049" role="18"/>
+  <member type="relation" ref="4576877" role="19"/>
+  <member type="relation" ref="4576126" role="20"/>
+  <member type="relation" ref="4576146" role="21"/>
+  <member type="relation" ref="4576153" role="22"/>
+  <member type="relation" ref="4576177" role="23"/>
+  <tag k="boundary" v="political"/>
+  <tag k="collection" v="boundary"/>
+  <tag k="description" v="23 cantons"/>
+  <tag k="name" v="Gard - cantons (mars 2015)"/>
+  <tag k="planned:ref" v="030"/>
+  <tag k="political_division" v="canton"/>
+  <tag k="source" v="(JORF 2014-02-27) Décret nº 2014-232 du 24 février 2014 portant délimitation des cantons dans le département du Gard"/>
+  <tag k="source:url" v="http://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000028658380"/>
+  <tag k="start_date" v="2015-03"/>
+  <tag k="type" v="collection"/>
+ </relation>
+ <relation id="10564257" visible="true" version="1" changeset="79396661" timestamp="2020-01-10T00:18:20Z" user="chabe01" uid="502891">
+  <member type="way" ref="47933979" role="outer"/>
+  <member type="way" ref="47893567" role="outer"/>
+  <member type="way" ref="47933978" role="outer"/>
+  <member type="way" ref="47850838" role="outer"/>
+  <member type="way" ref="47934553" role="outer"/>
+  <member type="way" ref="47934559" role="outer"/>
+  <member type="way" ref="48227798" role="outer"/>
+  <member type="way" ref="48228823" role="outer"/>
+  <member type="way" ref="48131956" role="outer"/>
+  <member type="way" ref="47933980" role="outer"/>
+  <tag k="boundary" v="postal_code"/>
+  <tag k="postal_code" v="30129"/>
+  <tag k="type" v="boundary"/>
+ </relation>
+ <relation id="10564278" visible="true" version="1" changeset="79396661" timestamp="2020-01-10T00:18:20Z" user="chabe01" uid="502891">
+  <member type="way" ref="47805415" role="outer"/>
+  <member type="way" ref="47805416" role="outer"/>
+  <member type="way" ref="718034943" role="outer"/>
+  <member type="way" ref="718034940" role="outer"/>
+  <member type="way" ref="489930596" role="outer"/>
+  <member type="way" ref="47801255" role="outer"/>
+  <member type="way" ref="47843666" role="outer"/>
+  <member type="way" ref="47933978" role="outer"/>
+  <member type="way" ref="47893567" role="outer"/>
+  <member type="way" ref="47933979" role="outer"/>
+  <member type="way" ref="353774419" role="outer"/>
+  <member type="way" ref="47895476" role="outer"/>
+  <member type="way" ref="47893569" role="outer"/>
+  <member type="way" ref="47893568" role="outer"/>
+  <member type="way" ref="47893348" role="outer"/>
+  <member type="way" ref="47805948" role="outer"/>
+  <member type="way" ref="47893347" role="outer"/>
+  <member type="way" ref="48349592" role="outer"/>
+  <tag k="boundary" v="postal_code"/>
+  <tag k="postal_code" v="30320"/>
+  <tag k="type" v="boundary"/>
+ </relation>
+</osm>
