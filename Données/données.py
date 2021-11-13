@@ -1,7 +1,39 @@
 #%%
-import numpy as np
-import pandas as pd
+
+#### IMPORT BIBLIOTHEQUES ###
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
+import alphashape
+from descartes import PolygonPatch
+import folium
+import geopandas as gpd
+from geopy.geocoders import Nominatim
+from ipywidgets import interact, fixed, widgets
 import matplotlib.pyplot as plt
+import networkx as nx
+import numpy as np
+import osmnx as ox
+import pandas as pd
+from shapely import geometry
+from pyroutelib3 import Router
+from pyproj import Proj, transform
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+pd.options.display.max_rows = 8
+ 
+#%%
 
 pd.options.display.max_rows = 8
  
@@ -85,7 +117,7 @@ def tarif (i,j) :   # i,j = numéros "arrangés" des sorties d'autouroutes
 
 # %%
 
-df_brut = pd.read_table("Gares-peage_2019.csv" , sep = ';' )
+df_brut = pd.read_csv('Gares-peage_2019.csv' , sep = ';' )
 
 # On récupére les indices des lignes qui ne nous intéresse pas.
 # C'est à dire toutes celles qui ne sont pas A9, A61, A62, A66, A75, A620, A709.
@@ -108,7 +140,7 @@ df_brut = df_brut.reset_index()
 X = df_brut['X']
 Y = df_brut['Y']
 
-from pyproj import Proj, transform
+
 
 inProj = Proj(init='epsg:2154')
 outProj = Proj(init='epsg:4326')
@@ -118,11 +150,111 @@ for i in range (len(df_brut)) :
     GPS.append( transform(inProj, outProj, X[i], Y[i] ) )
 
 
+
+
+
+
+
 # %%
 
-tab = { 'ROUTE':df_brut["ROUTE"], 'NOMGARE':df_brut["NOMGARE"], 'COORDONNEES':GPS }
+
+
+x1,y1= GPS[1]
+x2,y2 = GPS[10]
+dist =[]
+
+%config InlineBackend.figure_format = 'retina'
+plt.rcParams['figure.figsize'] = (10, 10)
+address = 'Montpellier, 34000, France'
+geocoder = Nominatim(user_agent='Isochrone calculator')
+print(geocoder)
+#location = geocoder.geocode(address)
+#location 
+
+m = folium.Map((43.30366439969685,3.2229492234270127), max_zoom=20, zoom_start=16)
+folium.Marker((43.30366439969685,3.2229492234270127), popup="départ").add_to(m)
+folium.Marker((43.17658759196941,3.034479741724844), popup="arrivée").add_to(m)
+m
+y,x=43.30366439969685,3.2229492234270127
+y1,x1=43.17658759196941,3.034479741724844
+routeLatLons = [y,x,y1,x1]
+folium.PolyLine(routeLatLons,color="blue", weight=2.5,opacity=1).add_to(m)
+m
+
+
+
+
+
+## %%
+#import ssl
+#ssl._create_default_https_context = ssl._create_unverified_context
+#################
+router = Router("car")
+depart = router.findNode(46.078025, 6.409053)
+arrivee = router.findNode(46.193253,  6.234158)
+status, route = router.doRoute(depart, arrivee)
+if status == 'success':
+	routeLatLons = list(map(router.nodeLatLon, route))
+
+c= folium.Map(location=[46.078025, 6.409053],zoom_start=10)
+folium.Marker(depart, popup="départ").add_to(c)
+folium.Marker(arrivee, popup="arrivée").add_to(c)
+for coord in routeLatLons:
+    coord=list(coord)
+    folium.PolyLine(routeLatLons,color="blue", weight=2.5,opacity=1).add_to(c)
+    
+c
 
 # %%
-######### ENREGISTREMENT DU TABLEAU EN CSV ######
+
+##### MODELISATION POINTS #####
+w=0
+y,x=43.30366439969685,3.2229492234270127
+y1,x1=43.17658759196941,3.034479741724844
+router = Router("car")
+depart = router.findNode(y, x)
+arrivee = router.findNode(y1, x1)
+status, route = router.doRoute(depart, arrivee)
+if status == 'success':
+	routeLatLons = list(map(router.nodeLatLon, route))
+%config InlineBackend.figure_format = 'retina'
+plt.rcParams['figure.figsize'] = (10, 10)
+
+m = folium.Map((y,x), max_zoom=20, zoom_start=16)
+folium.Marker((y,x), popup="départ").add_to(m)
+folium.Marker((y1,x1), popup="arrivée").add_to(m)
+
+folium.PolyLine(routeLatLons, color='darkblue').add_to(m)
+m
+
+
+
+# %%
+
+import requests
+import json
+dist = []
+# call the OSMR API
+for i in range(len(GPS)):
+    if i-1 < 0:
+        x,y = GPS[i]
+    else:
+
+        x,y=GPS[i-1]
+
+    x1,y1=GPS[i]
+
+    r = requests.get(f"http://router.project-osrm.org/route/v1/car/{x},{y};{x1},{y1}?overview=false""")
+# then you load the response using the json libray
+# by default you get only one alternative so you access 0-th element of the `routes`
+    routes = json.loads(r.content)
+    route_1 = routes.get("routes")[0]
+    dist.append(round(route_1['distance']/1000))
+print(dist)
+    
+#%%
+
+tab = { 'ROUTE':df_brut["ROUTE"], 'NOMGARE':df_brut["NOMGARE"], 'COORDONNEES':GPS, 'DISTANCE': dist }
+
 df_new = pd.DataFrame(tab)
 df_new.to_csv('coordonnees.csv')
