@@ -148,8 +148,7 @@ outProj = Proj(init='epsg:4326')
 GPS = []   # couples (x,y)
 for i in range (len(df_brut)) :
     GPS.append( transform(inProj, outProj, X[i], Y[i] ) )
-
-
+print(GPS)
 
 
 
