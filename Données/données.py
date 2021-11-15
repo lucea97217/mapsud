@@ -199,8 +199,62 @@ def distance(x,y,x1,y1):
     return (round(route_1['distance']/1000,1))
 #%%
 #ajout de la variable distance au tableau des coordonnées
-tab = { 'ROUTE':df_coord["ROUTE"], 'NOMGARE':df_coord["NOMGARE"], 'COORDONNEES':coord }
+coord=[]
+for i in range(len(df_coord)):
+    coord.append(df_coord["COORDONNEES"][i])
+
+#%%
+####compteur####
+count=[]
+for i in range(len(df_coord)):
+    count.append(i)
+#%%
+tab = { 'ROUTE':df_coord["ROUTE"], 'NOMGARE':df_coord["NOMGARE"], 'COORDONNEES':coord}
 df_coord = pd.DataFrame(tab)
+
+
+# %%
+###### INSERTIONS DONNEES MANQUANTES ######
+
+def Insert_row(row_number, df, row_value): 
+    
+    start_upper = 0
+   
+    
+    end_upper = row_number 
+   
+    
+    start_lower = row_number 
+   
+    
+    end_lower = df.shape[0] 
+   
+    
+    upper_half = [*range(start_upper, end_upper, 1)] 
+   
+    
+    lower_half = [*range(start_lower, end_lower, 1)] 
+   
+    
+    lower_half = [x.__add__(1) for x in lower_half] 
+   
+    
+    index_ = upper_half + lower_half 
+   
+    
+    df.index = index_ 
+   
+    
+    df.loc[row_number] = row_value 
+    
+    
+    df = df.sort_index() 
+   
+    
+    return df 
+
+   
+
 #%%
 ########## CONVERT TO CSV #######
 df_coord.to_csv('coordonnees.csv')
@@ -208,4 +262,3 @@ df_coord.to_csv('coordonnees.csv')
 
 
 # %%
-
