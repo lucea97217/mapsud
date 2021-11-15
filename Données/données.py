@@ -218,7 +218,7 @@ tab = { 'ROUTE':df_coord["ROUTE"], 'NOMGARE':df_coord["NOMGARE"], 'COORDONNEES':
 df_coord = pd.DataFrame(tab)
 #%%
 ########## CONVERT TO CSV #######
-df_coord.to_csv('coordonnees.csv', sep=';')
+df_coord.to_csv('coordonnees.csv')
 
 
 
