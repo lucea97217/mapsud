@@ -11,7 +11,7 @@ __YUAN__ __JIAYUE__
 
 ## INITIALISATION DES DONNEES
 
-Afin d'initialiser les données nous avons commencé par nettoyer les données, en supprimant les valeurs manquantes ou les sections vides, puis nous avons sélectionné le contenu des données dont nous avions besoin. Dans le même temps, nous avons converti les coordonnées GPS et élabibré une liste des prix. Enfin nous avons élaboré un programme permettant de calculer successivement les distances entre chaques gares de péage successives.
+Afin d'initialiser les données nous avons commencé par nettoyer les données, en supprimant les valeurs manquantes ou les sections vides, puis nous avons sélectionné le contenu des données dont nous avions besoin. Dans le même temps, nous avons converti les coordonnées GPS et élabibré une liste des prix. Enfin nous avons élaboré un programme permettant de calculer successivement les distances entre deux gares (voir programme *données.py*).
 
 ## POINTS PRINCIPAUX DU PROJET
 

@@ -183,26 +183,12 @@ for i in range(len(df_coord)-24):
 
 # %%
 
-########## CALCUL DISTANCE #########
+########## CALCUL DISTANCE #############
 import requests
 import json
-dist = []
 
-coord=[]
-
-# recolte des coordonnees de df_coord
-for j in range(len(df_coord)):
-
-    coord.append(df_coord["COORDONNEES"][j])
-for i in range(len(coord)):
-    if i-1 < 0:
-        x,y = coord[i]
-    else:
-
-        x,y=coord[i-1]
-
-    x1,y1=coord[i]
-
+# Def calcul de distance
+def distance(x,y,x1,y1):
 #calcul des distances entre les payages en restant sur la route
 #on utilise les coordonnées récoltées précédemment
 
@@ -210,11 +196,10 @@ for i in range(len(coord)):
 
     routes = json.loads(r.content)
     route_1 = routes.get("routes")[0]
-    dist.append(round(route_1['distance']/1000,1))
-print(dist)
+    return (round(route_1['distance']/1000,1))
 #%%
 #ajout de la variable distance au tableau des coordonnées
-tab = { 'ROUTE':df_coord["ROUTE"], 'NOMGARE':df_coord["NOMGARE"], 'COORDONNEES':coord , 'DISTANCE':dist}
+tab = { 'ROUTE':df_coord["ROUTE"], 'NOMGARE':df_coord["NOMGARE"], 'COORDONNEES':coord }
 df_coord = pd.DataFrame(tab)
 #%%
 ########## CONVERT TO CSV #######
@@ -223,3 +208,4 @@ df_coord.to_csv('coordonnees.csv')
 
 
 # %%
+
