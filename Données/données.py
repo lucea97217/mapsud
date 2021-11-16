@@ -1,6 +1,8 @@
 #%%
 #### IMPORT BIBLIOTHEQUES ###
 import ssl
+
+from pandas.io.parsers import read_csv
 ssl._create_default_https_context = ssl._create_unverified_context
 import alphashape
 from descartes import PolygonPatch
@@ -76,7 +78,7 @@ TARIF = [ L1, L2, L3, L4, L5, L6, L7, L8, L9, L10, L11, L12, L13, L14, L15, L16,
 
 
 #%%
-
+#fonction calcul tarifs
 def tarif (i,j) :   # i,j = numéros "arrangés" des sorties d'autouroutes
 
     if ( 0 <= i <= 42) and ( 0 <= j <= 42 ) :
@@ -97,112 +99,23 @@ def tarif (i,j) :   # i,j = numéros "arrangés" des sorties d'autouroutes
         print("Erreur : numéro incorrecte")
 
     
-#
-# %%
-
-df_brut = pd.read_csv('Gares-peage_2019.csv' , sep = ';' )
-
-# On récupére les indices des lignes qui ne nous intéresse pas.
-# C'est à dire toutes celles qui ne sont pas A9, A61, A62, A66, A75, A620, A709.
-X = df_brut['ROUTE']
-
-A = []
-for i in range (len(X)) :
-
-    if X[i] not in ["A0009", "A0061", "A0062", "A0066", "A0075", "A0620", "A0709"] :
-       df_brut.drop(i,0,inplace=True)
-
-# mise à jour des index 
-
-df_brut.reset_index(inplace=True,drop=True)
-
-
 
 #%%
-
-################################################################################
-
-# Maintenant on va transfomer les colonnes X,Y (coordonées Lambert)
-# en coordonnées GPS :
-
-X = df_brut['X']
-Y = df_brut['Y']
-
-
-
-inProj = Proj(init='epsg:2154')
-outProj = Proj(init='epsg:4326')
-
-GPS = []   # couples (x,y)
-for i in range (len(df_brut)) :
-    GPS.append( transform(inProj, outProj, X[i], Y[i] ) )
-
+#IMPORT TABLEAU COORDONNEES
+df = read_csv("coordonnees.csv", sep=",")
 #%%
-tab = { 'ROUTE':df_brut["ROUTE"], 'NOMGARE':df_brut["NOMGARE"], 'COORDONNEES':GPS }
-df_new = pd.DataFrame(tab)
-df_new.reindex()
-tab = { 'ROUTE':df_brut["ROUTE"], 'NOMGARE':df_brut["NOMGARE"], 'COORDONNEES':GPS }
-
-df_new = pd.DataFrame(tab)
-
-
+del df["index"]
 #%%
-
-######## SUPRESSION ARRETS USELESS #########
-df_coord = df_new.copy()
-df_coord.iloc[0]=df_new.iloc[8]
-df_coord.iloc[1]=df_new.iloc[9]
-df_coord.iloc[2]=df_new.iloc[10]
-df_coord.iloc[3]=df_new.iloc[52]
-df_coord.iloc[4]=df_new.iloc[51]
-df_coord.iloc[5]=df_new.iloc[11]
-df_coord.iloc[6]=df_new.iloc[12]
-df_coord.iloc[7]=df_new.iloc[13]
-df_coord.iloc[8]=df_new.iloc[14]
-df_coord.iloc[9]=df_new.iloc[15]
-df_coord.iloc[10]=df_new.iloc[16]
-df_coord.iloc[11]=df_new.iloc[17]
-df_coord.iloc[12]=df_new.iloc[19]
-df_coord.iloc[13]=df_new.iloc[18]
-df_coord.iloc[14]=df_new.iloc[20]
-df_coord.iloc[15]=df_new.iloc[28]
-df_coord.iloc[16]=df_new.iloc[27]
-df_coord.iloc[17]=df_new.iloc[26]
-df_coord.iloc[18]=df_new.iloc[25]
-df_coord.iloc[19]=df_new.iloc[24]
-df_coord.iloc[20]=df_new.iloc[23]
-df_coord.iloc[21]=df_new.iloc[47]
-df_coord.iloc[22]=df_new.iloc[48]
-df_coord.iloc[23]=df_new.iloc[49]
-df_coord.iloc[24]=df_new.iloc[22]
-df_coord.iloc[25]=df_new.iloc[21]
-
-for i in range(len(df_coord)-24):
-    df_coord.drop(24+i,0,inplace=True)
 
 
 # %%
 
-########## CALCUL DISTANCE #########
+########## CALCUL DISTANCE #############
 import requests
 import json
-dist = []
 
-coord=[]
-
-# recolte des coordonnees de df_coord
-for j in range(len(df_coord)):
-
-    coord.append(df_coord["COORDONNEES"][j])
-for i in range(len(coord)):
-    if i-1 < 0:
-        x,y = coord[i]
-    else:
-
-        x,y=coord[i-1]
-
-    x1,y1=coord[i]
-
+# Def calcul de distance
+def distance(x,y,x1,y1):
 #calcul des distances entre les payages en restant sur la route
 #on utilise les coordonnées récoltées précédemment
 
@@ -210,16 +123,95 @@ for i in range(len(coord)):
 
     routes = json.loads(r.content)
     route_1 = routes.get("routes")[0]
-    dist.append(round(route_1['distance']/1000,1))
-print(dist)
-#%%
-#ajout de la variable distance au tableau des coordonnées
-tab = { 'ROUTE':df_coord["ROUTE"], 'NOMGARE':df_coord["NOMGARE"], 'COORDONNEES':coord , 'DISTANCE':dist}
-df_coord = pd.DataFrame(tab)
-#%%
-########## CONVERT TO CSV #######
-df_coord.to_csv('coordonnees.csv')
+    return (round(route_1['distance']/1000,1))
 
 
 
 # %%
+###### INSERTIONS DONNEES MANQUANTES ######
+
+def Insert_row(row_number, df, row_value): 
+    
+    start_upper = 0
+   
+    
+    end_upper = row_number 
+   
+    
+    start_lower = row_number 
+   
+    
+    end_lower = df.shape[0] 
+   
+    
+    upper_half = [*range(start_upper, end_upper, 1)] 
+   
+    
+    lower_half = [*range(start_lower, end_lower, 1)] 
+   
+    
+    lower_half = [x.__add__(1) for x in lower_half] 
+   
+    
+    index_ = upper_half + lower_half 
+   
+    
+    df.index = index_ 
+   
+    
+    df.loc[row_number] = row_value 
+    
+    
+    df = df.sort_index() 
+   
+    
+    return df 
+
+   
+
+
+
+# %%
+Insert_row
+# %%
+
+#EXEMPLE GRAPHE INTERACTIF
+
+import openrouteservice
+from openrouteservice import convert
+import folium
+import json
+
+client = openrouteservice.Client(key='5b3ce3597851110001cf62485fa977bf16a24e2387854486dad592d8')
+#%%
+coords = ((3.2229492234270127,43.30366439969685),(3.034479741724844,43.17658759196941))
+#%%
+coords = ((80.21787585263182,6.025423265401452),(80.23990263756545,6.018498276842677))
+#%%
+
+res = client.directions(coords)
+#%%
+geometry = client.directions(coords)['routes'][0]['geometry']
+decoded = convert.decode_polyline(geometry)
+#%%
+distance_txt = "<h4> <b>Distance :&nbsp" + "<strong>"+str(round(res['routes'][0]['summary']['distance']/1000,1))+" Km </strong>" +"</h4></b>"
+duration_txt = "<h4> <b>Duration :&nbsp" + "<strong>"+str(round(res['routes'][0]['summary']['duration']/60,1))+" Mins. </strong>" +"</h4></b>"
+
+m = folium.Map(location=[43.30366439969685,3.2229492234270127],zoom_start=10, control_scale=True,tiles="cartodbpositron")
+folium.GeoJson(decoded).add_child(folium.Popup(distance_txt+duration_txt,max_width=300)).add_to(m)
+
+folium.Marker(
+    location=list(coords[0][::-1]),
+    popup="Beziers",
+    icon=folium.Icon(color="green"),
+).add_to(m)
+
+folium.Marker(
+    location=list(coords[1][::-1]),
+    popup="Narbonne Est",
+    icon=folium.Icon(color="red"),
+).add_to(m)
+
+m
+
+
