@@ -100,32 +100,6 @@ def tarif (i,j) :   # i,j = numéros "arrangés" des sorties d'autouroutes
 
     
 
-#%%
-#IMPORT TABLEAU COORDONNEES
-df = read_csv("coordonnees.csv", sep=",")
-#%%
-del df["index"]
-#%%
-
-
-# %%
-
-########## CALCUL DISTANCE #############
-import requests
-import json
-
-# Def calcul de distance
-def distance(x,y,x1,y1):
-#calcul des distances entre les payages en restant sur la route
-#on utilise les coordonnées récoltées précédemment
-
-    r = requests.get(f"http://router.project-osrm.org/route/v1/car/{x},{y};{x1},{y1}?overview=false""")
-
-    routes = json.loads(r.content)
-    route_1 = routes.get("routes")[0]
-    return (round(route_1['distance']/1000,1))
-
-
 
 # %%
 ###### INSERTIONS DONNEES MANQUANTES ######
@@ -171,48 +145,4 @@ def Insert_row(row_number, df, row_value):
 
 
 
-# %%
-# %%
 
-#EXEMPLE GRAPHE INTERACTIF
-
-import openrouteservice
-from openrouteservice import convert
-import folium
-import json
-
-client = openrouteservice.Client(key='5b3ce3597851110001cf62485fa977bf16a24e2387854486dad592d8')
-#%%
-coords = ((3.2229492234270127,43.30366439969685),(3.034479741724844,43.17658759196941))
-#%%
-coords = ((80.21787585263182,6.025423265401452),(80.23990263756545,6.018498276842677))
-#%%
-
-res = client.directions(coords)
-#%%
-geometry = client.directions(coords)['routes'][0]['geometry']
-decoded = convert.decode_polyline(geometry)
-#%%
-distance_txt = "<h4> <b>Distance :&nbsp" + "<strong>"+str(round(res['routes'][0]['summary']['distance']/1000,1))+" Km </strong>" +"</h4></b>"
-duration_txt = "<h4> <b>Duration :&nbsp" + "<strong>"+str(round(res['routes'][0]['summary']['duration']/60,1))+" Mins. </strong>" +"</h4></b>"
-
-m = folium.Map(location=[43.30366439969685,3.2229492234270127],zoom_start=10, control_scale=True,tiles="cartodbpositron")
-folium.GeoJson(decoded).add_child(folium.Popup(distance_txt+duration_txt,max_width=300)).add_to(m)
-
-folium.Marker(
-    location=list(coords[0][::-1]),
-    popup="Beziers",
-    icon=folium.Icon(color="green"),
-).add_to(m)
-
-folium.Marker(
-    location=list(coords[1][::-1]),
-    popup="Narbonne Est",
-    icon=folium.Icon(color="red"),
-).add_to(m)
-
-m
-
-# %%
-
-# %%
