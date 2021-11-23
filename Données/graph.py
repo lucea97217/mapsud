@@ -19,13 +19,14 @@ def nomCoord(df,char):
     x=0
     y=0
     for i in range(len(df)):
-        if df["NOMGARE"]==char:
+        if df["NOMGARE"][i]==char:
             x = df["X"][i]
             y = df["Y"][i]
     if x==0 or y ==0:
         return "ERREUR : Ce nom n'a pas été trouvé"
     else:
         return x,y
+
 
 #%%
 class graphique:
@@ -77,4 +78,7 @@ graphique.distance(x,y,x1,y1)
 #exemple affichage graph
 
 graphique.graph(x,y,x1,y1)
+# %%
+#exemple return coordonnées
+nomCoord(df,"VENDARGUES")
 # %%
