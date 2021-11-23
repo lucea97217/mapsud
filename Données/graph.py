@@ -13,6 +13,19 @@ df = pd.read_csv("coordonnees.csv", sep=",")
 #sion veut supprimer les index
 del df["index"]
 
+#%%
+#recherche des coordonnées en fonction du nom de la gare
+def nomCoord(df,char):
+    x=0
+    y=0
+    for i in range(len(df)):
+        if df["NOMGARE"]==char:
+            x = df["X"][i]
+            y = df["Y"][i]
+    if x==0 or y ==0:
+        return "ERREUR : Ce nom n'a pas été trouvé"
+    else:
+        return x,y
 
 #%%
 class graphique:
