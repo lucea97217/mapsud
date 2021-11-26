@@ -1,6 +1,6 @@
 #%%
 
-from données.py import tarif
+from donnees.py import tarif
 
 tarif(1.2)
 
@@ -137,6 +137,28 @@ def sortie_intermédiaire (i, j, A_) :     # i et j numéros arrangés des sorti
 ###########################################################################################
 
 #%%
+
+
+def algo1 (i, j, A_) :   # Retourne le trajet optimal entre i et j, avec un seul arrêt possible.
+
+    a = tarif (i,j)     # a = tarif optimal
+    Z = [i, j]          # trajet optimal
+
+    I = sortie_intermédiaire (i, j, A_)   # ensemble des sorties intermédiaires entre i et j
+
+    for k in I :   # On va trouver le chemin optimal qui minimise le tarif
+        
+        c1 = tarif(i,k)
+        c2 = tarif(k,j)
+        if ( c1 != -1 ) and ( c2 != -1 ) :   # Si il existe un trajet entre i et k, puis entre k et j
+            
+            if c1 + c2 < a :
+                a = c1 + c2
+                Z = [i, k, j]
+
+    return ( a, Z )
+
+
 
 def trajet_optimal (A, B) :      # A, B les entrée et sortie = numéros "arrangées"
 
