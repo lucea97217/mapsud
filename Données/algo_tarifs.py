@@ -175,8 +175,7 @@ def trajet_optimal (A, B) :   # A, B les entrée et sortie = numéros "arrangée
     # préambule : 0 sortie autorisé
     a = tarif(A, B)
     if a == -1 :       # Aucun trajet existant
-        return(False)
-        # !!!!!!!!!!!!!!!!!!! A TRAITER !!!!!!!!!!!!!!!!!!!  (29-30) et (41-42)
+        return(-1)     # Cas (29-30) et (41-42)
     W = [A, B]
     S.append( ( round(a,1), W, 0 ) )
 
@@ -243,6 +242,8 @@ def trajet_optimal_min (A, B) :   # A, B les entrée et sortie = numéros "arran
     S = trajet_optimal (A, B)
     if S == False :
         return(False)
+    if S == -1 :
+        return(-1)
 
     n = len(S) - 1
     while True :
@@ -263,7 +264,7 @@ def trajet_optimal_min (A, B) :   # A, B les entrée et sortie = numéros "arran
 
 #%%
 
-trajet_optimal_min (1, 30)
+trajet_optimal_min (29, 30)
 
 
 
