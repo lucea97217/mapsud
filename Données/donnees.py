@@ -1,30 +1,4 @@
-#%%
-#### IMPORT BIBLIOTHEQUES ###
-import ssl
 
-from pandas.io.parsers import read_csv
-ssl._create_default_https_context = ssl._create_unverified_context
-import alphashape
-from descartes import PolygonPatch
-import folium
-import geopandas as gpd
-from geopy.geocoders import Nominatim
-from ipywidgets import interact, fixed, widgets
-import matplotlib.pyplot as plt
-import networkx as nx
-import numpy as np
-import osmnx as ox
-import pandas as pd
-from shapely import geometry
-from pyroutelib3 import Router
-from pyproj import Proj, transform
-
-pd.options.display.max_rows = 8
- 
-#%%
-
-pd.options.display.max_rows = 8
- 
 #%%
 
 # Nous avons convertit le pdf des tarifs en word.
@@ -48,7 +22,7 @@ L15 = [ 15.2 , 15.2 , 15.2 , 15.2 , 15.2 , 15.2 , 12.3 , 9.7 , 9.3 , 8.4 , 6.1 ,
 L16 = [ 17.1 , 17.1 , 17.1 , 17.1 , 17.1 , 17.1 , 15 , 12.1 , 11.8 , 10.3 , 8.8 , 7.5 , 5.9 , 4.7 , 2.5 , 1.5 ]
 L17 = [ 18.8 , 18.8 , 18.8 , 18.8 , 18.8 , 18.8 , 16.2 , 13.8 , 13.5 , 11.8 , 9.6 , 9.2 , 7.1 , 5.9 , 3.1 , 2.6 , -1 ]
 L18 = [ -1 , -1 , -1 , -1 , -1 , -1 , -1 , -1 , -1 , -1 , -1 , -1 , -1 , -1 , -1 , -1 , -1 , -1 ]
-L19 = [ 18.8 , 18.8 , 18.8 , 18.8 , 18.8 , 18.8 , 16.2 , 13.8 , 13.5 , 11.8 , 9.6 , 9.2 , 7.1 , 5.9 , 3.1 , 2.6 , -1 , -1 , 0.8 ]
+L19 = [ 18.8 , 18.8 , 18.8 , 18.8 , 18.8 , 18.8 , 16.2 , 13.8 , 13.5 , 11.8 , 9.6 , 9.2 , 7.1 , 5.9 , 3.1 , 2.6 , 0.8 , -1 , 0.8 ]   # Modification Boulout fermé <--> Espagne : 0.8
 
 L20 = [ 10.8 , 10.8 , 10.8 , 10.8 , 10.8 , 10.8 , 8.6 , 6 , 4.1 , 3.4 , 2.4 , 1.8 , 2.9 , 3.4 , 6.9 , 7.6 , 9 , 10.3 , -1 , 10.3 ]
 L21 = [ 14.7 , 14.7 , 14.7 , 14.7 , 14.7 , 14.7 , 12 , 9.5 , 8.1 , 7.4 , 5.4 , 4.4 , 6.2 , 7.2 , 10.3 , 10.9 , 12.9 , 14.2 , -1 , 14.2 , 2.4 ]
@@ -90,10 +64,7 @@ def tarif (i,j) :   # i,j = numéros "arrangés" des sorties d'autouroutes
             m = min(i,j)
             a = TARIF[n-1][m]
             
-            if a == -1 :
-                print("Il n'existe pas d'itinéraire entre ces deux sorties")
-            else :
-                return( a )
+            return( a )   # Si a = -1, alors il n'existe pas de trajet
 
     else :
         print("Erreur : numéro incorrecte")
@@ -102,47 +73,3 @@ def tarif (i,j) :   # i,j = numéros "arrangés" des sorties d'autouroutes
 
 
 # %%
-###### INSERTIONS DONNEES MANQUANTES ######
-
-def Insert_row(row_number, df, row_value): 
-    
-    start_upper = 0
-   
-    
-    end_upper = row_number 
-   
-    
-    start_lower = row_number 
-   
-    
-    end_lower = df.shape[0] 
-   
-    
-    upper_half = [*range(start_upper, end_upper, 1)] 
-   
-    
-    lower_half = [*range(start_lower, end_lower, 1)] 
-   
-    
-    lower_half = [x.__add__(1) for x in lower_half] 
-   
-    
-    index_ = upper_half + lower_half 
-   
-    
-    df.index = index_ 
-   
-    
-    df.loc[row_number] = row_value 
-    
-    
-    df = df.sort_index() 
-   
-    
-    return df 
-
-   
-
-
-
-
