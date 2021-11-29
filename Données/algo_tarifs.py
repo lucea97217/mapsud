@@ -237,7 +237,6 @@ def trajet_optimal (A, B) :   # A, B les entrée et sortie = numéros "arrangée
 
 # Petite fonction supprimant les "doublons" de la fonction ci-dessus
 # Retourne S = [ ... ( tarif(réel), trajet(liste), contrainte sortie(entier) ) ... ],
-# et q = nombre de sorties maximum améliorant le tarif = len(S)-1
 
 def trajet_optimal_min (A, B) :   # A, B les entrée et sortie = numéros "arrangées", à valeurs dans Y = ensemble des sorties valides
                                   # Y = [ 0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 30, 31, 33, 35, 36, 37, 38, 39, 40, 41, 42 ]
@@ -249,14 +248,14 @@ def trajet_optimal_min (A, B) :   # A, B les entrée et sortie = numéros "arran
     while True :
 
         if n == 0 :                  # La meilleur solution est le direct entre A et B
-            return( (S, n) )
+            return( S )
 
         (a, W, t) = S[n]
         if (a, W, t-1) == S[n-1] :   # On supprime le dernier élément, car c'est un doublon
             del S[n]
             
         else :                       # S est devenue "irréductible"
-            return( (S, n) )
+            return( S )
         n = n-1
             
 
@@ -264,6 +263,8 @@ def trajet_optimal_min (A, B) :   # A, B les entrée et sortie = numéros "arran
 
 #%%
 
+trajet_optimal_min (1, 30)
 
 
 
+# %%
