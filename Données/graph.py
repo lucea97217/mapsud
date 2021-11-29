@@ -5,6 +5,7 @@ import openrouteservice
 from openrouteservice import convert
 import folium
 import json
+from algo_tarifs import *
 
 #%%
 #IMPORT TABLEAU COORDONNEES
@@ -39,33 +40,75 @@ def indCoord(df,i):
         return "veuillez inserer un entier entre 0 et 42"
 
 #%%
+
+def latLong(i,df):
+    if 0<=i<=42:
+        return df['Y'][i],df['X'][i]
+    else:
+        return 'élément inconnu'
+
+#%%
+def longLat(i,df):
+    if 0<=i<=42:
+        return df['X'][i],df['Y'][i]
+    else:
+        return 'élément inconnu'
+#%%
+def Lat(i,df):
+    if 0<=i<=42:
+        return df['Y'][i]
+    else:
+        return 'élément inconnu'
+#%%
+def long(i,df):
+    if 0<=i<=42:
+        return df['X'][i]
+    else:
+        return 'élément inconnu'
+
+#%%
+def k_opti(i,j):
+    return trajet_optimal_min(i,j)[len(trajet_optimal_min(i,j))-1][2]
+#%%
 class graphique:
     def __init__(self) -> None:
         pass
-    def graph_rang(i,j,df):
-        if isinstance(i,float)==True and isinstance(j,float)==True:
-            coords = ((df["X"][i],df["Y"][i]),(df["X"][j],df["Y"][j]))
+    def graph_rang(i,j,df,k):
+        if isinstance(i,int)==True and isinstance(j,int)==True:
+            if k >= k_opti(i,j):
+                k = k_opti(i,j)
+                print("Au dessus de "+ str(k)+" " +" sorties supplémentaires le prix reste inchangé.")
+            else:
+                k=k
+            li = trajet_optimal_min(i,j)[k][1]
+            locationList=[]
+            for point in range(len(li)):
+                locationList.append(latLong(li[point],df))
+            coords = (longLat(i,df),longLat(j,df))
             client = openrouteservice.Client(key='5b3ce3597851110001cf6248ec32a01981c344289c76bd7dbc72c78d')
             res = client.directions(coords,preference="fastest")
             geometry = client.directions(coords)['routes'][0]['geometry']
             decoded = convert.decode_polyline(geometry)
             distance_txt = "<h4> <b>Distance :&nbsp" + "<strong>"+str(round(res['routes'][0]['summary']['distance']/1000,1))+" Km </strong>" +"</h4></b>"
             duration_txt = "<h4> <b>Durée :&nbsp" + "<strong>"+str(round(res['routes'][0]['summary']['duration']/60,1))+" Mins. </strong>" +"</h4></b>"
-            price_txt = "<h4> <b>Prix :&nbsp" + "<strong>"+ str(13.8)+" € . </strong>" +"</h4></b>"
-            m = folium.Map(location=[df["Y"][i],df["X"][i]],zoom_start=10, control_scale=True,tiles="cartodbpositron")
+            price_txt = "<h4> <b>Prix :&nbsp" + "<strong>"+ str(round((trajet_optimal_min(i,j)[k][0])/round(res['routes'][0]['summary']['distance']/1000,1),2))+" € /km. </strong>" +"</h4></b>"
+            m = folium.Map(location=[Lat(i,df),long(i,df)],zoom_start=10, control_scale=True,tiles="cartodbpositron")
             folium.GeoJson(decoded).add_child(folium.Popup(distance_txt+duration_txt+price_txt,max_width=300)).add_to(m)
-        
-            folium.Marker(
-                location=list(coords[0][::-1]),
-                popup=df["NOMGARE"][i],
-                icon=folium.Icon(color="green"),
-            ).add_to(m)
+            for loc in range(len(locationList)):
 
-            folium.Marker(
-                location=list(coords[1][::-1]),
-                popup=df["NOMGARE"][j],
-                icon=folium.Icon(color="red"),
-            ).add_to(m)
+                folium.Marker(
+                    locationList[loc],
+                    popup=df["NOMGARE"][loc+i],
+                    icon=folium.Icon(icon_color='red',icon='road')
+                ).add_to(m)
+
+            #folium.Marker(
+                #locationList[2],
+                #popup=df["NOMGARE"][j],
+            #).add_to(m)
+
+            
+
 
             return m
         else:
