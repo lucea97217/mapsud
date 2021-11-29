@@ -265,7 +265,7 @@ def trajet_optimal_min (A, B) :   # A, B les entrée et sortie = numéros "arran
 
 #%%
 
-trajet_optimal_min (41, 42)
+# trajet_optimal_min (41, 42)
 
 
 
