@@ -99,17 +99,10 @@ class graphique:
                 folium.Marker(
                     locationList[loc],
                     popup=df["NOMGARE"][loc+i],
-                    icon=folium.Icon(icon_color='red',icon='road')
+                    icon=folium.Icon(icon_color='black',icon='road')
                 ).add_to(m)
 
-            #folium.Marker(
-                #locationList[2],
-                #popup=df["NOMGARE"][j],
-            #).add_to(m)
-
             
-
-
             return m
         else:
             return "Vos variables n'ont pas le bon format ou utilisez la fonction 'nomCoord'"
