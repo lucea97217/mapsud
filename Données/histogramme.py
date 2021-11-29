@@ -2,7 +2,7 @@ import pandas
 from algo_tarifs import *
 import plotly.express as px
 
-R = trajet_optimal(4, 40)
+R = trajet_optimal(A,B)
 
 
 name_axe_x = "Nombre de sortie maximale autorisée"
