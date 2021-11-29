@@ -1,7 +1,6 @@
 #%%
 
 from donnees import tarif
-
 # %%
 
 #################################################################################################
@@ -248,14 +247,14 @@ def trajet_optimal_min (A, B) :   # A, B les entrée et sortie = numéros "arran
     while True :
 
         if n == 0 :                  # La meilleur solution est le direct entre A et B
-            return( (S, n) )
+            return S 
 
         (a, W, t) = S[n]
         if (a, W, t-1) == S[n-1] :   # On supprime le dernier élément, car c'est un doublon
             del S[n]
             
         else :                       # S est devenue "irréductible"
-            return( (S, n) )
+            return( S )
         n = n-1
             
 
@@ -265,3 +264,5 @@ def trajet_optimal_min (A, B) :   # A, B les entrée et sortie = numéros "arran
 
 
 
+
+# %%
