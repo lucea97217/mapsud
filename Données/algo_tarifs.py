@@ -1,3 +1,4 @@
+
 #%%
 
 from donnees import tarif
@@ -264,7 +265,7 @@ def trajet_optimal_min (A, B) :   # A, B les entrée et sortie = numéros "arran
 
 #%%
 
-trajet_optimal_min (29, 30)
+trajet_optimal_min (41, 42)
 
 
 

@@ -66,7 +66,11 @@ def long(i):
 
 #%%
 def k_opti(i,j):
-    return trajet_optimal_min(i,j)[len(trajet_optimal_min(i,j))-1][2]
+    if trajet_optimal_min(i,j)==False:
+        k= -1
+        return k
+ 
+    return len(trajet_optimal_min(i,j))-1
 #%%
 class graphique:
     def __init__(self) -> None:
@@ -78,13 +82,19 @@ class graphique:
             else:
                 i = nomCoord(DEPART)
                 j = nomCoord(ARRIVEE)
-                if nbSorties >= k_opti(i,j):
+
+                if k_opti(i,j)==-1:
+
+                    m = folium.Map(location=[Lat(i),long(i)],zoom_start=10, control_scale=True,tiles="cartodbpositron")
+                    print("Pas d'itinéraire possible")
+                    return m 
+                elif nbSorties >= k_opti(i,j):
                     nbSorties = k_opti(i,j)
                     print("Au dessus de "+ str(nbSorties)+" " +" sorties supplémentaires le prix reste inchangé.")
         
                 else:
                     nbSorties=nbSorties
-
+                print("Itinéraire optimal de "+ str(nbSorties) +""+"sorties.")
                 li = trajet_optimal_min(i,j)[nbSorties][1]
                 locationList=[]
                 for point in range(len(li)):
@@ -119,19 +129,18 @@ class graphique:
         res = client.directions(coords, preference="fastest")
         dist=float(round(res['routes'][0]['summary']['distance']/1000,1))
         return dist
-#%%
-df_nom = list(df['NOMGARE'])
-#%%
-df_nom2 = df_nom[1:42]
-#%%
-li=[]
-for j in range(43):
-    li.append(j)
+
 
 #%%
 k=[]
 for i in range(11):
     k.append(i)
+#%%
+
+Y = [ 0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 30, 31, 33, 35, 36, 37, 38, 39, 40, 41, 42 ]
+df_nom=[]
+for i in range(len(Y)):
+    df_nom.append(df["NOMGARE"][Y[i]])
 
 #%%
 
@@ -140,4 +149,7 @@ interact(graphique.graph_rang,DEPART= df_nom, ARRIVEE= df_nom,nbSorties = k)
 
 
 
+# %%
+trajet_optimal_min(40,42)
+# %%
 # %%
