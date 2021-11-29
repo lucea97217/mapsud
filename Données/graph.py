@@ -76,13 +76,15 @@ class graphique:
             if DEPART == ARRIVEE:
                 return 'Trajet impossible'
             else:
+                i = nomCoord(DEPART)
                 j = nomCoord(ARRIVEE)
                 if nbSorties >= k_opti(i,j):
                     nbSorties = k_opti(i,j)
                     print("Au dessus de "+ str(nbSorties)+" " +" sorties supplémentaires le prix reste inchangé.")
+        
                 else:
                     nbSorties=nbSorties
-            
+
                 li = trajet_optimal_min(i,j)[nbSorties][1]
                 locationList=[]
                 for point in range(len(li)):
@@ -94,14 +96,14 @@ class graphique:
                 decoded = convert.decode_polyline(geometry)
                 distance_txt = "<h4> <b>Distance :&nbsp" + "<strong>"+str(round(res['routes'][0]['summary']['distance']/1000,1))+" Km </strong>" +"</h4></b>"
                 duration_txt = "<h4> <b>Durée :&nbsp" + "<strong>"+str(round(res['routes'][0]['summary']['duration']/60,1))+" Mins. </strong>" +"</h4></b>"
-                price_txt = "<h4> <b>Prix :&nbsp" + "<strong>"+ str(round((trajet_optimal_min(i,j)[nbSorties][0])/round(res['routes'][0]['summary']['distance']/1000,1),2))+" € /km. </strong>" +"</h4></b>"
+                price_txt = "<h4> <b>Prix :&nbsp" + "<strong>"+ str(round((trajet_optimal_min(i,j)[nbSorties][0])/round(res['routes'][0]['summary']['distance']/1000,1),2))+" € /km. Soit </strong>"+str((trajet_optimal_min(i,j)[nbSorties][0]))+" €  </strong>" +"</h4></b>"
                 m = folium.Map(location=[Lat(i),long(i)],zoom_start=10, control_scale=True,tiles="cartodbpositron")
                 folium.GeoJson(decoded).add_child(folium.Popup(distance_txt+duration_txt+price_txt,max_width=300)).add_to(m)
                 for loc in range(len(locationList)):
 
                     folium.Marker(
                         locationList[loc],
-                        popup=df["NOMGARE"][loc+i],
+                        popup=df["NOMGARE"][li[loc]],
                         icon=folium.Icon(icon_color='black',icon='road')
                     ).add_to(m)
 
