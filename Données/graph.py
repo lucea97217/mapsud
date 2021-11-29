@@ -95,7 +95,7 @@ class graphique:
                 else:
                     nbSorties=nbSorties
 
-                 print("Itinéraire optimal de "+ str(k_opti(i,j)) +" "+"sorties.")
+                print("Itinéraire optimal de "+ str(k_opti(i,j)) +" "+"sorties.")
                 li = trajet_optimal_min(i,j)[nbSorties][1]
                 locationList=[]
                 for point in range(len(li)):

@@ -1,8 +1,9 @@
+#%%
 import pandas
 from algo_tarifs import *
 import plotly.express as px
-
-R = trajet_optimal(A,B)
+#%%
+R = trajet_optimal(1,3)
 
 
 name_axe_x = "Nombre de sortie maximale autorisée"
@@ -17,3 +18,5 @@ data = pandas.DataFrame(d)
 fig = px.bar(data, x=name_axe_x, y=name_axe_y)
 
 fig.show()
+
+# %%
