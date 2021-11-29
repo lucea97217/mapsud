@@ -144,6 +144,7 @@ def comparaison (A, B, Liste, Li) :
 
             if k == l :
                 if ( c1 != -1 ) and ( c2 != -1 ) :   # Si il existe un trajet possible entre A et k, puis entre k et B
+
                     if c1 + c2 < alpha :
                         alpha = c1 + c2
                         W = Z.copy()
@@ -174,8 +175,7 @@ def trajet_optimal (A, B) :   # A, B les entrée et sortie = numéros "arrangée
     # préambule : 0 sortie autorisé
     a = tarif(A, B)
     if a == -1 :       # Aucun trajet existant
-        return(False)
-        # !!!!!!!!!!!!!!!!!!! A TRAITER !!!!!!!!!!!!!!!!!!!  (29-30) et (41-42)
+        return(-1)     # Cas (29-30) et (41-42)
     W = [A, B]
     S.append( ( round(a,1), W, 0 ) )
 
@@ -237,11 +237,13 @@ def trajet_optimal (A, B) :   # A, B les entrée et sortie = numéros "arrangée
 # Petite fonction supprimant les "doublons" de la fonction ci-dessus
 # Retourne S = [ ... ( tarif(réel), trajet(liste), contrainte sortie(entier) ) ... ],
 
-def trajet_optimal_min (A,B) :   # A, B les entrée et sortie = numéros "arrangées", à valeurs dans Y = ensemble des sorties valides
+def trajet_optimal_min (A, B) :   # A, B les entrée et sortie = numéros "arrangées", à valeurs dans Y = ensemble des sorties valides
                                   # Y = [ 0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 30, 31, 33, 35, 36, 37, 38, 39, 40, 41, 42 ]
     S = trajet_optimal (A, B)
     if S == False :
         return(False)
+    if S == -1 :
+        return(-1)
 
     n = len(S) - 1
     while True :
@@ -259,6 +261,11 @@ def trajet_optimal_min (A,B) :   # A, B les entrée et sortie = numéros "arrang
             
 
 #################################################################################################
+
+#%%
+
+trajet_optimal_min (29, 30)
+
 
 
 # %%
