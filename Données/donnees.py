@@ -1,8 +1,10 @@
 
 #%%
+
 import pandas as pd
 
 #%%
+
 
 # Nous avons convertit le pdf des tarifs en word.
 # Puis effectué un copier-coller du tableau tarif depuis word dans VS-Code.
@@ -73,6 +75,7 @@ def tarif (i,j) :   # i,j = numéros "arrangés" des sorties d'autouroutes
         print("Erreur : numéro incorrecte")
 
     
+
 #%%
 ############# IMPORT TABLEAU COORDONNEES #####################
 df = pd.read_csv("coordonnees.csv", sep=",")
@@ -161,5 +164,6 @@ def long(i):
 
 
 # %%
+
 
 # %%

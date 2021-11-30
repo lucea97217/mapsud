@@ -7,12 +7,88 @@ import folium
 import json
 from algo_tarifs import *
 from ipywidgets import interact
+
 from histogramme import histo
 from donnees import *
+
+
+#%%
+############# IMPORT TABLEAU COORDONNEES #####################
+df = pd.read_csv("coordonnees.csv", sep=",")
+
+#%%
+#sion veut supprimer les index
+del df["index"]
+##############################################################
+
+
+#################### CALCUL DE COORDONNEES ####################
+#%%
+#recherche des coordonnées en fonction du nom de la gare
+def nomCoord(char):
+    y= -1
+    for i in range(len(df)):
+        if df["NOMGARE"][i]==char:
+            y=i
+    if y==-1:
+        return "ERREUR : Ce nom n'a pas été trouvé"
+    else:
+        return y
+
+#%%
+#recherche du nom de la gare en fonction du numéro arrangé
+def indCoord(i):
+    #on vérifie que i est bien de type entier
+    if isinstance(i,int)== True and 0<=i<=42:
+
+        return df["NOMGARE"][i]
+    
+    else: 
+        return "veuillez inserer un entier entre 0 et 42"
+
+#%%
+#recherche des coordonnées dans l'ordre lattitude longitude
+# d'un péage en fonction du numéro arrangé
+def latLong(i):
+    #On verifie que i correspond bien à un élément de la liste
+    if 0<=i<=42:
+        return df['Y'][i],df['X'][i]
+    else:
+        return 'élément inconnu'
+
+#%%
+#recherche des coordonnées dans l'ordre longitude lattitude
+# d'un péage en fonction du numéro arrangé
+def longLat(i):
+    #On verifie que i correspond bien à un élément de la liste
+    if 0<=i<=42:
+        return df['X'][i],df['Y'][i]
+    else:
+        return 'élément inconnu'
+#%%
+#recherche de la lattitude d'un péage
+#en fonction de son numéro arrangé
+def Lat(i):
+    #On verifie que i correspond bien à un élément de la liste
+    if 0<=i<=42:
+        return df['Y'][i]
+    else:
+        return 'élément inconnu'
+#%%
+#recherche de la lattitude d'un péage
+#en fonction de son numéro arrangé
+def long(i):
+    #On verifie que i correspond bien à un élément de la liste
+    if 0<=i<=42:
+        return df['X'][i]
+    else:
+        return 'élément inconnu'
+
 
 #%%
 #calcul du nombre optimum de sorties
 #Pour payer le tarif le moins élevé d'un péage à un autre.
+
 def k_opti(S):
 #si la fonction retourne -1 c'est qu'il n'y a pas 
 #d'itinéraire possible
@@ -20,6 +96,7 @@ def k_opti(S):
         return S
 
     return len(S)-1
+
 ##############################################################
 #%%
 ######################## GRAPHE INTERACTIF ###################
@@ -35,7 +112,7 @@ class graphique:
     # Correspondant à des noms de gares connus
     # Avec une contrainte de nombre de sorties (nbSorties)
 
-        
+
         if isinstance(DEPART,str)==True and isinstance(ARRIVEE,str)==True:
         #Verification des variables
             if DEPART == ARRIVEE:
@@ -49,6 +126,7 @@ class graphique:
                 S = trajet_optimal_min(i,j)
                 # On traite le cas où il n'y a pas d'itinéraire possible
                 if k_opti(S)==-1:
+
                     # On affiche alors une carte vide
                     m = folium.Map(location=[Lat(i),long(i)],zoom_start=10, control_scale=True,tiles="cartodbpositron")
                     print("Pas d'itinéraire possible")
@@ -57,8 +135,10 @@ class graphique:
                 # Si l'utilisateur insère un contrainte supérieure
                 # Au nombre de sortie optimum 
                 # On réinitialise alors la contrainte
+
                 elif nbSorties >= k_opti(S):
                     nbSorties = k_opti(S)
+
         
                 else:
                 
@@ -67,7 +147,9 @@ class graphique:
                     nbSorties=nbSorties
 
                 # On spécifie tout de même l'itinéraire optimal
+
                 print("Itinéraire optimal de "+ str(k_opti(S)) +" "+"sorties.")
+
 
                 # On liste les sorties à l'aide des numéros arrangés
                 li = trajet_optimal_min(i,j)[nbSorties][1]
@@ -112,7 +194,9 @@ class graphique:
                         icon=folium.Icon(icon_color='black',icon='road')
                     ).add_to(m)
 
+
                 histo(DEPART,ARRIVEE)
+
                 return m
         else:
             return "Vos variables n'ont pas le bon format ou utilisez la fonction 'nomCoord'"
@@ -162,4 +246,3 @@ interact(graphique.graph_rang,DEPART= df_nom, ARRIVEE= df_nom,nbSorties = k)
 
 # %%
 
-# %%
