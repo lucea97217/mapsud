@@ -15,11 +15,10 @@ def histo(DEPART,ARRIVEE):
           name_axe_y = "prix (€)"
           d = {name_axe_x: [], name_axe_y: []}
           data = pandas.DataFrame(d)
+          plt.bar(d[name_axe_x],d[name_axe_y])
+          print(" Pas d'itinéraire possible.")
+          return plt.show()
 
-          fig = px.bar(data, x=name_axe_x, y=name_axe_y)
-          fig.show()
-
-          return fig.show()
 
      R = trajet_optimal_min(nomCoord(DEPART),nomCoord(ARRIVEE))
 
@@ -29,33 +28,23 @@ def histo(DEPART,ARRIVEE):
      for n in range(len(R)):
           d[name_axe_x].append(R[n][2])
           d[name_axe_y].append(R[n][0])
-     print(d)
 
      data = pandas.DataFrame(d)
-     print(d)
-     plt.hist(data)
-     #fig = px.bar(data, x=name_axe_x, y=name_axe_y)
-     #fig.show()
-     
+
+     if d[name_axe_y]==[0] and d[name_axe_x]==[0]:
+          plt.scatter(d[name_axe_x],d[name_axe_y])
+          return plt.show()
+
+     plt.bar(d[name_axe_x],d[name_axe_y])
      return plt.show()
 
      
 
-#%%
-li=['VENDARGUES']
-li2=['PAMIER SUD']
+
 
 #%% 
-hist('VENDARGUES','PAMIER SUD')
+histo('VENDARGUES','PAMIER SUD')
 # %%
-interact(hist,DEPART = df_nom, ARRIVEE = df_nom)
-
-
-# %%
-
-L = [1,2,3]
-M = [5,5,5]
-data = [L,M]
-plt.hist(L)
+interact(histo,DEPART = df_nom, ARRIVEE = df_nom)
 
 # %%
