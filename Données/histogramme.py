@@ -36,15 +36,12 @@ def histo(DEPART,ARRIVEE):
           return plt.show()
 
      plt.bar(d[name_axe_x],d[name_axe_y])
+
      return plt.show()
 
      
 
 
-
-#%% 
-histo('VENDARGUES','PAMIER SUD')
 # %%
 interact(histo,DEPART = df_nom, ARRIVEE = df_nom)
 
-# %%
