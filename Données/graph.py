@@ -7,18 +7,11 @@ import folium
 import json
 from algo_tarifs import *
 from ipywidgets import interact
-
 from histogramme import histo
 from donnees import *
 
 
-#%%
-############# IMPORT TABLEAU COORDONNEES #####################
-df = pd.read_csv("coordonnees.csv", sep=",")
 
-#%%
-#sion veut supprimer les index
-del df["index"]
 ##############################################################
 
 
