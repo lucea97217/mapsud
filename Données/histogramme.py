@@ -5,7 +5,7 @@ import plotly.express as px
 
 #%%
 
-R = trajet_optimal(3,19)
+R = trajet_optimal(A,B)
 
 name_axe_x = "Nombre de sortie maximale autorisée"
 name_axe_y = "prix (€)"
