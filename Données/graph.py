@@ -8,6 +8,10 @@ import json
 from algo_tarifs import *
 from ipywidgets import interact
 
+from histogramme import histo
+from donnees import *
+
+
 #%%
 ############# IMPORT TABLEAU COORDONNEES #####################
 df = pd.read_csv("coordonnees.csv", sep=",")
@@ -80,17 +84,18 @@ def long(i):
     else:
         return 'élément inconnu'
 
+
 #%%
 #calcul du nombre optimum de sorties
 #Pour payer le tarif le moins élevé d'un péage à un autre.
-def k_opti(i,j):
+
+def k_opti(S):
 #si la fonction retourne -1 c'est qu'il n'y a pas 
 #d'itinéraire possible
-    if trajet_optimal_min(i,j)==-1:
-        k= -1
-        return k
+    if S ==-1:
+        return S
 
-    return len(trajet_optimal_min(i,j))-1
+    return len(S)-1
 
 ##############################################################
 #%%
@@ -107,6 +112,7 @@ class graphique:
     # Correspondant à des noms de gares connus
     # Avec une contrainte de nombre de sorties (nbSorties)
 
+
         if isinstance(DEPART,str)==True and isinstance(ARRIVEE,str)==True:
         #Verification des variables
             if DEPART == ARRIVEE:
@@ -117,8 +123,10 @@ class graphique:
                 i = nomCoord(DEPART)
                 j = nomCoord(ARRIVEE)
 
+                S = trajet_optimal_min(i,j)
                 # On traite le cas où il n'y a pas d'itinéraire possible
-                if k_opti(i,j)==-1:
+                if k_opti(S)==-1:
+
                     # On affiche alors une carte vide
                     m = folium.Map(location=[Lat(i),long(i)],zoom_start=10, control_scale=True,tiles="cartodbpositron")
                     print("Pas d'itinéraire possible")
@@ -127,9 +135,10 @@ class graphique:
                 # Si l'utilisateur insère un contrainte supérieure
                 # Au nombre de sortie optimum 
                 # On réinitialise alors la contrainte
-                elif nbSorties >= k_opti(i,j):
-                    nbSorties = k_opti(i,j)
-                    print("Au dessus de "+ str(nbSorties)+" " +" sorties supplémentaires le prix reste inchangé.")
+
+                elif nbSorties >= k_opti(S):
+                    nbSorties = k_opti(S)
+
         
                 else:
                 
@@ -138,7 +147,9 @@ class graphique:
                     nbSorties=nbSorties
 
                 # On spécifie tout de même l'itinéraire optimal
-                print("Itinéraire optimal de "+ str(k_opti(i,j)) +" "+"sorties.")
+
+                print("Itinéraire optimal de "+ str(k_opti(S)) +" "+"sorties.")
+
 
                 # On liste les sorties à l'aide des numéros arrangés
                 li = trajet_optimal_min(i,j)[nbSorties][1]
@@ -183,7 +194,9 @@ class graphique:
                         icon=folium.Icon(icon_color='black',icon='road')
                     ).add_to(m)
 
-            
+
+                histo(DEPART,ARRIVEE)
+
                 return m
         else:
             return "Vos variables n'ont pas le bon format ou utilisez la fonction 'nomCoord'"
@@ -232,3 +245,4 @@ interact(graphique.graph_rang,DEPART= df_nom, ARRIVEE= df_nom,nbSorties = k)
 # %%
 
 # %%
+

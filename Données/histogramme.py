@@ -2,11 +2,11 @@
 import pandas
 from algo_tarifs import trajet_optimal_min
 import plotly.express as px
-from graph import nomCoord,df_nom
+
 from ipywidgets import interact
 import matplotlib.pyplot as plt
-
-
+import pandas as pd
+from donnees import *
 #%%
 
 def histo(DEPART,ARRIVEE):
@@ -18,6 +18,9 @@ def histo(DEPART,ARRIVEE):
           plt.bar(d[name_axe_x],d[name_axe_y])
           print(" Pas d'itinéraire possible.")
           return plt.show()
+
+
+#%%
 
 
      R = trajet_optimal_min(nomCoord(DEPART),nomCoord(ARRIVEE))
@@ -44,4 +47,7 @@ def histo(DEPART,ARRIVEE):
 
 # %%
 interact(histo,DEPART = df_nom, ARRIVEE = df_nom)
+
+
+# %%
 
