@@ -229,3 +229,6 @@ for i in range(len(Y)):
 interact(graphique.graph_rang,DEPART= df_nom, ARRIVEE= df_nom,nbSorties = k)
 
 ############################## FIN ##########################################
+# %%
+
+# %%
