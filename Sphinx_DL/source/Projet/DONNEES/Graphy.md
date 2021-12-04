@@ -224,4 +224,6 @@ On insère alors dans df_nom tout les noms de gare correspondants aux numéros a
 On obtient alors un graphe interactif, où l'on peut sélectionner notre point de depart et d'arrivée, ainsi que notre contrainte de nombre de sorties intermédiares maximum autorisé :
 
     interact(graphique.graph_rang,DEPART= df_nom, ARRIVEE= df_nom,nbSorties = k)
+    
+# ------Capture---------
 
