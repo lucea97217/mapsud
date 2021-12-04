@@ -1,7 +1,7 @@
 
 ![Capture](/Capture/Capture1.png) 
 
-<img src="/docs/logo.png" alt="My cool logo"/>
+<img src="/Capture/Capture1.png" alt="Cap"/>
 
 
 # Algo_tarifs
