@@ -75,31 +75,23 @@ fonction calcul tarifs
 
     
 
-## IMPORT TABLEAU COORDONNEES
+# IMPORT TABLEAU COORDONNEES
+
     df = pd.read_csv("coordonnees.csv", sep=",")
-
-
-sion veut supprimer les index
 
     del df["index"]
 
-Ici on a repris Y de algo_tarifs
-
-Correspondant à la liste des numéros arrangés
-
-Des péages dont nous pouvons entrer et sortir
+Y correspond à la liste des sorties que l'utilisateur peut emprunter pour entrer et sortir de l'autoroute.
 
     Y = [ 0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 30, 31, 33, 35, 36, 37, 38, 39, 40, 41, 42 ]
         df_nom=[]
 
-On insère alors dans df_nom tout les noms de gare
-
-Correspondants aux numéros arrangés de Y
+On insère alors dans df_nom tout les noms de gare correspondants aux numéros arrangés de Y
  
     for i in range(len(Y)):
         df_nom.append(df["NOMGARE"][Y[i]])
 
-## CALCUL DE COORDONNEES 
+# CALCUL DE COORDONNEES 
 
 recherche des coordonnées en fonction du nom de la gare
 
@@ -125,9 +117,7 @@ recherche du nom de la gare en fonction du numéro arrangé
             return "veuillez inserer un entier entre 0 et 42"
 
 
-recherche des coordonnées dans l'ordre lattitude longitude
-
-d'un péage en fonction du numéro arrangé
+recherche des coordonnées dans l'ordre lattitude longitude d'un péage en fonction du numéro arrangé
 
     def latLong(i):
         #On verifie que i correspond bien à un élément de la liste
@@ -136,9 +126,7 @@ d'un péage en fonction du numéro arrangé
         else:
             return 'élément inconnu'
 
-recherche des coordonnées dans l'ordre longitude lattitude
-
-d'un péage en fonction du numéro arrangé
+recherche des coordonnées dans l'ordre longitude lattitude d'un péage en fonction du numéro arrangé
 
     def longLat(i):
         #On verifie que i correspond bien à un élément de la liste
@@ -147,9 +135,7 @@ d'un péage en fonction du numéro arrangé
         else:
             return 'élément inconnu'
 
-recherche de la lattitude d'un péage
-
-en fonction de son numéro arrangé
+recherche de la lattitude d'un péage en fonction de son numéro arrangé
 
     def Lat(i):
         #On verifie que i correspond bien à un élément de la liste
@@ -158,9 +144,7 @@ en fonction de son numéro arrangé
         else:
             return 'élément inconnu'
 
-recherche de la lattitude d'un péage
-
-en fonction de son numéro arrangé
+recherche de la lattitude d'un péage en fonction de son numéro arrangé
 
     def long(i):
         #On verifie que i correspond bien à un élément de la liste
