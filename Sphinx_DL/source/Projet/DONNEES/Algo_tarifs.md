@@ -3,7 +3,7 @@
 
 <img src="/Capture/Capture1.png" alt="Cap"/>
 
-![Alt text](relative/path/to/Capture1.png?raw=true "Capture1")
+![Alt text](Sphinx_DL/source/Projet/DONNEES/Capture/Capture1.png?raw=true "Capture1")
 
 
 # Algo_tarifs
