@@ -246,6 +246,12 @@ Exemple : trajets optimaux entre Vendargues(0) et Sesquières(42). Pour chaque c
 
     trajet_optimal (0, 42)
 
+.. image:: Capture1.jpg
+   :height: 100
+   :width: 200
+   :scale: 50
+   :align: center
+   :alt: ordinateur
 
 
 Fonction supprimant les "doublons" de la fonction ci-dessus. C'est à dire les itinéraires correspondant à une contrainte k supérieur à la contrainte q optimal.
