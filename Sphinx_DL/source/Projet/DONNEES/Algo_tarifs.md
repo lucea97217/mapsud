@@ -8,7 +8,7 @@ Etant donnée une entrée A et une sortie B, il apparaît parfois préférable d
 Quitter l'autoroute lors d'une sortie intermédiaire, puis re-rentrer immédiatement après, diminue parfois le coût du trajet global.
 
 La partie ci-dessous recherche donc le chemin optimal entre A et B, avec la contrainte k sorties intermédiares maximum autorisées. Si k=0, alors l'itinéraire correspond à un direct entre A et B. Si k=1, alors nous nous autorisons maximum une sortie intermédiare, etc ...
-Il existe une contrainte à partir de laquelle le trajet optimal entre A et B ne pourra plus être amélioré. C'est à dire que s'accorder une contrainte plus élevé ne permettra pas de trouver un itinéraire moins coûteux.
+Il existe une contrainte q à partir de laquelle le trajet optimal entre A et B ne pourra plus être amélioré. C'est à dire que s'accorder une contrainte plus élevé ne permettra pas de trouver un itinéraire moins coûteux.
 
 
 1) Dans un premier temps, nous aurons besoin, étant donnée une entrée A et une sortie B, de récupérer l'ensemble des sorties intermédiares entre A et B.
@@ -170,8 +170,9 @@ On crée ensuite la fonction qui retourne la liste des sorties intermédiaires s
 
 
         return( alpha, W )
+        
 
-
+        # Fonction trajet optimal
 
         def trajet_optimal (A, B) :   # A, B les entrée et sortie = numéros "arrangées"
 
@@ -241,8 +242,13 @@ On crée ensuite la fonction qui retourne la liste des sorties intermédiaires s
 
         return(S)
 
+Exemple : trajets optimaux entre Vendargues(0) et Sesquières(42). Pour chaque contrainte k allant de 0 au maximum enviseagble, on retrouve le tarif, et le trajet optimal :
 
-Petite fonction supprimant les "doublons" de la fonction ci-dessus
+
+
+
+
+Fonction supprimant les "doublons" de la fonction ci-dessus. C'est à dire les itinéraires correspondant à une contrainte k supérieur à la contrainte q optimal.
 
 Retourne S = [ ... ( tarif(réel), trajet(liste), contrainte sortie(entier) ) ... ],
 
@@ -269,6 +275,7 @@ Retourne S = [ ... ( tarif(réel), trajet(liste), contrainte sortie(entier) ) ..
         n = n-1
             
 
+Exemple : trajets optimaux entre Vendargues(0) et Sesquières(42) :
 
 
 
