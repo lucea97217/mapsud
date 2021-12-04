@@ -87,13 +87,15 @@ calcul du nombre optimum de sorties pour payer le tarif le moins élevé lors d'
 
 
 
-## GRAPHE INTERACTIF 
+## CLASSE GRAPHIQUE
 
-Creation classe graphique
+Creation de la classe graphique
 
-Elle permet d'afficher un graphe interactif 
+Elle permet d'afficher le compte rendu final du projet via la fonction "graph_rang(DEPART,ARRIVEE,nbSorties)".
 
-class graphique:
+Elle affiche à l'écran un graphique interractif permettant à l'utilisateur de sélectionner une entrée A et une sortie B, ainsi que k le nombre maximum de sorties intermédiaires autorisées, pour le trajet optimisant le tarif entre A et B.
+
+Apparaît alors à l'écran une carte cliquable avec l'itinéraire optimal surligné, ainsi que plusieurs informations sur celui-ci, comme la durée estimé, la distance, ou encore le tarif prévu pour le péage. Apparaît également le diagramme en baton comparant les tarifs selon la contrainte k.
     
     def __init__(self) -> None:
         pass
@@ -203,7 +205,7 @@ class graphique:
 
 ## CARTE AVEC WIDGETS 
 
-Initialisation, Y correspond à la liste des sorties que l'utilisateur peut emprunter pour entrer et sortir de l'autoroute.
+Initialisation, Y correspond à la liste des sorties que l'utilisateur peut emprunter pour rentrer et sortir de l'autoroute.
 
     k=[]
     for i in range(11):
@@ -218,9 +220,9 @@ Initialisation, Y correspond à la liste des sorties que l'utilisateur peut empr
 
 
 
-Nous obtenons un graphe interactif, sur lequel nous pouvons sélectionner notre point de depart A et d'arrivée B, ainsi que notre contrainte de nombre de sorties intermédiares maximum autorisé.
+Nous obtenons alors le graphe interactif décris plus haut, sur lequel nous pouvons sélectionner notre point de depart A et d'arrivée B, ainsi que notre contrainte de nombre de sorties intermédiares maximum autorisé.
 
-Nous avons la carte cliquable avec l'itinéraire, ainsi que l'histogramme comparant l'évolution du tarif selon la contrainte. Voici un exemple :
+Nous avons la carte cliquable avec l'itinéraire, ainsi que le diagramme comparant l'évolution du tarif selon la contrainte. Voici un exemple :
 
     interact(graphique.graph_rang,DEPART= df_nom, ARRIVEE= df_nom,nbSorties = k)
     
