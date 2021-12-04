@@ -1,6 +1,4 @@
-
-# Donnees
-
+# Tarifs
 
     import pandas as pd
 
@@ -75,7 +73,7 @@ fonction calcul tarifs
 
     
 
-I) IMPORT TABLEAU COORDONNEES
+# IMPORT TABLEAU COORDONNEES
 
     df = pd.read_csv("coordonnees.csv", sep=",")
 
