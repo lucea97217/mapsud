@@ -1,5 +1,5 @@
 
-![Capture](relative/path/to/img.jpg?raw=true "Capture1") 
+![Capture](relative/path/to/img.png?raw=true "Capture1") 
 
 
 # Algo_tarifs
@@ -249,7 +249,7 @@ Exemple : trajets optimaux entre Vendargues(0) et Sesquières(42). Pour chaque c
 
     trajet_optimal (0, 42)
 
-# -------IMAGE--------
+# -------Capture1.png--------
 
 Fonction supprimant les "doublons" de la fonction ci-dessus. C'est à dire les itinéraires correspondant à une contrainte k supérieur à la contrainte q optimal.
 
@@ -282,5 +282,5 @@ Exemple : trajets optimaux entre Vendargues(0) et Sesquières(42) :
 
     trajet_optimal_min (0, 42)
     
-# -------IMAGE--------
+# -------Capture.png--------
 
