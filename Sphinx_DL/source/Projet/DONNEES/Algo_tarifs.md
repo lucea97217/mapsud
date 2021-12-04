@@ -1,5 +1,5 @@
 
-![Capture](/Capture/Capture1.png) 
+![Capture](../Capture/Capture1.png) 
 
 
 # Algo_tarifs
