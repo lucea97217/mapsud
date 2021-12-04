@@ -147,7 +147,7 @@ On crée ensuite la fonction qui retourne la liste des sorties intermédiaires s
 
 2) Nous pouvons maintenant créer la fonction calculant le trajet optimal entre A et B, avec la contrainte k allant de 0 au maximum envisageable :
 
-    # Fonction algorithme une sortie, voir papier
+       # Fonction algorithme une sortie, voir papier
 
     def comparaison (A, B, Liste, Li) :
 
