@@ -173,73 +173,73 @@ On crée ensuite la fonction qui retourne la liste des sorties intermédiaires s
 
 
 
-    def trajet_optimal (A, B) :   # A, B les entrée et sortie = numéros "arrangées"
+        def trajet_optimal (A, B) :   # A, B les entrée et sortie = numéros "arrangées"
 
-    if (A == B) or (A not in Y) or (B not in Y) :   # Y = ensemble des sorties possibles
-        return(False)
+        if (A == B) or (A not in Y) or (B not in Y) :   # Y = ensemble des sorties possibles
+            return(False)
 
-    S = []   # Ensemble des solutions avec contrainte (tarif + trajet optimaux)
+        S = []   # Ensemble des solutions avec contrainte (tarif + trajet optimaux)
              # n-ième élément : contrainte n sorties max
-    L = []
+        L = []
 
         # préambule : 0 sortie autorisé
-    a = tarif(A, B)
-    if a == -1 :       # Aucun trajet existant
-        return(-1)     # Cas (29-30) et (41-42)
-    W = [A, B]
-    S.append( ( round(a,1), W, 0 ) )
+        a = tarif(A, B)
+        if a == -1 :       # Aucun trajet existant
+            return(-1)     # Cas (29-30) et (41-42)
+        W = [A, B]
+        S.append( ( round(a,1), W, 0 ) )
 
-      # première étape : 1 sortie autorisée
+        # première étape : 1 sortie autorisée
         I = sortie_intermédiaire (A, B)
-    if len(I) >= 1 :
-        Liste1 = []
-        L0 = []
+        if len(I) >= 1 :
+            Liste1 = []
+            L0 = []
 
-        for k in I :
-            Liste1.append( ( k, tarif(A,k) ) )
-            L0.append ( ( k, tarif(k,B), [k,B] ) )     # Tarif + trajet optimal entre k et B, avec 0 arrêt possible
+            for k in I :
+                Liste1.append( ( k, tarif(A,k) ) )
+                L0.append ( ( k, tarif(k,B), [k,B] ) )     # Tarif + trajet optimal entre k et B, avec 0 arrêt possible
 
-        L.append(L0)
-        (a, W) = comparaison (A, B, Liste1, L0)   # Tarif + trajet optimal entre A et B avec 1 arrêt possible
-        S.append( (round(a,1), W, 1) )
+            L.append(L0)
+            (a, W) = comparaison (A, B, Liste1, L0)   # Tarif + trajet optimal entre A et B avec 1 arrêt possible
+            S.append( (round(a,1), W, 1) )
 
-    # deuxième étape : >= 2 sorties autorisées
+        # deuxième étape : >= 2 sorties autorisées
     
-    # 1) Préambule à la boucle while
-    if len(I) >= 2 :
-        Liste2 = []
-        for k in I :
+        # 1) Préambule à la boucle while
+        if len(I) >= 2 :
+            Liste2 = []
+            for k in I :
 
-            I_ = sortie_intermédiaire (k, B)
-            L_ = []
-            for i in I_ :
-                L_.append( ( i, tarif(k,i) ) )
+                I_ = sortie_intermédiaire (k, B)
+                L_ = []
+                for i in I_ :
+                    L_.append( ( i, tarif(k,i) ) )
 
-            Liste2.append( (k, L_) )
+                Liste2.append( (k, L_) )
 
-    # 2) Calcul des tarifs et trajets optimaux
-    t = 1
-    while t < len(I) :
+        # 2) Calcul des tarifs et trajets optimaux
+        t = 1
+        while t < len(I) :
 
-        t += 1
-        n = len(L) - 1
-        M = L[n]
+            t += 1
+            n = len(L) - 1
+            M = L[n]
 
-        Lbis = []
-        # 1ère connection, voir papier
-        for k in I :
-            for (l, N) in Liste2 :
-                if k == l :
+            Lbis = []
+            # 1ère connection, voir papier
+            for k in I :
+                for (l, N) in Liste2 :
+                    if k == l :
 
-                    (a, W) = comparaison( k, B, N, M )   # Tarif + trajet optimal entre k et B, avec t-1 arêts possibles, où 1 <= t-1 : étape de la boucle
-                    Lbis.append( ( k, a, W ) )
+                        (a, W) = comparaison( k, B, N, M )   # Tarif + trajet optimal entre k et B, avec t-1 arêts possibles, où 1 <= t-1 : étape de la boucle
+                        Lbis.append( ( k, a, W ) )
         
-        L.append(Lbis)
-        # 2ème connection, voir papier
-        (a, W) = comparaison( A, B, Liste1, Lbis )   # Tarif + trajet optimal entre A et B avec t arrêts possibles
-        S.append( (round(a,1), W, t) )
+            L.append(Lbis)
+            # 2ème connection, voir papier
+            (a, W) = comparaison( A, B, Liste1, Lbis )   # Tarif + trajet optimal entre A et B avec t arrêts possibles
+            S.append( (round(a,1), W, t) )
 
-    return(S)
+        return(S)
 
 
 Petite fonction supprimant les "doublons" de la fonction ci-dessus
@@ -269,9 +269,6 @@ Retourne S = [ ... ( tarif(réel), trajet(liste), contrainte sortie(entier) ) ..
         n = n-1
             
 
-
-    #test
-    #trajet_optimal_min (41, 42)
 
 
 
