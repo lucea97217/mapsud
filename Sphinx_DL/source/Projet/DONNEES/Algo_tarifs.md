@@ -244,13 +244,13 @@ On crée ensuite la fonction qui retourne la liste des sorties intermédiaires s
 
 Exemple : trajets optimaux entre Vendargues(0) et Sesquières(42). Pour chaque contrainte k allant de 0 au maximum enviseagble, on retrouve le tarif, et le trajet optimal :
 
-
+    trajet_optimal (0, 42)
 
 
 
 Fonction supprimant les "doublons" de la fonction ci-dessus. C'est à dire les itinéraires correspondant à une contrainte k supérieur à la contrainte q optimal.
 
-Retourne S = [ ... ( tarif(réel), trajet(liste), contrainte sortie(entier) ) ... ],
+    # Retourne S = [ ... ( tarif(réel), trajet(liste), contrainte sortie(entier) ) ... ],
 
     def trajet_optimal_min (A, B) :   # A, B les entrée et sortie = numéros "arrangées", à valeurs dans Y = ensemble des sorties valides
                                       # Y = [ 0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 30, 31, 33, 35, 36, 37, 38, 39, 40, 41, 42 ]
@@ -277,5 +277,5 @@ Retourne S = [ ... ( tarif(réel), trajet(liste), contrainte sortie(entier) ) ..
 
 Exemple : trajets optimaux entre Vendargues(0) et Sesquières(42) :
 
-
+    trajet_optimal_min (0, 42)
 
