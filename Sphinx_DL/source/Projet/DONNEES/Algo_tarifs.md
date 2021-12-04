@@ -3,6 +3,17 @@
 
     from donnees import tarif
     
+Cette partie concerne l'algorithme recherchant le trajet optimal entre deux sorties d'autoroutes.
+Etant donnée une entrée A et une sortie B, il apparaît parfois préférable de ne pas faire un direct entre A et B pour minimiser le tarif.
+Quitter l'autoroute lors d'une sortie intermédiaire, puis re-rentrer immédiatement après, diminue parfois le coût du trajet global.
+
+La partie ci-dessous recherche donc le chemin optimal entre A et B, avec la contrainte k sorties intermédiares maximum autorisées. Si k=0, alors l'itinéraire correspond à un direct entre A et B. Si k=1, alors nous nous autorisons maximum une sortie intermédiare, etc ...
+Il existe une contrainte à partir de laquelle le trajet optimal entre A et B ne pourra plus être amélioré. C'est à dire que s'accorder une contrainte plus élevé ne permettra pas de trouver un itinéraire moins coûteux.
+
+
+1) Dans un premier temps, nous aurons besoin, étant donnée une entrée A et une sortie B, de récupérer l'ensemble des sorties intermédiares entre A et B.
+
+Nous commençons par ordonner les sorties d'autoroutes :
     
 
     Les An correspondent aux tronçons d'autoroutes avant intersection avec une autre. 
