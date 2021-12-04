@@ -13,7 +13,7 @@
     from donnees import *
 
 
-## CALCUL DE COORDONNEES
+## CALCUL DE COORDONNEES / PREAMBULE
 
 recherche des coordonnées en fonction du nom de la gare
 
@@ -201,27 +201,24 @@ class graphique:
         return dist
 
 
-## INITIALISATION CARTE AVEC WIDGETS 
+## CARTE AVEC WIDGETS 
 
-Initialisation
+Initialisation, Y correspond à la liste des sorties que l'utilisateur peut emprunter pour entrer et sortir de l'autoroute.
 
     k=[]
     for i in range(11):
     k.append(i)
 
-Y correspond à la liste des sorties que l'utilisateur peut emprunter pour entrer et sortir de l'autoroute.
-
     Y = [ 0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 30, 31, 33, 35, 36, 37, 38, 39, 40, 41, 42 ]
     df_nom=[]
 
-On insère alors dans df_nom tout les noms de gare correspondants aux numéros arrangés de Y
-    
+    # On insère dans df_nom tout les noms de gare correspondants aux numéros arrangés de Y
     for i in range(len(Y)):
     df_nom.append(df["NOMGARE"][Y[i]])
 
 
 
-On obtient alors un graphe interactif, où l'on peut sélectionner notre point de depart et d'arrivée, ainsi que notre contrainte de nombre de sorties intermédiares maximum autorisé :
+Nous obtenons un graphe interactif, sur lequel nous pouvons sélectionner notre point de depart A et d'arrivée B, ainsi que notre contrainte de nombre de sorties intermédiares maximum autorisé. Nous avons la carte avec l'itinéraire, ainsi que l'histogramme comparant l'évolution du tarif selon la contrainte. Voici un exemple :
 
     interact(graphique.graph_rang,DEPART= df_nom, ARRIVEE= df_nom,nbSorties = k)
     
