@@ -209,7 +209,7 @@ Initialisation
     for i in range(11):
     k.append(i)
 
-Y = Liste des sorties 
+Y correspond à la liste des sorties que l'utilisateur peut emprunter pour entrer et sortir de l'autoroute.
 
     Y = [ 0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 30, 31, 33, 35, 36, 37, 38, 39, 40, 41, 42 ]
     df_nom=[]
