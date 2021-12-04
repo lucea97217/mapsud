@@ -218,7 +218,9 @@ Initialisation, Y correspond à la liste des sorties que l'utilisateur peut empr
 
 
 
-Nous obtenons un graphe interactif, sur lequel nous pouvons sélectionner notre point de depart A et d'arrivée B, ainsi que notre contrainte de nombre de sorties intermédiares maximum autorisé. Nous avons la carte avec l'itinéraire, ainsi que l'histogramme comparant l'évolution du tarif selon la contrainte. Voici un exemple :
+Nous obtenons un graphe interactif, sur lequel nous pouvons sélectionner notre point de depart A et d'arrivée B, ainsi que notre contrainte de nombre de sorties intermédiares maximum autorisé.
+
+Nous avons la carte cliquable avec l'itinéraire, ainsi que l'histogramme comparant l'évolution du tarif selon la contrainte. Voici un exemple :
 
     interact(graphique.graph_rang,DEPART= df_nom, ARRIVEE= df_nom,nbSorties = k)
     
