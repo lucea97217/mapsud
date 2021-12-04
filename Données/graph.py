@@ -100,7 +100,7 @@ class graphique:
     def __init__(self) -> None:
         pass
 
-    def graph_rang(DEPART,ARRIVEE,nbSorties):
+    def graph_rang(DEPART,ARRIVEE,nbSorties,APIkey):
     # Ici on devra insérer 2 chaines de caractères
     # Correspondant à des noms de gares connus
     # Avec une contrainte de nombre de sorties (nbSorties)
@@ -158,7 +158,8 @@ class graphique:
 
                 # Utilisation de openrouteservice
                 # Il faudra ici utiliser une clef API
-                client = openrouteservice.Client(key='5b3ce3597851110001cf6248ec32a01981c344289c76bd7dbc72c78d')
+
+                client = openrouteservice.Client(key=APIkey)
 
                 # Ici on calculera l'itinéraire entre nos deux points
                 # En utilisant preference="fastest" 
@@ -187,9 +188,7 @@ class graphique:
                         icon=folium.Icon(icon_color='black',icon='road')
                     ).add_to(m)
 
-
                 histo(DEPART,ARRIVEE)
-
                 return m
         else:
             return "Vos variables n'ont pas le bon format ou utilisez la fonction 'nomCoord'"
@@ -232,7 +231,7 @@ for i in range(len(Y)):
 # Ou on peut sélectionner notre lieux de depart
 # Notre lieux d'arrivée 
 # Et notre contrainte de nombre de sorties supplémentaires
-interact(graphique.graph_rang,DEPART= df_nom, ARRIVEE= df_nom,nbSorties = k)
+interact(graphique.graph_rang,DEPART= df_nom, ARRIVEE= df_nom,nbSorties = k, APIkey='5b3ce3597851110001cf6248ec32a01981c344289c76bd7dbc72c78d')
 
 ############################## FIN ##########################################
 # %%

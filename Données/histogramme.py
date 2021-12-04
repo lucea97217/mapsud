@@ -20,12 +20,9 @@ def histo(DEPART,ARRIVEE):
           return plt.show()
 
 
-#%%
-
-
      R = trajet_optimal_min(nomCoord(DEPART),nomCoord(ARRIVEE))
 
-     name_axe_x = "Nombre de sortie maximale autorisée"
+     name_axe_x = "Nombre de sorties"
      name_axe_y = "prix (€)"
      d = {name_axe_x: [], name_axe_y: []}
      for n in range(len(R)):
@@ -36,9 +33,14 @@ def histo(DEPART,ARRIVEE):
 
      if d[name_axe_y]==[0] and d[name_axe_x]==[0]:
           plt.scatter(d[name_axe_x],d[name_axe_y])
+          plt.xlabel(name_axe_x, size = 16,)
+          plt.ylabel(name_axe_y, size = 16)
+
           return plt.show()
 
      plt.bar(d[name_axe_x],d[name_axe_y])
+     plt.xlabel(name_axe_x, size = 16)
+     plt.ylabel(name_axe_y, size = 16)
 
      return plt.show()
 
@@ -46,7 +48,3 @@ def histo(DEPART,ARRIVEE):
 
 
 # %%
-
-
-# %%
-
