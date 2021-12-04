@@ -46,7 +46,6 @@ def histo(DEPART,ARRIVEE):
 
 
 # %%
-interact(histo,DEPART = df_nom, ARRIVEE = df_nom)
 
 
 # %%
