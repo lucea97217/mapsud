@@ -182,7 +182,7 @@ On crée ensuite la fonction qui retourne la liste des sorties intermédiaires s
              # n-ième élément : contrainte n sorties max
     L = []
 
-    # préambule : 0 sortie autorisé
+        # préambule : 0 sortie autorisé
     a = tarif(A, B)
     if a == -1 :       # Aucun trajet existant
         return(-1)     # Cas (29-30) et (41-42)
