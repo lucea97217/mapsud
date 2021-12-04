@@ -1,5 +1,5 @@
 
-![Capture](Capture1.png) 
+![Capture](https://github.com/lucea97217/Projetgroupe6/tree/main/Sphinx_DL/source/Projet/DONNEES/Capture1.png) 
 
 
 # Algo_tarifs
