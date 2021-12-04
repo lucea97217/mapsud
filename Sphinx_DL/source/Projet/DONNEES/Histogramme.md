@@ -10,7 +10,8 @@
     from donnees import *
     
 Fonction prenant en compte un point de départ A, et un point d'arrivée B, et retournant un diagramme en baton des tarifs en fonction de la contrainte k sorties intermédiares maximum autorisées.
-Les prix sont bien sûr décroissant lorsque k augmente, c'est à dire lorsqu'on a la possiblité d'emprunter un plus grand nombre de sorties, et donc d'optimiser notre itinéraire.
+k allant de 0 jusqu'à l'optimum, c'est à dire jusqu'à la contrainte qui, à partir d'elle, ne permet plus d'amélioration sur le tarif.
+Les prix sont bien sûr décroissant lorsque k augmente, c'est à dire lorsqu'on a la possiblité d'emprunter un plus grand nombre de sorties, et donc d'optimiser son itinéraire.
 
     def histo(DEPART,ARRIVEE):
      if DEPART == ARRIVEE:
@@ -42,11 +43,11 @@ Les prix sont bien sûr décroissant lorsque k augmente, c'est à dire lorsqu'on
 
      return plt.show()
 
-Exemple :
+Exemple entre Vendargues et Sesquières :
 
-    interact(histo,DEPART = df_nom, ARRIVEE = df_nom)
+    histo('VENDARGUES', 'SESQUIERES')
 
-# ------------Capture-------------
+# ------------Capture3-------------
 
 
 
