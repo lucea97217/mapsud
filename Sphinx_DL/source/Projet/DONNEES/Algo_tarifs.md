@@ -189,8 +189,8 @@ On crée ensuite la fonction qui retourne la liste des sorties intermédiaires s
     W = [A, B]
     S.append( ( round(a,1), W, 0 ) )
 
-    # première étape : 1 sortie autorisée
-    I = sortie_intermédiaire (A, B)
+      # première étape : 1 sortie autorisée
+        I = sortie_intermédiaire (A, B)
     if len(I) >= 1 :
         Liste1 = []
         L0 = []
