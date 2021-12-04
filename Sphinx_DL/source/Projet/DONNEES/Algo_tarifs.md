@@ -1,7 +1,7 @@
 
 ![Capture](https://github.com/lucea97217/Projetgroupe6/blob/04900ad79b3d5ff56324a37aa533b3f331318476/Sphinx_DL/source/Projet/DONNEES/Capture/Capture1.PNG) 
 
-<img src="https://github.com/lucea97217/Projetgroupe6/blob/04900ad79b3d5ff56324a37aa533b3f331318476/Sphinx_DL/source/Projet/DONNEES/Capture/Capture1.PNG" width="500" height="500" />
+<img src="https://github.com/lucea97217/Projetgroupe6/blob/04900ad79b3d5ff56324a37aa533b3f331318476/Sphinx_DL/source/Projet/DONNEES/Capture/Capture1.PNG" width="600" height="600" />
 
 
 # Algo_tarifs
