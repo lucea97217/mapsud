@@ -16,17 +16,17 @@ Il existe une contrainte à partir de laquelle le trajet optimal entre A et B ne
 Nous commençons par ordonner les sorties d'autoroutes :
     
 
-    Les An correspondent aux tronçons d'autoroutes avant intersection avec une autre. 
+    # Les An correspondent aux tronçons d'autoroutes avant intersection avec une autre. 
 
-    Nous nous en servons pour ordonner les sorties. 
+    # Nous nous en servons pour ordonner les sorties. 
 
-    An = [ Liste0, Liste1, Liste2 ]
+    # An = [ Liste0, Liste1, Liste2 ]
 
-    Liste 0 = liste des sorties 
+    # Liste 0 = liste des sorties 
 
-    Liste 1 = tronçons d'autouroutes connecté à An par la gauche  (premier élèment de Liste0)
+    # Liste 1 = tronçons d'autouroutes connecté à An par la gauche  (premier élèment de Liste0)
 
-    Liste 2 = tronçons d'autouroutes connecté à An par la droite  (dernier élément de Liste0) 
+    # Liste 2 = tronçons d'autouroutes connecté à An par la droite  (dernier élément de Liste0) 
 
     Y = [ 0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 30, 31, 33, 35, 36, 37, 38, 39, 40, 41, 42 ]   # Ensemble des sorties valides
 
@@ -42,9 +42,7 @@ Nous commençons par ordonner les sorties d'autoroutes :
 
     A_ = [A0, A1, A2, A3, A4]
 
-On créer une fonction qui retourne la liste des sorties intermédiaires
-
-situées entre deux points i et j
+On crée ensuite la fonction qui retourne la liste des sorties intermédiaires situées entre deux points i et j :
 
  
     def sortie_intermédiaire (i, j) :       #i et j numéros arrangés des sorties départ et arrivée 
@@ -147,7 +145,9 @@ situées entre deux points i et j
         return(S)
 
 
-Fonction algorithme une sortie, voir papier
+2) Nous pouvons maintenant créer la fonction calculant le trajet optimal entre A et B, avec la contrainte k allant de 0 au maximum envisageable :
+
+    # Fonction algorithme une sortie, voir papier
 
     def comparaison (A, B, Liste, Li) :
 
@@ -172,10 +172,6 @@ Fonction algorithme une sortie, voir papier
     return( alpha, W )
 
 
-
-Fonction retournant la liste des tarifs, et des trajets optimaux associées, pour q sorties max autorisées.
-
-q allant de 0 au maximum envisageable
 
     def trajet_optimal (A, B) :   # A, B les entrée et sortie = numéros "arrangées"
 
