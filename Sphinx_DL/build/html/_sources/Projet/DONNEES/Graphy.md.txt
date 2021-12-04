@@ -1,102 +1,110 @@
-#%%
-from numpy import string_
-import pandas as pd
-import openrouteservice
-from openrouteservice import convert
-import folium
-import json
-from algo_tarifs import *
-from ipywidgets import interact
-from histogramme import histo
-from donnees import *
+# Graphy
 
 
+    from numpy import string_
+    import pandas as pd
+    import openrouteservice
+    from openrouteservice import convert
+    import folium
+    import json
+    from algo_tarifs import *
+    from ipywidgets import interact
+    from histogramme import histo
+    from donnees import *
 
-##############################################################
 
+## CALCUL DE COORDONNEES
 
-#################### CALCUL DE COORDONNEES ####################
-#%%
-#recherche des coordonnées en fonction du nom de la gare
-def nomCoord(char):
+recherche des coordonnées en fonction du nom de la gare
+
+    def nomCoord(char):
     y= -1
-    for i in range(len(df)):
-        if df["NOMGARE"][i]==char:
-            y=i
-    if y==-1:
-        return "ERREUR : Ce nom n'a pas été trouvé"
-    else:
-        return y
+        for i in range(len(df)):
+            if df["NOMGARE"][i]==char:
+                y=i
+        if y==-1:
+            return "ERREUR : Ce nom n'a pas été trouvé"
+        else:
+            return y
 
-#%%
-#recherche du nom de la gare en fonction du numéro arrangé
-def indCoord(i):
-    #on vérifie que i est bien de type entier
-    if isinstance(i,int)== True and 0<=i<=42:
+recherche du nom de la gare en fonction du numéro arrangé
 
-        return df["NOMGARE"][i]
+    def indCoord(i):
+        #on vérifie que i est bien de type entier
+        if isinstance(i,int)== True and 0<=i<=42:
+
+            return df["NOMGARE"][i]
     
-    else: 
-        return "veuillez inserer un entier entre 0 et 42"
+        else: 
+            return "veuillez inserer un entier entre 0 et 42"
 
-#%%
-#recherche des coordonnées dans l'ordre lattitude longitude
-# d'un péage en fonction du numéro arrangé
-def latLong(i):
-    #On verifie que i correspond bien à un élément de la liste
-    if 0<=i<=42:
-        return df['Y'][i],df['X'][i]
-    else:
-        return 'élément inconnu'
+recherche des coordonnées dans l'ordre lattitude longitude 
 
-#%%
-#recherche des coordonnées dans l'ordre longitude lattitude
-# d'un péage en fonction du numéro arrangé
-def longLat(i):
-    #On verifie que i correspond bien à un élément de la liste
-    if 0<=i<=42:
-        return df['X'][i],df['Y'][i]
-    else:
-        return 'élément inconnu'
-#%%
-#recherche de la lattitude d'un péage
-#en fonction de son numéro arrangé
-def Lat(i):
-    #On verifie que i correspond bien à un élément de la liste
-    if 0<=i<=42:
-        return df['Y'][i]
-    else:
-        return 'élément inconnu'
-#%%
-#recherche de la lattitude d'un péage
-#en fonction de son numéro arrangé
-def long(i):
-    #On verifie que i correspond bien à un élément de la liste
-    if 0<=i<=42:
-        return df['X'][i]
-    else:
-        return 'élément inconnu'
+d'un péage en fonction du numéro arrangé
+
+    def latLong(i):
+        #On verifie que i correspond bien à un élément de la liste
+        if 0<=i<=42:
+            return df['Y'][i],df['X'][i]
+        else:
+            return 'élément inconnu'
+
+recherche des coordonnées dans l'ordre longitude lattitude
+
+d'un péage en fonction du numéro arrangé
+
+    def longLat(i):
+        #On verifie que i correspond bien à un élément de la liste
+        if 0<=i<=42:
+            return df['X'][i],df['Y'][i]
+        else:
+            return 'élément inconnu'
+
+recherche de la lattitude d'un péage
+
+en fonction de son numéro arrangé
+
+    def Lat(i):
+        #On verifie que i correspond bien à un élément de la liste
+        if 0<=i<=42:
+            return df['Y'][i]
+        else:
+            return 'élément inconnu'
+
+recherche de la lattitude d'un péage
+
+en fonction de son numéro arrangé
+    
+    def long(i):
+        #On verifie que i correspond bien à un élément de la liste
+        if 0<=i<=42:
+            return df['X'][i]
+        else:
+            return 'élément inconnu'
 
 
-#%%
-#calcul du nombre optimum de sorties
-#Pour payer le tarif le moins élevé d'un péage à un autre.
+calcul du nombre optimum de sorties
 
-def k_opti(S):
-#si la fonction retourne -1 c'est qu'il n'y a pas 
-#d'itinéraire possible
-    if S ==-1:
-        return S
+Pour payer le tarif le moins élevé d'un péage à un autre.
 
-    return len(S)-1
+    def k_opti(S):
+        #si la fonction retourne -1 c'est qu'il n'y a pas 
+        #d'itinéraire possible
+        if S ==-1:
+            return S
 
-##############################################################
-#%%
-######################## GRAPHE INTERACTIF ###################
+            return len(S)-1
 
-# Creation classe graphique
-# Elle permet d'afficher un graphe interactif 
+
+
+## GRAPHE INTERACTIF 
+
+Creation classe graphique
+
+Elle permet d'afficher un graphe interactif 
+
 class graphique:
+    
     def __init__(self) -> None:
         pass
 
@@ -202,40 +210,44 @@ class graphique:
         dist=float(round(res['routes'][0]['summary']['distance']/1000,1))
         return dist
 
-##############################################################################
-#%%
 
-############### INITIALISATION CARTE AVEC WIDGETS #########################
+## INITIALISATION CARTE AVEC WIDGETS 
 
-# Initialisation d'une liste d'entiers
-# Allant de 1 à 10
-# Pour l'initialisation de la contrainte de sorties
-k=[]
-for i in range(11):
+Initialisation d'une liste d'entiers
+
+Allant de 1 à 10
+
+Pour l'initialisation de la contrainte de sorties
+
+    k=[]
+    for i in range(11):
     k.append(i)
-#%%
-# Ici on a repris Y de algo_tarifs
-# Correspondant à la liste des numéros arrangés
-# Des péages dont nous pouvons entrer et sortir
 
-Y = [ 0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 30, 31, 33, 35, 36, 37, 38, 39, 40, 41, 42 ]
-df_nom=[]
+Ici on a repris Y de algo_tarifs
 
-# On insère alors dans df_nom tout les noms de gare
-# Correspondants aux numéros arrangés de Y
-for i in range(len(Y)):
+Correspondant à la liste des numéros arrangés
+
+Des péages dont nous pouvons entrer et sortir
+
+    Y = [ 0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 30, 31, 33, 35, 36, 37, 38, 39, 40, 41, 42 ]
+    df_nom=[]
+
+On insère alors dans df_nom tout les noms de gare
+
+Correspondants aux numéros arrangés de Y
+    
+    for i in range(len(Y)):
     df_nom.append(df["NOMGARE"][Y[i]])
 
-#%%
 
-# On obtient alors enfin un graphe interactif
-# Ou on peut sélectionner notre lieux de depart
-# Notre lieux d'arrivée 
-# Et notre contrainte de nombre de sorties supplémentaires
-interact(graphique.graph_rang,DEPART= df_nom, ARRIVEE= df_nom,nbSorties = k)
 
-############################## FIN ##########################################
-# %%
+On obtient alors enfin un graphe interactif
 
-# %%
+Ou on peut sélectionner notre lieux de depart
+
+Notre lieux d'arrivée 
+
+Et notre contrainte de nombre de sorties supplémentaires
+
+    interact(graphique.graph_rang,DEPART= df_nom, ARRIVEE= df_nom,nbSorties = k)
 
