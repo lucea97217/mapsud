@@ -1,4 +1,7 @@
 
+![Capture](Capture1.png) 
+
+
 # Algo_tarifs
 
     from donnees import tarif
