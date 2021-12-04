@@ -3,6 +3,8 @@
 
 <img src="/Capture/Capture1.png" alt="Cap"/>
 
+![Alt text](relative/path/to/Capture1.png?raw=true "Title")
+
 
 # Algo_tarifs
 
