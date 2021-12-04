@@ -149,27 +149,27 @@ On crée ensuite la fonction qui retourne la liste des sorties intermédiaires s
 
        # Fonction algorithme une sortie, voir papier
 
-    def comparaison (A, B, Liste, Li) :
+        def comparaison (A, B, Liste, Li) :
 
-    alpha = tarif(A, B)
-    W = [A, B]
-    for (k, c1) in Liste :
-        for (l, c2, Z) in Li :
+        alpha = tarif(A, B)
+        W = [A, B]
+        for (k, c1) in Liste :
+            for (l, c2, Z) in Li :
 
-            if k == l :
-                if ( c1 != -1 ) and ( c2 != -1 ) :   # Si il existe un trajet possible entre A et k, puis entre k et B
+                if k == l :
+                    if ( c1 != -1 ) and ( c2 != -1 ) :   # Si il existe un trajet possible entre A et k, puis entre k et B
 
-                    if c1 + c2 < alpha :
-                        alpha = c1 + c2
-                        W = Z.copy()
-                        W.insert(0, A)
+                        if c1 + c2 < alpha :
+                            alpha = c1 + c2
+                            W = Z.copy()
+                            W.insert(0, A)
 
-                    if ( c1 + c2 == alpha ) and ( len(Z) < len(W)-1 ) :
-                        W = Z.copy()
-                        W.insert(0, A)
+                        if ( c1 + c2 == alpha ) and ( len(Z) < len(W)-1 ) :
+                            W = Z.copy()
+                            W.insert(0, A)
 
 
-    return( alpha, W )
+        return( alpha, W )
 
 
 
