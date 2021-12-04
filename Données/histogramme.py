@@ -20,6 +20,9 @@ def histo(DEPART,ARRIVEE):
           return plt.show()
 
 
+#%%
+
+
      R = trajet_optimal_min(nomCoord(DEPART),nomCoord(ARRIVEE))
 
      name_axe_x = "Nombre de sorties"
@@ -47,4 +50,4 @@ def histo(DEPART,ARRIVEE):
      
 
 
-# %%
+

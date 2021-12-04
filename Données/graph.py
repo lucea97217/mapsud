@@ -188,7 +188,9 @@ class graphique:
                         icon=folium.Icon(icon_color='black',icon='road')
                     ).add_to(m)
 
+
                 histo(DEPART,ARRIVEE)
+
                 return m
         else:
             return "Vos variables n'ont pas le bon format ou utilisez la fonction 'nomCoord'"
