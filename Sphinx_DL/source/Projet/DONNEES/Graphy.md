@@ -38,9 +38,7 @@ recherche du nom de la gare en fonction du numéro arrangé
         else: 
             return "veuillez inserer un entier entre 0 et 42"
 
-recherche des coordonnées dans l'ordre lattitude longitude 
-
-d'un péage en fonction du numéro arrangé
+recherche des coordonnées dans l'ordre lattitude longitude d'un péage en fonction du numéro arrangé
 
     def latLong(i):
         #On verifie que i correspond bien à un élément de la liste
@@ -49,9 +47,7 @@ d'un péage en fonction du numéro arrangé
         else:
             return 'élément inconnu'
 
-recherche des coordonnées dans l'ordre longitude lattitude
-
-d'un péage en fonction du numéro arrangé
+recherche des coordonnées dans l'ordre longitude lattitude d'un péage en fonction du numéro arrangé
 
     def longLat(i):
         #On verifie que i correspond bien à un élément de la liste
@@ -60,9 +56,7 @@ d'un péage en fonction du numéro arrangé
         else:
             return 'élément inconnu'
 
-recherche de la lattitude d'un péage
-
-en fonction de son numéro arrangé
+recherche de la lattitude d'un péage en fonction de son numéro arrangé
 
     def Lat(i):
         #On verifie que i correspond bien à un élément de la liste
@@ -71,9 +65,7 @@ en fonction de son numéro arrangé
         else:
             return 'élément inconnu'
 
-recherche de la lattitude d'un péage
-
-en fonction de son numéro arrangé
+recherche de la longétitude d'un péage en fonction de son numéro arrangé
     
     def long(i):
         #On verifie que i correspond bien à un élément de la liste
@@ -83,9 +75,7 @@ en fonction de son numéro arrangé
             return 'élément inconnu'
 
 
-calcul du nombre optimum de sorties
-
-Pour payer le tarif le moins élevé d'un péage à un autre.
+calcul du nombre optimum de sorties pour payer le tarif le moins élevé lors d'un itinéraire entre deux points A et B.
 
     def k_opti(S):
         #si la fonction retourne -1 c'est qu'il n'y a pas 
@@ -213,41 +203,25 @@ class graphique:
 
 ## INITIALISATION CARTE AVEC WIDGETS 
 
-Initialisation d'une liste d'entiers
-
-Allant de 1 à 10
-
-Pour l'initialisation de la contrainte de sorties
+Initialisation
 
     k=[]
     for i in range(11):
     k.append(i)
 
-Ici on a repris Y de algo_tarifs
-
-Correspondant à la liste des numéros arrangés
-
-Des péages dont nous pouvons entrer et sortir
+Y = Liste des sorties 
 
     Y = [ 0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 30, 31, 33, 35, 36, 37, 38, 39, 40, 41, 42 ]
     df_nom=[]
 
-On insère alors dans df_nom tout les noms de gare
-
-Correspondants aux numéros arrangés de Y
+On insère alors dans df_nom tout les noms de gare correspondants aux numéros arrangés de Y
     
     for i in range(len(Y)):
     df_nom.append(df["NOMGARE"][Y[i]])
 
 
 
-On obtient alors enfin un graphe interactif
-
-Ou on peut sélectionner notre lieux de depart
-
-Notre lieux d'arrivée 
-
-Et notre contrainte de nombre de sorties supplémentaires
+On obtient alors un graphe interactif, où l'on peut sélectionner notre point de depart et d'arrivée, ainsi que notre contrainte de nombre de sorties intermédiares maximum autorisé :
 
     interact(graphique.graph_rang,DEPART= df_nom, ARRIVEE= df_nom,nbSorties = k)
 
