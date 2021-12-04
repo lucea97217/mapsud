@@ -1,9 +1,3 @@
-
-![Capture](https://github.com/lucea97217/Projetgroupe6/blob/04900ad79b3d5ff56324a37aa533b3f331318476/Sphinx_DL/source/Projet/DONNEES/Capture/Capture1.PNG) 
-
-<img src="https://github.com/lucea97217/Projetgroupe6/blob/04900ad79b3d5ff56324a37aa533b3f331318476/Sphinx_DL/source/Projet/DONNEES/Capture/Capture1.PNG" width="300" />
-
-
 # Algo_tarifs
 
     from donnees import tarif
@@ -251,7 +245,7 @@ Exemple : trajets optimaux entre Vendargues(0) et Sesquières(42). Pour chaque c
 
     trajet_optimal (0, 42)
 
-# -------Capture1.png--------
+<img src="https://github.com/lucea97217/Projetgroupe6/blob/04900ad79b3d5ff56324a37aa533b3f331318476/Sphinx_DL/source/Projet/DONNEES/Capture/Capture1.PNG" width="400" /
 
 Fonction supprimant les "doublons" de la fonction ci-dessus. C'est à dire les itinéraires correspondant à une contrainte k supérieur à la contrainte q optimal.
 
@@ -284,5 +278,5 @@ Exemple : trajets optimaux entre Vendargues(0) et Sesquières(42) :
 
     trajet_optimal_min (0, 42)
     
-# -------Capture2.png--------
+<img src="https://github.com/lucea97217/Projetgroupe6/blob/04900ad79b3d5ff56324a37aa533b3f331318476/Sphinx_DL/source/Projet/DONNEES/Capture/Capture2.PNG" width="400" /
 
