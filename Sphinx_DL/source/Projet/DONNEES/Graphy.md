@@ -220,7 +220,7 @@ Initialisation, Y correspond à la liste des sorties que l'utilisateur peut empr
 
 
 
-Nous obtenons alors le graphe interactif décris plus haut, sur lequel nous pouvons sélectionner notre point de depart A et d'arrivée B, ainsi que notre contrainte k de nombre de sorties intermédiares maximum autorisées.
+Nous obtenons alors le graphe interactif décris plus haut, sur lequel nous pouvons sélectionner notre point de depart A et d'arrivée B, ainsi que notre contrainte de nombre de sorties intermédiares maximum autorisées.
 
 Nous avons la carte cliquable avec l'itinéraire, ainsi que le diagramme comparant l'évolution du tarif selon la contrainte.
 
