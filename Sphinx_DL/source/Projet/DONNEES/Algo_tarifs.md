@@ -2,18 +2,20 @@
 # Algo_tarifs
 
     from donnees import tarif
+    
+    
 
-Les An correspondent aux tronçons d'autoroutes avant intersection avec une autre. 
+    Les An correspondent aux tronçons d'autoroutes avant intersection avec une autre. 
 
-Nous nous en servons pour ordonner les sorties. 
+    Nous nous en servons pour ordonner les sorties. 
 
-An = [ Liste0, Liste1, Liste2 ]
+    An = [ Liste0, Liste1, Liste2 ]
 
-Liste 0 = liste des sorties 
+    Liste 0 = liste des sorties 
 
-Liste 1 = tronçons d'autouroutes connecté à An par la gauche  (premier élèment de Liste0)
+    Liste 1 = tronçons d'autouroutes connecté à An par la gauche  (premier élèment de Liste0)
 
-Liste 2 = tronçons d'autouroutes connecté à An par la droite  (dernier élément de Liste0) 
+    Liste 2 = tronçons d'autouroutes connecté à An par la droite  (dernier élément de Liste0) 
 
     Y = [ 0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 30, 31, 33, 35, 36, 37, 38, 39, 40, 41, 42 ]   # Ensemble des sorties valides
 
