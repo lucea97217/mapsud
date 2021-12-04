@@ -9,6 +9,8 @@
     import pandas as pd
     from donnees import *
     
+Fonction prenant en compte un point de départ A, et un point d'arrivée B, et retournant un diagramme en baton des tarifs en fonction de la contrainte k sorties intermédiares maximum autorisées.
+Les prix sont bien sûr décroissant lorsque k augmente, c'est à dire lorsqu'on a la possiblité d'emprunter un plus grand nombre de sorties, et donc d'optimiser notre itinéraire.
 
     def histo(DEPART,ARRIVEE):
      if DEPART == ARRIVEE:
@@ -40,10 +42,11 @@
 
      return plt.show()
 
-     
+Exemple :
 
     interact(histo,DEPART = df_nom, ARRIVEE = df_nom)
 
+# ------------Capture-------------
 
 
 
