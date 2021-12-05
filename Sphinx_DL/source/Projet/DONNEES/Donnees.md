@@ -73,7 +73,7 @@ fonction calcul tarifs
 
     
 
-# IMPORT TABLEAU COORDONNEES
+## IMPORT TABLEAU COORDONNEES
 
     df = pd.read_csv("coordonnees.csv", sep=",")
 
@@ -89,7 +89,7 @@ On insère alors dans df_nom tout les noms de gare correspondants aux numéros a
     for i in range(len(Y)):
         df_nom.append(df["NOMGARE"][Y[i]])
 
-# CALCUL DE COORDONNEES 
+## CALCUL DE COORDONNEES 
 
 recherche des coordonnées en fonction du nom de la gare
 
