@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="fr" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Histogramme &mdash; Documentation Projet Groupe 6 0.0.1</title>
@@ -42,7 +42,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">PROJET M1 SSD</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../README/index.html">README</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">DONNEES</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="Donnees.html">Donnees</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Donnees.html">Tarifs</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Algo_tarifs.html">Algo_tarifs</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Graphy.html">Graphy</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Histogramme</a></li>
@@ -88,9 +88,12 @@
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">from</span> <span class="nn">donnees</span> <span class="kn">import</span> <span class="o">*</span>
-
-
-<span class="k">def</span> <span class="nf">histo</span><span class="p">(</span><span class="n">DEPART</span><span class="p">,</span><span class="n">ARRIVEE</span><span class="p">):</span>
+</pre></div>
+</div>
+<p>Fonction prenant en compte un point de départ A, et un point d”arrivée B, et retournant un diagramme en baton des tarifs en fonction de la contrainte k sorties intermédiares maximum autorisées.</p>
+<p>k allant de 0 jusqu”à l”optimum, c”est à dire jusqu”à la contrainte qui, au-delà, ne permet plus d”amélioration sur le tarif.</p>
+<p>Les prix sont bien sûr décroissant lorsque k augmente, c”est à dire lorsqu”on a la possiblité d”emprunter un plus grand nombre de sorties, et donc d”optimiser son itinéraire.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">histo</span><span class="p">(</span><span class="n">DEPART</span><span class="p">,</span><span class="n">ARRIVEE</span><span class="p">):</span>
  <span class="k">if</span> <span class="n">DEPART</span> <span class="o">==</span> <span class="n">ARRIVEE</span><span class="p">:</span>
       <span class="n">name_axe_x</span> <span class="o">=</span> <span class="s2">&quot;Nombre de sortie maximale autorisée&quot;</span>
       <span class="n">name_axe_y</span> <span class="o">=</span> <span class="s2">&quot;prix (€)&quot;</span>
@@ -119,13 +122,13 @@
  <span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="n">name_axe_x</span><span class="p">],</span><span class="n">d</span><span class="p">[</span><span class="n">name_axe_y</span><span class="p">])</span>
 
  <span class="k">return</span> <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-
- 
-
-<span class="n">interact</span><span class="p">(</span><span class="n">histo</span><span class="p">,</span><span class="n">DEPART</span> <span class="o">=</span> <span class="n">df_nom</span><span class="p">,</span> <span class="n">ARRIVEE</span> <span class="o">=</span> <span class="n">df_nom</span><span class="p">)</span>
 </pre></div>
 </div>
-</section>
+<p>Exemple entre Vendargues et Sesquières :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">histo</span><span class="p">(</span><span class="s1">&#39;VENDARGUES&#39;</span><span class="p">,</span> <span class="s1">&#39;SESQUIERES&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<img src="https://raw.githubusercontent.com/lucea97217/Projetgroupe6/04900ad79b3d5ff56324a37aa533b3f331318476/Sphinx_DL/source/Projet/DONNEES/Capture/Capture3.PNG" width="400" /></section>
 
 
            </div>

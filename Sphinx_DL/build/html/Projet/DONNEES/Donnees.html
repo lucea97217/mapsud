@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="fr" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Donnees &mdash; Documentation Projet Groupe 6 0.0.1</title>
+  <title>Tarifs &mdash; Documentation Projet Groupe 6 0.0.1</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -43,7 +43,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">PROJET M1 SSD</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../README/index.html">README</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">DONNEES</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Donnees</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Tarifs</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#import-tableau-coordonnees">IMPORT TABLEAU COORDONNEES</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#calcul-de-coordonnees">CALCUL DE COORDONNEES</a></li>
 </ul>
@@ -73,7 +73,7 @@
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../index.html">PROJET M1 SSD</a> &raquo;</li>
           <li><a href="index.html">DONNEES</a> &raquo;</li>
-      <li>Donnees</li>
+      <li>Tarifs</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/Projet/DONNEES/Donnees.md.txt" rel="nofollow"> Afficher la source de la page</a>
       </li>
@@ -83,8 +83,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="donnees">
-<h1>Donnees<a class="headerlink" href="#donnees" title="Lien permanent vers ce titre"></a></h1>
+  <section id="tarifs">
+<h1>Tarifs<a class="headerlink" href="#tarifs" title="Lien permanent vers ce titre"></a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 </pre></div>
 </div>
@@ -158,21 +158,16 @@
 <section id="import-tableau-coordonnees">
 <h2>IMPORT TABLEAU COORDONNEES<a class="headerlink" href="#import-tableau-coordonnees" title="Lien permanent vers ce titre"></a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;coordonnees.csv&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>
+
+<span class="k">del</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;index&quot;</span><span class="p">]</span>
 </pre></div>
 </div>
-<p>sion veut supprimer les index</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">del</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;index&quot;</span><span class="p">]</span>
-</pre></div>
-</div>
-<p>Ici on a repris Y de algo_tarifs</p>
-<p>Correspondant à la liste des numéros arrangés</p>
-<p>Des péages dont nous pouvons entrer et sortir</p>
+<p>Y correspond à la liste des sorties que l”utilisateur peut emprunter pour entrer et sortir de l”autoroute.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Y</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">37</span><span class="p">,</span> <span class="mi">38</span><span class="p">,</span> <span class="mi">39</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">41</span><span class="p">,</span> <span class="mi">42</span> <span class="p">]</span>
     <span class="n">df_nom</span><span class="o">=</span><span class="p">[]</span>
 </pre></div>
 </div>
-<p>On insère alors dans df_nom tout les noms de gare</p>
-<p>Correspondants aux numéros arrangés de Y</p>
+<p>On insère alors dans df_nom tout les noms de gare correspondants aux numéros arrangés de Y</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Y</span><span class="p">)):</span>
     <span class="n">df_nom</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;NOMGARE&quot;</span><span class="p">][</span><span class="n">Y</span><span class="p">[</span><span class="n">i</span><span class="p">]])</span>
 </pre></div>
@@ -203,8 +198,7 @@
         <span class="k">return</span> <span class="s2">&quot;veuillez inserer un entier entre 0 et 42&quot;</span>
 </pre></div>
 </div>
-<p>recherche des coordonnées dans l”ordre lattitude longitude</p>
-<p>d”un péage en fonction du numéro arrangé</p>
+<p>recherche des coordonnées dans l”ordre lattitude longitude d”un péage en fonction du numéro arrangé</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">latLong</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
     <span class="c1">#On verifie que i correspond bien à un élément de la liste</span>
     <span class="k">if</span> <span class="mi">0</span><span class="o">&lt;=</span><span class="n">i</span><span class="o">&lt;=</span><span class="mi">42</span><span class="p">:</span>
@@ -213,8 +207,7 @@
         <span class="k">return</span> <span class="s1">&#39;élément inconnu&#39;</span>
 </pre></div>
 </div>
-<p>recherche des coordonnées dans l”ordre longitude lattitude</p>
-<p>d”un péage en fonction du numéro arrangé</p>
+<p>recherche des coordonnées dans l”ordre longitude lattitude d”un péage en fonction du numéro arrangé</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">longLat</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
     <span class="c1">#On verifie que i correspond bien à un élément de la liste</span>
     <span class="k">if</span> <span class="mi">0</span><span class="o">&lt;=</span><span class="n">i</span><span class="o">&lt;=</span><span class="mi">42</span><span class="p">:</span>
@@ -223,8 +216,7 @@
         <span class="k">return</span> <span class="s1">&#39;élément inconnu&#39;</span>
 </pre></div>
 </div>
-<p>recherche de la lattitude d”un péage</p>
-<p>en fonction de son numéro arrangé</p>
+<p>recherche de la lattitude d”un péage en fonction de son numéro arrangé</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">Lat</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
     <span class="c1">#On verifie que i correspond bien à un élément de la liste</span>
     <span class="k">if</span> <span class="mi">0</span><span class="o">&lt;=</span><span class="n">i</span><span class="o">&lt;=</span><span class="mi">42</span><span class="p">:</span>
@@ -233,8 +225,7 @@
         <span class="k">return</span> <span class="s1">&#39;élément inconnu&#39;</span>
 </pre></div>
 </div>
-<p>recherche de la lattitude d”un péage</p>
-<p>en fonction de son numéro arrangé</p>
+<p>recherche de la lattitude d”un péage en fonction de son numéro arrangé</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">long</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
     <span class="c1">#On verifie que i correspond bien à un élément de la liste</span>
     <span class="k">if</span> <span class="mi">0</span><span class="o">&lt;=</span><span class="n">i</span><span class="o">&lt;=</span><span class="mi">42</span><span class="p">:</span>

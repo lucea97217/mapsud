@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="fr" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Graphy &mdash; Documentation Projet Groupe 6 0.0.1</title>
@@ -43,12 +43,13 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">PROJET M1 SSD</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../README/index.html">README</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">DONNEES</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="Donnees.html">Donnees</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Donnees.html">Tarifs</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Algo_tarifs.html">Algo_tarifs</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Graphy</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#calcul-de-coordonnees">CALCUL DE COORDONNEES</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#graphe-interactif">GRAPHE INTERACTIF</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#initialisation-carte-avec-widgets">INITIALISATION CARTE AVEC WIDGETS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#calcul-de-coordonnees-preambule">CALCUL DE COORDONNEES / PREAMBULE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#classe-graphique">CLASSE GRAPHIQUE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#carte-avec-widgets">CARTE AVEC WIDGETS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#capture">——Capture———</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="Histogramme.html">Histogramme</a></li>
@@ -98,8 +99,8 @@
 <span class="kn">from</span> <span class="nn">donnees</span> <span class="kn">import</span> <span class="o">*</span>
 </pre></div>
 </div>
-<section id="calcul-de-coordonnees">
-<h2>CALCUL DE COORDONNEES<a class="headerlink" href="#calcul-de-coordonnees" title="Lien permanent vers ce titre"></a></h2>
+<section id="calcul-de-coordonnees-preambule">
+<h2>CALCUL DE COORDONNEES / PREAMBULE<a class="headerlink" href="#calcul-de-coordonnees-preambule" title="Lien permanent vers ce titre"></a></h2>
 <p>recherche des coordonnées en fonction du nom de la gare</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">nomCoord</span><span class="p">(</span><span class="n">char</span><span class="p">):</span>
 <span class="n">y</span><span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
@@ -123,8 +124,7 @@
         <span class="k">return</span> <span class="s2">&quot;veuillez inserer un entier entre 0 et 42&quot;</span>
 </pre></div>
 </div>
-<p>recherche des coordonnées dans l”ordre lattitude longitude</p>
-<p>d”un péage en fonction du numéro arrangé</p>
+<p>recherche des coordonnées dans l”ordre lattitude longitude d”un péage en fonction du numéro arrangé</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">latLong</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
     <span class="c1">#On verifie que i correspond bien à un élément de la liste</span>
     <span class="k">if</span> <span class="mi">0</span><span class="o">&lt;=</span><span class="n">i</span><span class="o">&lt;=</span><span class="mi">42</span><span class="p">:</span>
@@ -133,8 +133,7 @@
         <span class="k">return</span> <span class="s1">&#39;élément inconnu&#39;</span>
 </pre></div>
 </div>
-<p>recherche des coordonnées dans l”ordre longitude lattitude</p>
-<p>d”un péage en fonction du numéro arrangé</p>
+<p>recherche des coordonnées dans l”ordre longitude lattitude d”un péage en fonction du numéro arrangé</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">longLat</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
     <span class="c1">#On verifie que i correspond bien à un élément de la liste</span>
     <span class="k">if</span> <span class="mi">0</span><span class="o">&lt;=</span><span class="n">i</span><span class="o">&lt;=</span><span class="mi">42</span><span class="p">:</span>
@@ -143,8 +142,7 @@
         <span class="k">return</span> <span class="s1">&#39;élément inconnu&#39;</span>
 </pre></div>
 </div>
-<p>recherche de la lattitude d”un péage</p>
-<p>en fonction de son numéro arrangé</p>
+<p>recherche de la lattitude d”un péage en fonction de son numéro arrangé</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">Lat</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
     <span class="c1">#On verifie que i correspond bien à un élément de la liste</span>
     <span class="k">if</span> <span class="mi">0</span><span class="o">&lt;=</span><span class="n">i</span><span class="o">&lt;=</span><span class="mi">42</span><span class="p">:</span>
@@ -153,8 +151,7 @@
         <span class="k">return</span> <span class="s1">&#39;élément inconnu&#39;</span>
 </pre></div>
 </div>
-<p>recherche de la lattitude d”un péage</p>
-<p>en fonction de son numéro arrangé</p>
+<p>recherche de la longétitude d”un péage en fonction de son numéro arrangé</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">long</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
     <span class="c1">#On verifie que i correspond bien à un élément de la liste</span>
     <span class="k">if</span> <span class="mi">0</span><span class="o">&lt;=</span><span class="n">i</span><span class="o">&lt;=</span><span class="mi">42</span><span class="p">:</span>
@@ -163,8 +160,7 @@
         <span class="k">return</span> <span class="s1">&#39;élément inconnu&#39;</span>
 </pre></div>
 </div>
-<p>calcul du nombre optimum de sorties</p>
-<p>Pour payer le tarif le moins élevé d”un péage à un autre.</p>
+<p>calcul du nombre optimum de sorties pour payer le tarif le moins élevé lors d”un itinéraire entre deux points A et B.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">k_opti</span><span class="p">(</span><span class="n">S</span><span class="p">):</span>
     <span class="c1">#si la fonction retourne -1 c&#39;est qu&#39;il n&#39;y a pas </span>
     <span class="c1">#d&#39;itinéraire possible</span>
@@ -175,11 +171,12 @@
 </pre></div>
 </div>
 </section>
-<section id="graphe-interactif">
-<h2>GRAPHE INTERACTIF<a class="headerlink" href="#graphe-interactif" title="Lien permanent vers ce titre"></a></h2>
-<p>Creation classe graphique</p>
-<p>Elle permet d”afficher un graphe interactif</p>
-<p>class graphique:</p>
+<section id="classe-graphique">
+<h2>CLASSE GRAPHIQUE<a class="headerlink" href="#classe-graphique" title="Lien permanent vers ce titre"></a></h2>
+<p>Creation de la classe graphique</p>
+<p>Elle permet d”afficher le compte rendu final du projet via la fonction « graph_rang(DEPART,ARRIVEE,nbSorties) ».</p>
+<p>Elle affiche à l”écran un graphique interractif permettant à l”utilisateur de sélectionner une entrée A et une sortie B, ainsi que k le nombre maximum de sorties intermédiaires autorisées, pour le trajet optimisant le tarif entre A et B.</p>
+<p>Apparaît alors à l”écran une carte cliquable avec l”itinéraire optimal surligné, ainsi que plusieurs informations sur celui-ci, comme la durée estimé, la distance, ou encore le tarif prévu pour le péage. Apparaît également le diagramme en baton comparant les tarifs selon la contrainte k.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
     <span class="k">pass</span>
 
@@ -287,36 +284,30 @@
 </pre></div>
 </div>
 </section>
-<section id="initialisation-carte-avec-widgets">
-<h2>INITIALISATION CARTE AVEC WIDGETS<a class="headerlink" href="#initialisation-carte-avec-widgets" title="Lien permanent vers ce titre"></a></h2>
-<p>Initialisation d”une liste d”entiers</p>
-<p>Allant de 1 à 10</p>
-<p>Pour l”initialisation de la contrainte de sorties</p>
+<section id="carte-avec-widgets">
+<h2>CARTE AVEC WIDGETS<a class="headerlink" href="#carte-avec-widgets" title="Lien permanent vers ce titre"></a></h2>
+<p>Initialisation, Y correspond à la liste des sorties que l”utilisateur peut emprunter pour rentrer et sortir de l”autoroute.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">k</span><span class="o">=</span><span class="p">[]</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">11</span><span class="p">):</span>
 <span class="n">k</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Ici on a repris Y de algo_tarifs</p>
-<p>Correspondant à la liste des numéros arrangés</p>
-<p>Des péages dont nous pouvons entrer et sortir</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Y</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">37</span><span class="p">,</span> <span class="mi">38</span><span class="p">,</span> <span class="mi">39</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">41</span><span class="p">,</span> <span class="mi">42</span> <span class="p">]</span>
+
+<span class="n">Y</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">33</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">37</span><span class="p">,</span> <span class="mi">38</span><span class="p">,</span> <span class="mi">39</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">41</span><span class="p">,</span> <span class="mi">42</span> <span class="p">]</span>
 <span class="n">df_nom</span><span class="o">=</span><span class="p">[]</span>
-</pre></div>
-</div>
-<p>On insère alors dans df_nom tout les noms de gare</p>
-<p>Correspondants aux numéros arrangés de Y</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Y</span><span class="p">)):</span>
+
+<span class="c1"># On insère dans df_nom tout les noms de gare correspondants aux numéros arrangés de Y</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Y</span><span class="p">)):</span>
 <span class="n">df_nom</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;NOMGARE&quot;</span><span class="p">][</span><span class="n">Y</span><span class="p">[</span><span class="n">i</span><span class="p">]])</span>
 </pre></div>
 </div>
-<p>On obtient alors enfin un graphe interactif</p>
-<p>Ou on peut sélectionner notre lieux de depart</p>
-<p>Notre lieux d”arrivée</p>
-<p>Et notre contrainte de nombre de sorties supplémentaires</p>
+<p>Nous obtenons alors le graphe interactif décris plus haut, sur lequel nous pouvons sélectionner notre point de depart A et d”arrivée B, ainsi que notre contrainte de nombre de sorties intermédiares maximum autorisées.</p>
+<p>Nous avons la carte cliquable avec l”itinéraire, ainsi que le diagramme comparant l”évolution du tarif selon la contrainte.</p>
+<p>Voici la syntaxe, et un exemple :</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">interact</span><span class="p">(</span><span class="n">graphique</span><span class="o">.</span><span class="n">graph_rang</span><span class="p">,</span><span class="n">DEPART</span><span class="o">=</span> <span class="n">df_nom</span><span class="p">,</span> <span class="n">ARRIVEE</span><span class="o">=</span> <span class="n">df_nom</span><span class="p">,</span><span class="n">nbSorties</span> <span class="o">=</span> <span class="n">k</span><span class="p">)</span>
 </pre></div>
 </div>
+</section>
+<section id="capture">
+<h2>——Capture———<a class="headerlink" href="#capture" title="Lien permanent vers ce titre"></a></h2>
 </section>
 </section>
 
