@@ -36,7 +36,9 @@ Télécharger le dossier github du projet sur votre ordinateur :
     
 **Il vous faudra ensuire créer une clé API personnelle** (moins de 1min).
 
-Pour cela, suivre le lien https://openrouteservice.org/dev/#/signup.
+--> Pour cela, suivre le lien https://openrouteservice.org/dev/#/signup, et les instructions suivantes :
+
+Tout d'abord créer un compte (on peut utiliser "sign up with github" pour aller plus vite) :
 
 
 
