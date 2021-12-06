@@ -76,4 +76,4 @@ Vous pouvez également la coller dans le code python, à l'emplacement indiqué 
 
 Exemple entre St-Jean-de-Védas et la frontière espagnole, avec l'itinéraire optimal comportant maximum 3 sorties. Pour ce parcours, le trajet optimal est atteint pour 5 sorties autorisées.
 
-<img src="https://github.com/lucea97217/Projetgroupe6/blob/24dd9d1efe33aeca3e1a51407b0f73a8f50c9db2/Sphinx_DL/source/Projet/DONNEES/Capture/Capture11.PNG" width="400" />
+<img src="https://github.com/lucea97217/Projetgroupe6/blob/17a9c6585c64a6147508a32c18880b6cdbc5285b/Sphinx_DL/source/Projet/DONNEES/Capture/Capture12.PNG" width="400" />
