@@ -18,4 +18,4 @@ Voici un exemple entre la sortie A = St-Jean-de-Védas, et B = Carcassane ouest,
 
 <img src="https://github.com/lucea97217/Projetgroupe6/blob/23a68b81a13c988690123226e56a5d861a5c6af1/Sphinx_DL/source/Projet/DONNEES/Capture/exemple_prog_graph.png" width="400" />
 
-La contrainte k = 0 sorties autorisées correspond au cas du direct entre A et B. Au-delà de 5 sorties maximums autorisées, pour cet exemple, on ne peut plus optimiser le coût du trajet, et donc s'accorder d'avantage de sorties n'apporterait rien. C'est pourquoi le programme de propose pas d'itinéraire comportant plus de 5 sorties.
+La contrainte k = 0 sorties autorisées correspond au cas du direct entre A et B. Au-delà de 5 sorties maximums autorisées, pour cet exemple, on ne peut plus optimiser le coût du trajet, et donc s'accorder d'avantage de sorties n'apporterait rien. C'est pourquoi le programme ne propose pas d'itinéraire comportant plus de 5 sorties.
