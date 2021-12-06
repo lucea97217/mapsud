@@ -14,7 +14,7 @@ L'utilisateur aura la possiblité de sélectionner deux points parmis l'ensemble
 Un diagramme en baton affichera le coût du trajet optimal en fonction de k le nombre de sorties maximum autorisées (c'est à dire en s'accordant le droit de sortir de l'autoroute, pour re-rentrer immédiatement après, k fois maximum).    
 L'utilisateur aura également la possiblité de sélectionner sa contrainte k, et le programme adaptera l'itinéraire sur la carte en conséquence, affichant notamment les k sorties intermédiares.
 
-Voici un exemple entre la sortie A = St-Jean-de-Védas, et B = Carcassane ouest, passant par l'A709, A9, A61 :
+Voici un exemple entre la sortie A = St-Jean-de-Védas, et B = Carcassane ouest, passant par l'A709, A9, A61 (nbSorties correspond à la contrainte k) :
 
 <img src="https://github.com/lucea97217/Projetgroupe6/blob/23a68b81a13c988690123226e56a5d861a5c6af1/Sphinx_DL/source/Projet/DONNEES/Capture/exemple_prog_graph.png" width="400" />
 
