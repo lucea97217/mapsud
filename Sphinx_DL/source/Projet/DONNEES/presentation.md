@@ -56,7 +56,7 @@ Télécharger le dossier github du projet sur votre ordinateur :
 
 # UTILISATION
 
-1) Ouvrir le dossier github téléchargé du projet sur votre machine.
+1) Ouvrir le dossier téléchargé du projet sur votre machine.
 
 2) Aller dans le sous-dossier "Données".
 
