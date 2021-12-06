@@ -55,7 +55,7 @@ Exemple entre Vendargues et Sesquières :
 
     histo('VENDARGUES', 'SESQUIERES')
 
-<img src="https://github.com/lucea97217/Projetgroupe6/blob/04900ad79b3d5ff56324a37aa533b3f331318476/Sphinx_DL/source/Projet/DONNEES/Capture/Capture2.PNG" width="400" />
+<img src="https://github.com/lucea97217/Projetgroupe6/blob/04900ad79b3d5ff56324a37aa533b3f331318476/Sphinx_DL/source/Projet/DONNEES/Capture/Capture4.PNG" width="400" />
 
 
 
