@@ -29,7 +29,9 @@ calcul du nombre optimum de sorties pour payer le tarif le moins élevé lors d'
 
 Creation de la classe graphique
 
-Elle permet d'afficher le compte rendu final du projet via la fonction "graph_rang(DEPART,ARRIVEE,nbSorties)".
+Elle permet d'afficher le compte rendu final du projet via la fonction graph_rang(DEPART,ARRIVEE,nbSorties,APIkey).
+
+(Création d'une APIkey personnelle nécessaire ! voir page de présentation du projet pour avoir un tutoriel).
 
 Elle affiche à l'écran un graphique interractif permettant à l'utilisateur de sélectionner une entrée A et une sortie B, ainsi que k le nombre maximum de sorties intermédiaires autorisées, pour le trajet optimisant le tarif entre A et B.
 
@@ -160,7 +162,7 @@ Nous avons la carte cliquable avec l'itinéraire, ainsi que le diagramme compara
 
 Voici la syntaxe, et un exemple :
 
-    interact(graphique.graph_rang,DEPART= df_nom, ARRIVEE= df_nom,nbSorties = k)
+    interact(graphique.graph_rang,DEPART= tabOpti(df), ARRIVEE= tabOpti(df),nbSorties = k, APIkey='#####################################')
     
 <img src="https://github.com/lucea97217/Projetgroupe6/blob/04900ad79b3d5ff56324a37aa533b3f331318476/Sphinx_DL/source/Projet/DONNEES/Capture/exemple_prog_graph.png" width="400" />
 
