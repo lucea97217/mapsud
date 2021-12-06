@@ -56,7 +56,7 @@ Télécharger le dossier github du projet sur votre ordinateur :
 
 # UTILISATION
 
-1) Ouvrir le dossier téléchargé du projet sur votre machine.
+1) Ouvrir le dossier téléchargé du projet sur votre ordinateur.
 
 2) Aller dans le sous-dossier "Données".
 
@@ -72,4 +72,4 @@ Vous pouvez également la coller dans le code python, à l'emplacement indiqué 
 
 <img src="https://github.com/lucea97217/Projetgroupe6/blob/24dd9d1efe33aeca3e1a51407b0f73a8f50c9db2/Sphinx_DL/source/Projet/DONNEES/Capture/Capture11.PNG" width="1400" />
 
-6) Il ne vous reste plus qu'à sélectionner votre point de Départ et d'Arrivée, ainsi que la contrainte du nombre de sorties maximums autorisées. Sachant que la contrainte correspondant au trajet le moins cher (parmis tout les trajets possible) est affiché dans sur une ligne texte, ou bien encore elle correspond 
+6) Il ne vous reste plus qu'à sélectionner votre point de Départ et d'Arrivée, ainsi que la contrainte du nombre de sorties maximums autorisées. Sachant que la contrainte correspondante au trajet le moins cher (parmis tout les trajets possibles) est affichée sur une ligne de texte.
