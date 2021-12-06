@@ -31,7 +31,7 @@ Creation de la classe graphique
 
 Elle permet d'afficher le compte rendu final du projet via la fonction graph_rang(DEPART,ARRIVEE,nbSorties,APIkey).
 
-(Création d'une APIkey personnelle nécessaire ! voir page de présentation du projet pour avoir un tutoriel).
+(Création d'une APIkey personnelle nécessaire ! voir page de présentation du projet, rubrique installation, pour avoir un tutoriel).
 
 Elle affiche à l'écran un graphique interractif permettant à l'utilisateur de sélectionner une entrée A et une sortie B, ainsi que k le nombre maximum de sorties intermédiaires autorisées, pour le trajet optimisant le tarif entre A et B.
 
