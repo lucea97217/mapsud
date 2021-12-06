@@ -2,8 +2,14 @@
 
 Bienvenue sur le projet du groupe 6 !
 
-L'objectif de ce package est de fourir une lecture compréhensible des tarifs autoroutiers concernant la région entre Montpellier, Toulouse, et la frontière Espagnole.
+L'objectif de ce package est de fourir une lecture compréhensible des tarifs autoroutiers concernant la région entre Montpellier, Toulouse, et la frontière espagnole.
 
-<img src="https://github.com/lucea97217/Projetgroupe6/blob/9a333e0e9263a3ddd4c0825bb65714172d1e228a/Sphinx_DL/source/Projet/DONNEES/Capture/Capture5.PNG" width="600" />
+<img src="https://github.com/lucea97217/Projetgroupe6/blob/9a333e0e9263a3ddd4c0825bb65714172d1e228a/Sphinx_DL/source/Projet/DONNEES/Capture/Capture5.PNG" width="400" />
 
 La liste détaillé des tarifs est disponible sur https://public-content.vinci-autoroutes.com/PDF/Tarifs-peage-asf-vf/ASF-C1-TARIFS-WEB-2021-maille-vf.pdf (page 3).
+
+L'utilisateur aura la possiblité de sélectionner deux points parmis l'ensemble des sorties d'autoroutes de la région concernée, une entrée A et une sortie B.  
+1) Le programme lui proposera en retour une carte intéractive et cliquable, affichant l'itinéraire entre A et B surligné en bleu (itinéraire passsant uniquement par l'autoroute). Ainsi que d'autres indicateurs, comme la durée estimée, la distance, le prix totale, ou encore le prix moyen au kilomètre.
+2) Il apparaît parfois préférable, pour aller de A jusq'en B, de quitter l'autoroute lors d'une sortie intermédiaire, puis de la réintégrer immédiatement après, afin de minimiser le coût du péage sur le trajet global entre A et B. Il seraît donc intéressant de chercher le tajet optimal minimisant le coût (sans pour autant augmenter la distance donc).
+Un diagramme en baton affichera le coût du trajet optimal avec k sorties maximum autorisées (c'est à dire en s'accordant le droit de sortir de l'autoroute, pour re-rentrer immédiatement après, k fois maximum).  
+L'utilisateur aura également la possiblité de sélectionner sa contrainte k, et le programme adaptera l'itinéraire sur la carte en conséquence, affichant notamment les sorties intermédiares.
