@@ -4,9 +4,7 @@ import pandas as pd
 import openrouteservice
 from openrouteservice import convert
 import folium
-import json
 import matplotlib.pyplot as plt
-import plotly.express as px
 from ipywidgets import interact
 
 ##############################################################
