@@ -162,7 +162,7 @@ Nous avons la carte cliquable avec l'itinéraire, ainsi que le diagramme compara
 
 Voici la syntaxe, et un exemple (APIkey à remplacer manuellement !) :
 
-    interact(graphique.graph_rang,DEPART= tabOpti(df), ARRIVEE= tabOpti(df),nbSorties = k, APIkey='#####################################')
+    interact(graphique.graph_rang,DEPART= tabOpti(df), ARRIVEE= tabOpti(df),nbSorties = k, APIkey='###################')
     
 <img src="https://github.com/lucea97217/Projetgroupe6/blob/23a68b81a13c988690123226e56a5d861a5c6af1/Sphinx_DL/source/Projet/DONNEES/Capture/exemple_prog_graph.png" width="400" />
 
