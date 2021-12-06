@@ -164,5 +164,5 @@ Voici la syntaxe, et un exemple :
 
     interact(graphique.graph_rang,DEPART= tabOpti(df), ARRIVEE= tabOpti(df),nbSorties = k, APIkey='#####################################')
     
-<img src="https://github.com/lucea97217/Projetgroupe6/blob/1c5c88450e7f097707cf081e1ce6bf01df25b1f3/Sphinx_DL/source/Projet/DONNEES/Capture/exemple_prog_graph.PNG" width="400" />
+<img src="https://github.com/lucea97217/Projetgroupe6/blob/23a68b81a13c988690123226e56a5d861a5c6af1/Sphinx_DL/source/Projet/DONNEES/Capture/exemple_prog_graph.png" width="400" />
 
