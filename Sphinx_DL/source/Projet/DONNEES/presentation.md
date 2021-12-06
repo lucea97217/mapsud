@@ -44,7 +44,7 @@ Télécharger le dossier github du projet sur votre ordinateur :
 
 2/ Ensuite connecter vous à celui-ci :
 
-<img src="https://github.com/lucea97217/Projetgroupe6/blob/fa225123ed9a8af8dd03ecb17132383c67a20507/Sphinx_DL/source/Projet/DONNEES/Capture/Capture_7.PNG" width="300" />
+<img src="https://github.com/lucea97217/Projetgroupe6/blob/fa225123ed9a8af8dd03ecb17132383c67a20507/Sphinx_DL/source/Projet/DONNEES/Capture/Capture_7.PNG" width="400" />
 
 3/ Dans l'onglet "TOKENS", puis dans la rubrique "Request a token", créer une nouvelle clé :
 
