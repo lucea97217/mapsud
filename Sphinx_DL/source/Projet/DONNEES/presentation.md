@@ -13,3 +13,7 @@ L'utilisateur aura la possiblité de sélectionner deux points parmis l'ensemble
 2) Il apparaît parfois préférable, pour aller de A jusq'en B, de quitter l'autoroute lors d'une sortie intermédiaire, puis de la réintégrer immédiatement après, afin de minimiser le coût du péage sur le trajet global entre A et B. Il seraît donc intéressant de chercher le tajet optimal minimisant le coût (sans pour autant augmenter la distance donc).
 Un diagramme en baton affichera le coût du trajet optimal avec k sorties maximum autorisées (c'est à dire en s'accordant le droit de sortir de l'autoroute, pour re-rentrer immédiatement après, k fois maximum).  
 L'utilisateur aura également la possiblité de sélectionner sa contrainte k, et le programme adaptera l'itinéraire sur la carte en conséquence, affichant notamment les sorties intermédiares.
+
+Voici un exemple entre la sortie St Jean de Vedas, et Carcassane ouest, passant par l'A709, A9, A61.
+
+<img src="https://github.com/lucea97217/Projetgroupe6/blob/23a68b81a13c988690123226e56a5d861a5c6af1/Sphinx_DL/source/Projet/DONNEES/Capture/exemple_prog_graph.png" width="400" />
