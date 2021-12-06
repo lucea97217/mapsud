@@ -24,14 +24,19 @@ La contrainte k = 0 sorties autorisées correspond au cas du direct entre A et B
 
 Tout d'abord lancer le terminal, et exécuter les commandes ci-dessous, afin d'installer les packages nécessaires au bon fonctionnement :
 
-  pip install #########
+    pip install #########
   
 Ensuite installer la bonne version de python :
 
-  commande ?
+    commande ?
   
 Télécharger le dossier github du projet sur votre ordinateur :
 
+    J'y arrive pas, l'informatique c'est d'la m***e, je rage !#**%
+    
+\textbf{Il vous faudra ensuire créer une clé API personnel.} (moins de 1min)
+
+Pour cela, suivre le lien https://openrouteservice.org/dev/#/signup.
 
 
 
