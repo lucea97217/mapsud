@@ -360,19 +360,7 @@ def k_opti(S):
 
     return len(S)-1
 
-#%%
-############################### SESSION TEST ################################
 
-#On test les cas particuliers
-
-def test_traj1():
-    assert trajet_optimal_min(41,42)==-1
-
-def test_traj2():
-    assert trajet_optimal(41,42)==-1
-
-
-###############################################################################################
 #%%
 ################################# CALCUL DE COORDONNEES ##########################################
 
