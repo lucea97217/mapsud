@@ -160,7 +160,7 @@ Nous obtenons alors le graphe interactif décris plus haut, sur lequel nous pouv
 
 Nous avons la carte cliquable avec l'itinéraire, ainsi que le diagramme comparant l'évolution du tarif selon la contrainte.
 
-Voici la syntaxe, et un exemple :
+Voici la syntaxe, et un exemple (APIkey à remplacer manuellement !) :
 
     interact(graphique.graph_rang,DEPART= tabOpti(df), ARRIVEE= tabOpti(df),nbSorties = k, APIkey='#####################################')
     
