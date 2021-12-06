@@ -38,21 +38,21 @@ Télécharger le dossier github du projet sur votre ordinateur :
 
 --> Pour cela, suivre le lien https://openrouteservice.org/dev/#/signup, et les instructions suivantes :
 
-Tout d'abord vous devez créer un compte (on peut utiliser "sign up with github" pour aller plus vite) :
+1/ Tout d'abord vous devez créer un compte (on peut utiliser "sign up with github" pour aller plus vite) :
 
 <img src="https://github.com/lucea97217/Projetgroupe6/blob/fa225123ed9a8af8dd03ecb17132383c67a20507/Sphinx_DL/source/Projet/DONNEES/Capture/Capture_6.PNG" width="500" />
 
-Ensuite connecter vous à celui-ci :
+2/ Ensuite connecter vous à celui-ci :
 
-<img src="https://github.com/lucea97217/Projetgroupe6/blob/fa225123ed9a8af8dd03ecb17132383c67a20507/Sphinx_DL/source/Projet/DONNEES/Capture/Capture_7.PNG" width="400" />
+<img src="https://github.com/lucea97217/Projetgroupe6/blob/fa225123ed9a8af8dd03ecb17132383c67a20507/Sphinx_DL/source/Projet/DONNEES/Capture/Capture_7.PNG" width="300" />
 
-Dans l'onglet "TOKENS", puis dans la rubrique "Request a token", créer une nouvelle clé :
+3/ Dans l'onglet "TOKENS", puis dans la rubrique "Request a token", créer une nouvelle clé :
 
-<img src="https://github.com/lucea97217/Projetgroupe6/blob/fa225123ed9a8af8dd03ecb17132383c67a20507/Sphinx_DL/source/Projet/DONNEES/Capture/Capture_8.PNG" width="700" />
+<img src="https://github.com/lucea97217/Projetgroupe6/blob/fa225123ed9a8af8dd03ecb17132383c67a20507/Sphinx_DL/source/Projet/DONNEES/Capture/Capture_8.PNG" width="800" />
 
-Votre clé apparaît sous la forme d'une chaîne de caractère, que vous pouvez copier-coller pour la suite.
+4/ Votre clé apparaît sous la forme d'une chaîne de caractère, que vous pouvez copier-coller pour la suite.
 
-<img src="https://github.com/lucea97217/Projetgroupe6/blob/fa225123ed9a8af8dd03ecb17132383c67a20507/Sphinx_DL/source/Projet/DONNEES/Capture/Capture_9.PNG" width="700" />
+<img src="https://github.com/lucea97217/Projetgroupe6/blob/fa225123ed9a8af8dd03ecb17132383c67a20507/Sphinx_DL/source/Projet/DONNEES/Capture/Capture_9.PNG" width="800" />
 
 # UTILISATION
 
