@@ -34,7 +34,7 @@ Télécharger le dossier github du projet sur votre ordinateur :
 
     J'y arrive pas, l'informatique c'est d'la m***e, je rage !#**%
     
-\textbf{Il vous faudra ensuire créer une clé API personnel.} (moins de 1min)
+**Il vous faudra ensuire créer une clé API personnelle** (moins de 1min).
 
 Pour cela, suivre le lien https://openrouteservice.org/dev/#/signup.
 
