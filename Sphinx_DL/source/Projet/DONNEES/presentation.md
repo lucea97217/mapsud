@@ -56,4 +56,18 @@ Télécharger le dossier github du projet sur votre ordinateur :
 
 # UTILISATION
 
+1) Ouvrir le dossier github téléchargé du projet sur votre machine.
 
+2) Aller dans le sous-dossier "Données".
+
+3) Ouvir le fichier python "progMap.py" dans un éditeur de code tel que VS-code. (L'éditeur est nécessaire pour la sortie graphique du programme, sinon, en ligne de commande sur la console, il ne s'affichera pas de graphique.)
+
+4) Executer le code.
+
+5) Coller votre clé API dans la zone dédié sur l'interphace graphique qui s'affiche.
+
+<img src="https://github.com/lucea97217/Projetgroupe6/blob/fa225123ed9a8af8dd03ecb17132383c67a20507/Sphinx_DL/source/Projet/DONNEES/Capture/Capture10.PNG" width="400" />
+
+Vous pouvez également la coller dans le code python, à l'emplacement indiqué ci-dessous :
+
+<img src="https://github.com/lucea97217/Projetgroupe6/blob/fa225123ed9a8af8dd03ecb17132383c67a20507/Sphinx_DL/source/Projet/DONNEES/Capture/Capture11.PNG" width="800" />
