@@ -360,7 +360,20 @@ def k_opti(S):
 
     return len(S)-1
 
+#%%
+############################### SESSION TEST ################################
+
+#On test les cas particuliers
+
+def test_traj1():
+    assert trajet_optimal_min(41,42)==-1
+
+def test_traj2():
+    assert trajet_optimal(41,42)==-1
+
+
 ###############################################################################################
+#%%
 ################################# CALCUL DE COORDONNEES ##########################################
 
 class loca:
@@ -453,7 +466,7 @@ def histo(DEPART,ARRIVEE):
     if d[name_axe_y]==[0] and d[name_axe_x]==[0]:
 
         plt.scatter(d[name_axe_x],d[name_axe_y])
-        plt.xlabel(name_axe_x, size = 16,)
+        plt.xlabel(name_axe_x, size = 16)
         plt.ylabel(name_axe_y, size = 16)
         return plt.show()
 
@@ -593,4 +606,3 @@ for i in range(11):
     k.append(i)
 
 ############################## FIN ##########################################
-
