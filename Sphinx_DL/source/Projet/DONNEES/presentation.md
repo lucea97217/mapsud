@@ -9,11 +9,13 @@ L'objectif de ce package est de fourir une lecture compréhensible des tarifs au
 La liste détaillé des tarifs est disponible sur https://public-content.vinci-autoroutes.com/PDF/Tarifs-peage-asf-vf/ASF-C1-TARIFS-WEB-2021-maille-vf.pdf (page 3).
 
 L'utilisateur aura la possiblité de sélectionner deux points parmis l'ensemble des sorties d'autoroutes de la région concernée, une entrée A et une sortie B.  
-1) Le programme lui proposera en retour une carte intéractive et cliquable, affichant l'itinéraire entre A et B surligné en bleu (itinéraire passsant uniquement par l'autoroute). Ainsi que d'autres indicateurs, comme la durée estimée, la distance, le prix totale, ou encore le prix moyen au kilomètre.
-2) Il apparaît parfois préférable, pour aller de A jusq'en B, de quitter l'autoroute lors d'une sortie intermédiaire, puis de la réintégrer immédiatement après, afin de minimiser le coût du péage sur le trajet global entre A et B. Il seraît donc intéressant de chercher le tajet optimal minimisant le coût (sans pour autant augmenter la distance donc).
-Un diagramme en baton affichera le coût du trajet optimal avec k sorties maximum autorisées (c'est à dire en s'accordant le droit de sortir de l'autoroute, pour re-rentrer immédiatement après, k fois maximum).  
+1) Le programme lui proposera en retour une carte intéractive et cliquable, affichant l'itinéraire entre A et B surligné en bleu (itinéraire passsant uniquement par l'autoroute). Ainsi que d'autres indicateurs, comme la durée estimée, la distance, le prix totale, ou encore le prix moyen au kilomètre.  
+2) Il apparaît parfois préférable, pour aller de A jusq'en B, de quitter l'autoroute lors d'une sortie intermédiaire, puis de la réintégrer immédiatement après, afin de minimiser le coût du péage sur le trajet global entre A et B. Il seraît donc intéressant de chercher le tajet optimal minimisant le coût (sans pour autant augmenter la distance donc).  
+Un diagramme en baton affichera le coût du trajet optimal avec k sorties maximum autorisées (c'est à dire en s'accordant le droit de sortir de l'autoroute, pour re-rentrer immédiatement après, k fois maximum).    
 L'utilisateur aura également la possiblité de sélectionner sa contrainte k, et le programme adaptera l'itinéraire sur la carte en conséquence, affichant notamment les sorties intermédiares.
 
-Voici un exemple entre la sortie St Jean de Vedas, et Carcassane ouest, passant par l'A709, A9, A61.
+Voici un exemple entre la sortie A = St-Jean-de-Védas, et B = Carcassane ouest, passant par l'A709, A9, A61 :
 
 <img src="https://github.com/lucea97217/Projetgroupe6/blob/23a68b81a13c988690123226e56a5d861a5c6af1/Sphinx_DL/source/Projet/DONNEES/Capture/exemple_prog_graph.png" width="400" />
+
+La contrainte k = 0 sorties autorisées correspond au cas du direct entre A et B. Au-delà de 5 sorties maximums autorisées, pour cet exemple, on ne peut plus optimiser le coût du trajet, et donc s'accorder d'avantage de sorties n'apporterait rien. C'est pourquoi le programme de propose pas d'itinéraire comportant plus de 5 sorties.
