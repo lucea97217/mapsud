@@ -73,3 +73,7 @@ Vous pouvez également la coller dans le code python, à l'emplacement indiqué 
 <img src="https://github.com/lucea97217/Projetgroupe6/blob/24dd9d1efe33aeca3e1a51407b0f73a8f50c9db2/Sphinx_DL/source/Projet/DONNEES/Capture/Capture11.PNG" width="1400" />
 
 6) Il ne vous reste plus qu'à sélectionner votre point de Départ et d'Arrivée, ainsi que la contrainte du nombre de sorties maximums autorisées. Sachant que la contrainte correspondante au trajet le moins cher (parmis tout les trajets possibles) est affichée sur une ligne de texte.
+
+Exemple entre St-Jean-de-Védas et la frontière espagnole, avec l'itinéraire optimal comportant maximum 3 sorties. Pour ce parcours, le trajet optimal est atteint pour 5 sorties autorisées.
+
+<img src="https://github.com/lucea97217/Projetgroupe6/blob/24dd9d1efe33aeca3e1a51407b0f73a8f50c9db2/Sphinx_DL/source/Projet/DONNEES/Capture/Capture11.PNG" width="400" />
