@@ -64,10 +64,10 @@ Télécharger le dossier github du projet sur votre ordinateur :
 
 4) Executer le code.
 
-5) Coller votre clé API dans la zone dédié sur l'interphace graphique qui s'affiche.
+5) Coller votre clé API dans la zone dédiée sur l'interphace graphique qui s'affiche.
 
 <img src="https://github.com/lucea97217/Projetgroupe6/blob/24dd9d1efe33aeca3e1a51407b0f73a8f50c9db2/Sphinx_DL/source/Projet/DONNEES/Capture/Capture10.PNG" width="400" />
 
 Vous pouvez également la coller dans le code python, à l'emplacement indiqué ci-dessous :
 
-<img src="https://github.com/lucea97217/Projetgroupe6/blob/24dd9d1efe33aeca3e1a51407b0f73a8f50c9db2/Sphinx_DL/source/Projet/DONNEES/Capture/Capture11.PNG" width="800" />
+<img src="https://github.com/lucea97217/Projetgroupe6/blob/24dd9d1efe33aeca3e1a51407b0f73a8f50c9db2/Sphinx_DL/source/Projet/DONNEES/Capture/Capture11.PNG" width="1400" />
