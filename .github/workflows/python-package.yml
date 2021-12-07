@@ -21,4 +21,5 @@ jobs:
         python-version: 3.8
     - name: Run tests
       run: |
-        nosetests -v --nologcapture --with-doctest --exclude=test_examples --with-coverage --cover-package=wntr --cover-min-percentage=70 wntr
+        
+        
