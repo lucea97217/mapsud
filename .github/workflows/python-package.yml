@@ -19,9 +19,6 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.8
-    - name: Install packages
-      run: |
-        python setup.py develop
     - name: Run tests
       run: |
         nosetests -v --nologcapture --with-doctest --exclude=test_examples --with-coverage --cover-package=wntr --cover-min-percentage=70 wntr
