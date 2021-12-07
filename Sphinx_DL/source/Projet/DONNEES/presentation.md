@@ -2,7 +2,7 @@
 
 Bienvenue sur le projet du groupe 6 !
 
-L'objectif de ce package est de fourir une lecture compréhensible des tarifs autoroutiers (2021) concernant la région entre Montpellier, Toulouse, et la frontière espagnole.
+L'objectif de ce package est de fournir une lecture compréhensible des tarifs autoroutiers (2021) concernant la région Occitanie,  entre Montpellier, Toulouse, et la frontière espagnole.
 
 <img src="https://github.com/lucea97217/Projetgroupe6/blob/9a333e0e9263a3ddd4c0825bb65714172d1e228a/Sphinx_DL/source/Projet/DONNEES/Capture/Capture5.PNG" width="400" />
 
