@@ -1,5 +1,9 @@
 # Projetgroupe6
 PROJET M1 SSD 
+
+**Pour avoir une présentation du projet, et un guide de son utilisation,    
+--> voir le sous-dossier "Données".**
+
 ## EDITEURS:
 
 __LUCEA__ __LENNY__
