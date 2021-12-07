@@ -10,7 +10,7 @@ La liste détaillé des tarifs est disponible sur https://public-content.vinci-a
 
 L'utilisateur aura la possiblité de sélectionner deux points parmis l'ensemble des sorties d'autoroutes de la région concernée, une entrée A et une sortie B.  
 1) Le programme lui proposera en retour une carte intéractive et cliquable, affichant l'itinéraire entre A et B surligné en bleu (itinéraire passsant uniquement par l'autoroute). Ainsi que d'autres indicateurs, comme la durée estimée, la distance, le prix totale, ou encore le prix moyen au kilomètre.  
-2) Il apparaît parfois préférable, pour aller de A jusq'en B, de quitter l'autoroute lors d'une sortie intermédiaire, puis de la réintégrer immédiatement après, afin de minimiser le coût du péage sur le trajet global entre A et B. Il seraît donc intéressant de chercher le tajet optimal minimisant le coût (sans pour autant augmenter la distance donc).  
+2) Il apparaît parfois préférable, pour aller de A jusqu'en B, de quitter l'autoroute lors d'une sortie intermédiaire, puis de la réintégrer immédiatement après, afin de minimiser le coût du péage sur le trajet global entre A et B. Il seraît donc intéressant de chercher le tajet optimal minimisant le coût (sans pour autant augmenter la distance donc).  
 Un diagramme en baton affichera le coût du trajet optimal en fonction de k le nombre de sorties maximum autorisées (c'est à dire en s'accordant le droit de sortir de l'autoroute, pour re-rentrer immédiatement après, k fois maximum).    
 L'utilisateur aura également la possiblité de sélectionner sa contrainte k, et le programme adaptera l'itinéraire sur la carte en conséquence, affichant notamment les k sorties intermédiares.
 
@@ -24,16 +24,12 @@ La contrainte k = 0 sorties autorisées correspond au cas du direct entre A et B
 
 Tout d'abord lancer le terminal, et exécuter les commandes ci-dessous, afin d'installer les packages nécessaires au bon fonctionnement :
 
-    pip install numpy pandas openrouteservice folium matplotlib ipywidgets
-  
-Ensuite installer la bonne version de python :
-
-    ça marche pô
+    $ pip install numpy pandas openrouteservice folium matplotlib ipywidgets
   
 Télécharger le dossier github du projet sur votre ordinateur :
 
-    J'y arrive pas, l'informatique c'est d'la m***e, je rage #!**%
-    
+     $ git clone https://github.com/lucea97217/Projetgroupe6.git
+     
 **Il vous faudra ensuire créer une clé API personnelle** (moins de 1min). Si vous utilisez la clé d'une autre personne, cela la détruira.
 
 --> Pour cela, suivre le lien https://openrouteservice.org/dev/#/signup, et les instructions suivantes :
