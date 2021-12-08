@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import mapsud
 
 setup(name = 'mapsud',
-      version = '0.0.1',
+      version = '0.0.2',
       url='https://github.com/lucea97217/mapsud.git',
       author = 'LUCEA, VALDEYRON, YUAN',
       author_email = 'lenny.lucea@etu.umontpellier.fr',
