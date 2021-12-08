@@ -84,7 +84,7 @@ def tarif (i,j) :   # i,j = numéros "arrangés" des sorties d'autouroutes
 #%%
 ####################### IMPORT TABLEAU COORDONNEES ##############################
 # Initialisation table de base
-df = pd.read_csv("coordonnees.csv", sep=",")
+df = pd.read_csv("https://raw.githubusercontent.com/lucea97217/mapsud/main/Donn%C3%A9es/coordonnees.csv", sep=",")
 # Supression des index
 del df["index"]
 
