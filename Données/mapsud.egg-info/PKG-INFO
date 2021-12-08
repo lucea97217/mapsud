@@ -1,4 +1,4 @@
-Metadata-Version: 2.1
+Metadata-Version: 1.2
 Name: mapsud
 Version: 0.0.1
 Summary: voir presentation
@@ -8,10 +8,8 @@ Author-email: lenny.lucea@etu.umontpellier.fr
 Maintainer: LUCEA, VALDEYRON, YUAN
 Maintainer-email: lenny.lucea@etu.umontpellier.fr
 License: UM G6
+Description: UNKNOWN
 Keywords: Tarifs autoroutiers sud France
 Platform: ALL
 Classifier: Topic :: tarif autoroute
 Classifier: Topic :: visualisation
-
-UNKNOWN
-
