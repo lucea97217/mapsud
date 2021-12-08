@@ -84,6 +84,8 @@ def tarif (i,j) :   # i,j = numéros "arrangés" des sorties d'autouroutes
 #%%
 ####################### IMPORT TABLEAU COORDONNEES ##############################
 # Initialisation table de base
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
 df = pd.read_csv("https://raw.githubusercontent.com/lucea97217/mapsud/main/Donn%C3%A9es/coordonnees.csv", sep=",")
 # Supression des index
 del df["index"]
@@ -593,4 +595,15 @@ k=[]
 for i in range(11):
     k.append(i)
 
+#%%
+# Commande d'affichage map interactive
+def map(APIkey):
+    if isinstance(APIkey,str)==True:
+
+        return interact(graphique.graph_rang,DEPART= tabOpti(df), ARRIVEE= tabOpti(df),nbSorties = k, APIkey=APIkey)
+    else:
+        print('Mauvais format')
+        return
+
 ############################## FIN ##########################################
+

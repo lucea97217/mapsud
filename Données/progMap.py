@@ -1,17 +1,13 @@
 # CODE A EXECUTER POUR LANCER LE PROGRAMME
 
 #%%
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
 from mapsud.graph import *
-from ipywidgets import interact
 
 #%%
 
 ################################################################################
-
-interact(graphique.graph_rang,DEPART= tabOpti(df), ARRIVEE= tabOpti(df),nbSorties = k, APIkey='YOUR APIKEY')
-
-
-
 
 
 
