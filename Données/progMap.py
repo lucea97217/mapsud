@@ -8,9 +8,11 @@ from ipywidgets import interact
 
 ################################################################################
 
-interact(graphique.graph_rang,DEPART= tabOpti(df), ARRIVEE= tabOpti(df),nbSorties = k, APIkey='')
+interact(graphique.graph_rang,DEPART= tabOpti(df), ARRIVEE= tabOpti(df),nbSorties = k, APIkey='YOUR APIKEY')
 
 
 
 
 
+
+# %%

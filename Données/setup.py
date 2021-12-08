@@ -11,6 +11,6 @@ setup(name = 'mapsud',
       keywords = 'Tarifs autoroutiers sud France',
       packages = ['mapsud'],
       description = 'voir presentation',
-      license = 'UM G6',
+      license = 'MIT',
       platforms = 'ALL',
      )
