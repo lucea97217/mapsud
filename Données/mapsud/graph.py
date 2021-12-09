@@ -1,4 +1,5 @@
 #%%
+import numpy
 from numpy import string_
 import pandas as pd
 import openrouteservice
