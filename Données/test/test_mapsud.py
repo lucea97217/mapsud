@@ -14,5 +14,6 @@ def test_traj1():
 
    
 def test_traj2():
-    assert trajet_optimal(41,42) == -1
+    assert trajet_optimal(29,30) == -1
+
 
