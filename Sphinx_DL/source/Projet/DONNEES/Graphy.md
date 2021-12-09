@@ -166,3 +166,16 @@ Voici la syntaxe, et un exemple (APIkey à remplacer manuellement !) :
     
 <img src="https://raw.githubusercontent.com/lucea97217/mapsud/main/Sphinx_DL/source/Projet/DONNEES/Capture/exemple_prog_graph.png"  width="400" />
 
+Voci également la fonction utilisateur, qui permet, lorsqu'on la lance, d'executer la commande ci-dessus dans l'exemple.  
+Ce sera la fonction que l'utilisateur exécutera lorsqu'il importera le package. A noter que l'argument d'entrer est la clé API personelle, sous forme de chaîne de caractère.
+
+    # Commande d'affichage map interactive
+    def map(APIkey):
+        if isinstance(APIkey,str)==True:
+
+            return interact(graphique.graph_rang,DEPART= tabOpti(df), ARRIVEE= tabOpti(df),nbSorties = k, APIkey=APIkey)
+        else:
+            print('Mauvais format')
+            return
+
+
