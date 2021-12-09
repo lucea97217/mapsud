@@ -42,7 +42,7 @@ Tout d'abord lancer le terminal, et exécuter la commande ci-dessous, afin d'ins
 
 <img src="https://raw.githubusercontent.com/lucea97217/mapsud/main/Sphinx_DL/source/Projet/DONNEES/Capture/Capture_8.PNG" width="800" />
 
-4/ Votre clé apparaît sous la forme d'une chaîne de caractère, que vous pouvez copier-coller pour la suite.
+4/ Votre clé apparaît sous la forme d'une chaîne de caractère.
 
 <img src="https://raw.githubusercontent.com/lucea97217/mapsud/main/Sphinx_DL/source/Projet/DONNEES/Capture/Capture_9.PNG" width="800" />
 
