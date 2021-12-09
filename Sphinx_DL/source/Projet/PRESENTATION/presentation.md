@@ -24,11 +24,7 @@ La contrainte k = 0 sorties autorisées correspond au cas du direct entre A et B
 
 Tout d'abord lancer le terminal, et exécuter les commandes ci-dessous, afin d'installer les packages nécessaires au bon fonctionnement :
 
-    $ pip install numpy pandas openrouteservice folium matplotlib ipywidgets
-  
-Télécharger le dossier github du projet sur votre ordinateur :
-
-     $ git clone https://github.com/lucea97217/Projetgroupe6.git
+    $ pip install mapsud numpy pandas openrouteservice folium matplotlib ipywidgets
      
 **Il vous faudra ensuire créer une clé API personnelle** (moins de 1min). Vous ne pouvez pas utiliser la clé d'une autre personne.
 
