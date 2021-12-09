@@ -8,4 +8,4 @@ mapsud.egg-info/SOURCES.txt
 mapsud.egg-info/dependency_links.txt
 mapsud.egg-info/top_level.txt
 test/__init__.py
-test/test.py
+test/test_mapsud.py
