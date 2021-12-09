@@ -598,12 +598,19 @@ for i in range(11):
 #%%
 # Commande d'affichage map interactive
 def map(APIkey):
-    if isinstance(APIkey,str)==True:
-
-        return interact(graphique.graph_rang,DEPART= tabOpti(df), ARRIVEE= tabOpti(df),nbSorties = k, APIkey=APIkey)
-    else:
-        print('Mauvais format')
+    '''
+    Paramètre d'entrer unique : APIkey sous forme de chaîne de caractère
+    Ex = map('5b3ce3597851110001cf6248ec32a01981c')
+    Fonction retournant la carte interactive, et le diagramme des tarifs, des sorties d'autoroutes.
+    A executer dans un editeur de code (tel que VS-code) pour avoir la sortie graphique.
+    '''
+    try :
+        if isinstance(APIkey,str)==True:
+            return interact(graphique.graph_rang,DEPART= tabOpti(df), ARRIVEE= tabOpti(df),nbSorties = k, APIkey=APIkey)
+        else:
+            print('Mauvais format')
+            return
+    except :
+        print("Mauvais format")
         return
-
 ############################## FIN ##########################################
-
