@@ -1,4 +1,5 @@
 README.md
+README.txt
 setup.py
 mapsud/__init__.py
 mapsud/graph.py
