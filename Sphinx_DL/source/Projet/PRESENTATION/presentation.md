@@ -60,12 +60,15 @@ Télécharger le dossier github du projet sur votre ordinateur :
         import ssl
         ssl._create_default_https_context = ssl._create_unverified_context
         from mapsud.graph import map
+        
         #%%
 
-        map("APIkey")     
+        map("APIkey") 
+        
         #%%
 
 2) Remplacer APIkey par votre clé API personelle, puis executer le code.
+
 La fonction map() a besoin comme argument d'une chaîne de caractère, veillez donc à laisser les guillemets.
 
 3) Une interface graphique s'affiche, il ne vous reste plus qu'à sélectionner votre point de Départ et d'Arrivée, ainsi que la contrainte du nombre de sorties maximums autorisées (nbSorties). Sachant que la contrainte correspondante au trajet le moins cher (parmis tout les trajets possibles) est affichée sur une ligne de texte.
