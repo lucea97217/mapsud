@@ -30,7 +30,7 @@ Télécharger le dossier github du projet sur votre ordinateur :
 
      $ git clone https://github.com/lucea97217/Projetgroupe6.git
      
-**Il vous faudra ensuire créer une clé API personnelle** (moins de 1min). Si vous utilisez la clé d'une autre personne, cela la détruira.
+**Il vous faudra ensuire créer une clé API personnelle** (moins de 1min). Vous ne pouvez pas utiliser la clé d'une autre personne.
 
 --> Pour cela, suivre le lien https://openrouteservice.org/dev/#/signup, et les instructions suivantes :
 
@@ -52,23 +52,23 @@ Télécharger le dossier github du projet sur votre ordinateur :
 
 # Utilisation
 
-1) Ouvrir le dossier téléchargé du projet sur votre ordinateur.
+1) Ouvrir un éditeur de code (tel que VS-code), et copier-coller le code ci-dessous :
 
-2) Aller dans le sous-dossier "Données".
+        # CODE A EXECUTER POUR LANCER MAPSUD
+        #%%
+        
+        import ssl
+        ssl._create_default_https_context = ssl._create_unverified_context
+        from mapsud.graph import map
+        #%%
 
-3) Ouvir le fichier python "progMap.py" dans un éditeur de code tel que VS-code. (L'éditeur est nécessaire pour la sortie graphique du programme, sinon, en ligne de commande sur la console, il ne s'affichera pas de graphique.)
+        map("APIkey")     
+        #%%
 
-4) Executer le code.
+2) Remplacer APIkey par votre clé API personelle, puis executer le code.
+La fonction map() a besoin comme argument d'une chaîne de caractère, veillez donc à laisser les guillemets.
 
-5) Coller votre clé API dans la zone dédiée sur l'interphace graphique qui s'affiche.
-
-<img src="https://raw.githubusercontent.com/lucea97217/mapsud/main/Sphinx_DL/source/Projet/DONNEES/Capture/Capture10.PNG" width="400" />
-
-Vous pouvez également la coller dans le code python, à l'emplacement indiqué ci-dessous :
-
-<img src="https://raw.githubusercontent.com/lucea97217/mapsud/main/Sphinx_DL/source/Projet/DONNEES/Capture/Capture11.PNG" width="1400" />
-
-6) Il ne vous reste plus qu'à sélectionner votre point de Départ et d'Arrivée, ainsi que la contrainte du nombre de sorties maximums autorisées (nbSorties). Sachant que la contrainte correspondante au trajet le moins cher (parmis tout les trajets possibles) est affichée sur une ligne de texte.
+3) Une interface graphique s'affiche, il ne vous reste plus qu'à sélectionner votre point de Départ et d'Arrivée, ainsi que la contrainte du nombre de sorties maximums autorisées (nbSorties). Sachant que la contrainte correspondante au trajet le moins cher (parmis tout les trajets possibles) est affichée sur une ligne de texte.
 
 Exemple entre St-Jean-de-Védas et la frontière espagnole, avec l'itinéraire optimal comportant maximum 3 sorties. Pour ce parcours, le trajet optimal est atteint pour 5 sorties autorisées.
 
