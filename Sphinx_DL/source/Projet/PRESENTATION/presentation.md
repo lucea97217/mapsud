@@ -22,7 +22,7 @@ La contrainte k = 0 sorties autorisées correspond au cas du direct entre A et B
 
 # Installation
 
-Tout d'abord lancer le terminal, et exécuter les commandes ci-dessous, afin d'installer les packages nécessaires au bon fonctionnement :
+Tout d'abord lancer le terminal, et exécuter la commande ci-dessous, afin d'installer les packages nécessaires au bon fonctionnement :
 
     $ pip install mapsud numpy pandas openrouteservice folium matplotlib ipywidgets
      
@@ -48,7 +48,7 @@ Tout d'abord lancer le terminal, et exécuter les commandes ci-dessous, afin d'i
 
 # Utilisation
 
-1) Ouvrir un éditeur de code (tel que VS-code), et copier-coller le code ci-dessous :
+1) Ouvrir un éditeur de code (tel que VS-code), puis copier-coller le code ci-dessous :
 
         # CODE A EXECUTER POUR LANCER MAPSUD
         #%%
