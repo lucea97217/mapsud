@@ -50,18 +50,18 @@ Tout d'abord lancer le terminal, et exécuter la commande ci-dessous, afin d'ins
 
 1) Ouvrir un éditeur de code (tel que VS-code), puis copier-coller le code ci-dessous :
 
-        # CODE A EXECUTER POUR LANCER MAPSUD
-        #%%
+       # CODE A EXECUTER POUR LANCER MAPSUD
+       #%%
         
-        import ssl
-        ssl._create_default_https_context = ssl._create_unverified_context
-        from mapsud.graph import map
+       import ssl
+       ssl._create_default_https_context = ssl._create_unverified_context
+       from mapsud.graph import map
         
-        #%%
+       #%%
 
-        map("APIkey") 
+       map("APIkey") 
         
-        #%%
+       #%%
 
 2) Remplacer APIkey par votre clé API personelle, puis executer le code.  
 La fonction map() a besoin comme argument d'une chaîne de caractère, veillez donc à laisser les guillemets.
