@@ -3,7 +3,7 @@ import sys
 import os
 import pytest
 sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), os.pardir))
-
+import mapsud
 from mapsud.graph import trajet_optimal_min, trajet_optimal
 
 #%%
