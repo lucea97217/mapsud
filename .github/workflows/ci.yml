@@ -14,10 +14,4 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - name:  mapsud install and test
-        run: | 
-          mapsud install
-          mapsud test
-        env :
-          CI : True
       - run: echo "🍏 This job's status is ${{ job.status }}."
