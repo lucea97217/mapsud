@@ -14,4 +14,10 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+      - name: npm install and test
+        run: | 
+          npm install
+          npm test
+        env :
+          CI : True
       - run: echo "🍏 This job's status is ${{ job.status }}."
